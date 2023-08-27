@@ -24,6 +24,8 @@ let mouseY = 0
 let chosenQuality = "sd"
 let chosenImage = "GJ_GameSheet"
 
+let locked = false
+
 function setup()
 {
     for (let imageName in images)
@@ -49,8 +51,27 @@ function setup()
     dropdownQuality.value = "sd"
 
     canvas.addEventListener("mousemove", event => {
+        if (!locked)
+        {
+            mouseX = event.x
+            mouseY = event.y
+        }
+    })
+
+    canvas.addEventListener("dblclick", event => {
         mouseX = event.x
         mouseY = event.y
+        locked = true
+
+        ctx.strokeStyle = "#ff0"
+    })
+
+    canvas.addEventListener("click", event => {
+        mouseX = event.x
+        mouseY = event.y
+
+        if (locked) locked = false
+        ctx.strokeStyle = "#f00"
     })
 
     formatCanvas()
@@ -79,7 +100,8 @@ function formatCanvas()
 
     canvas.style.aspectRatio = `${image.width} / ${image.height}`
 
-    ctx.strokeStyle = "#F00"
+    if (locked) ctx.strokeStyle = "#ff0"
+    else        ctx.strokeStyle = "#f00"
 }
 
 function main()
