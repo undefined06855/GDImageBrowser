@@ -1,8 +1,3 @@
-// TODO:
-// git integration
-// download part of canvas
-// just drawing a preview of the part of canvas
-
 function waitUntilFinishLoading()
 {
     if (loadedAllImages && loadedAllPlists)
@@ -15,8 +10,11 @@ function waitUntilFinishLoading()
 
 waitUntilFinishLoading()
 
-let canvas = document.querySelector("canvas")
+let canvas = document.querySelector("#canvas")
 let ctx = canvas.getContext("2d")
+let preview = document.querySelector("#preview")
+let previewCtx = preview.getContext("2d")
+
 let dropdownSheet = document.querySelector("#sheet_select")
 let dropdownQuality = document.querySelector("#quality_select")
 
@@ -121,6 +119,30 @@ function main()
     if (objectSelected)
     {
         let texRect = readTextureRect(objectSelected.textureRect)
+
+        if (objectSelected.textureRotated)
+        {
+            preview.width = texRect.height
+            preview.height = texRect.width
+            previewCtx.drawImage(canvas, texRect.x, texRect.y, texRect.height, texRect.width, 0, 0, texRect.height, texRect.width)
+        }
+        else
+        {
+            preview.width = texRect.width
+            preview.height = texRect.height
+            previewCtx.drawImage(canvas, texRect.x, texRect.y, texRect.width, texRect.height, 0, 0, texRect.width, texRect.height)
+        }
+
+        if (preview.width >= preview.height)
+        {
+            preview.style.width = "100%"
+            preview.style.height = "auto"
+        }
+        else
+        {
+            preview.style.width = "auto"
+            preview.style.height = "100%"
+        }
 
         ctx.beginPath()
         if (objectSelected.textureRotated) ctx.roundRect(texRect.x, texRect.y, texRect.height, texRect.width, 2)
