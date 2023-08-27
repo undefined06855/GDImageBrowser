@@ -1,0 +1,465 @@
+{
+	"frames":
+	{
+		"GJ_challengeBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{44,219},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_createBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{44,420},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_dailyBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{1,621},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_fameBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{264,40},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_featuredBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{245,241},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_gauntletsBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{245,442},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_highscoreBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{465,40},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_mapPacksBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{446,241},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_savedBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{446,442},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_searchBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{202,643},{200,200}}",
+			"textureRotated": false
+		},
+		"GJ_watchReplay_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-2}",
+			"spriteSize": "{262,178}",
+			"spriteSourceSize": "{266,182}",
+			"textureRect": "{{1,40},{262,178}}",
+			"textureRotated": false
+		},
+		"GJ_weeklyBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-5}",
+			"spriteSize": "{200,200}",
+			"spriteSourceSize": "{210,210}",
+			"textureRect": "{{403,643},{200,200}}",
+			"textureRotated": false
+		},
+		"boost_01_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{64,82}",
+			"spriteSourceSize": "{64,82}",
+			"textureRect": "{{720,848},{64,82}}",
+			"textureRotated": false
+		},
+		"boost_02_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,108}",
+			"spriteSourceSize": "{62,108}",
+			"textureRect": "{{883,484},{62,108}}",
+			"textureRotated": false
+		},
+		"boost_03_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{96,108}",
+			"spriteSourceSize": "{96,108}",
+			"textureRect": "{{520,844},{96,108}}",
+			"textureRotated": true
+		},
+		"boost_04_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{126,108}",
+			"spriteSourceSize": "{126,108}",
+			"textureRect": "{{827,357},{126,108}}",
+			"textureRotated": true
+		},
+		"boost_05_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,104}",
+			"spriteSourceSize": "{128,104}",
+			"textureRect": "{{778,510},{128,104}}",
+			"textureRotated": true
+		},
+		"playerDash2_boom2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,1}",
+			"spriteSize": "{90,88}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{629,848},{90,88}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_002.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,4}",
+			"spriteSize": "{118,110}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{798,768},{118,110}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_003.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,5}",
+			"spriteSize": "{124,122}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{827,232},{124,122}}",
+			"textureRotated": true
+		},
+		"playerDash2_boom2_004.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,4}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{790,639},{128,128}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_005.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,4}",
+			"spriteSize": "{130,130}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{647,510},{130,130}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_006.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,4}",
+			"spriteSize": "{134,136}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{655,641},{134,136}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_007.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,3}",
+			"spriteSize": "{140,138}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{686,232},{140,138}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_008.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{142,138}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{729,38},{142,138}}",
+			"textureRotated": false
+		},
+		"playerDash2_boom2_009.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,3}",
+			"spriteSize": "{140,138}",
+			"spriteSourceSize": "{142,144}",
+			"textureRect": "{{686,371},{140,138}}",
+			"textureRotated": false
+		},
+		"portal_01_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-10,0}",
+			"spriteSize": "{54,142}",
+			"spriteSourceSize": "{74,142}",
+			"textureRect": "{{872,38},{54,142}}",
+			"textureRotated": false
+		},
+		"portal_02_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-10,0}",
+			"spriteSize": "{54,142}",
+			"spriteSourceSize": "{74,142}",
+			"textureRect": "{{729,177},{54,142}}",
+			"textureRotated": true
+		},
+		"portal_03_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_04_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_05_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,0}",
+			"spriteSize": "{94,178}",
+			"spriteSourceSize": "{98,178}",
+			"textureRect": "{{1,822},{94,178}}",
+			"textureRotated": true
+		},
+		"portal_06_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,0}",
+			"spriteSize": "{94,178}",
+			"spriteSourceSize": "{98,178}",
+			"textureRect": "{{1,822},{94,178}}",
+			"textureRotated": true
+		},
+		"portal_07_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_08_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,0}",
+			"spriteSize": "{72,172}",
+			"spriteSourceSize": "{90,172}",
+			"textureRect": "{{180,844},{72,172}}",
+			"textureRotated": true
+		},
+		"portal_09_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,0}",
+			"spriteSize": "{72,172}",
+			"spriteSourceSize": "{90,172}",
+			"textureRect": "{{180,844},{72,172}}",
+			"textureRotated": true
+		},
+		"portal_10_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_11_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,174}",
+			"spriteSourceSize": "{62,174}",
+			"textureRect": "{{666,40},{62,174}}",
+			"textureRotated": false
+		},
+		"portal_12_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,174}",
+			"spriteSourceSize": "{62,174}",
+			"textureRect": "{{666,40},{62,174}}",
+			"textureRotated": false
+		},
+		"portal_13_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_14_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{80,166}",
+			"spriteSourceSize": "{86,166}",
+			"textureRect": "{{353,844},{80,166}}",
+			"textureRotated": true
+		},
+		"portal_15_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-16,0}",
+			"spriteSize": "{50,176}",
+			"spriteSourceSize": "{82,176}",
+			"textureRect": "{{604,643},{50,176}}",
+			"textureRotated": false
+		},
+		"portal_16_shine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-16,0}",
+			"spriteSize": "{50,176}",
+			"spriteSourceSize": "{82,176}",
+			"textureRect": "{{604,643},{50,176}}",
+			"textureRotated": false
+		},
+		"spiderDash_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{6,1}",
+			"spriteSize": "{424,38}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{1,1},{424,38}}",
+			"textureRotated": false
+		},
+		"spiderDash_002.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-8,0}",
+			"spriteSize": "{396,42}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{1,219},{396,42}}",
+			"textureRotated": true
+		},
+		"spiderDash_003.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-60,1}",
+			"spriteSize": "{300,38}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{426,1},{300,38}}",
+			"textureRotated": false
+		},
+		"spiderDash_004.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-93,2}",
+			"spriteSize": "{238,38}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{647,241},{238,38}}",
+			"textureRotated": true
+		},
+		"spiderDash_005.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-109,2}",
+			"spriteSize": "{210,36}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{727,1},{210,36}}",
+			"textureRotated": false
+		},
+		"spiderDash_006.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-143,2}",
+			"spriteSize": "{142,34}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{655,778},{142,34}}",
+			"textureRotated": false
+		},
+		"spiderDash_007.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-158,2}",
+			"spriteSize": "{118,34}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{655,813},{118,34}}",
+			"textureRotated": false
+		},
+		"spiderDash_008.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-196,3}",
+			"spriteSize": "{44,30}",
+			"spriteSourceSize": "{442,42}",
+			"textureRect": "{{1,917},{44,30}}",
+			"textureRotated": false
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "GJ_GameSheet04-hd.png",
+		"size": "{950,950}",
+		"smartupdate": "$TexturePacker:SmartUpdate:0704db3de3381ede8d553d9a553820b4:b3e2e3395c696903a65acdcb622b90a9:9f7a12832b5bd44135bd8d71ee27dfc5$",
+		"textureFileName": "GJ_GameSheet04-hd.png"
+	}
+}

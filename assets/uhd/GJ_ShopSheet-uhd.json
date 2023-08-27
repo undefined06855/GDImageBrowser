@@ -1,0 +1,807 @@
+{
+	"frames":
+	{
+		"chest03_small_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-1}",
+			"spriteSize": "{122,102}",
+			"spriteSourceSize": "{122,104}",
+			"textureRect": "{{3238,2345},{122,102}}",
+			"textureRotated": false
+		},
+		"chest_01_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{397,321}",
+			"spriteSourceSize": "{397,321}",
+			"textureRect": "{{2487,170},{397,321}}",
+			"textureRotated": true
+		},
+		"chest_01_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{385,309}",
+			"spriteSourceSize": "{385,309}",
+			"textureRect": "{{2479,568},{385,309}}",
+			"textureRotated": false
+		},
+		"chest_01_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{385,316}",
+			"spriteSourceSize": "{385,322}",
+			"textureRect": "{{2865,531},{385,316}}",
+			"textureRotated": false
+		},
+		"chest_01_03_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,14}",
+			"spriteSize": "{303,28}",
+			"spriteSourceSize": "{303,56}",
+			"textureRect": "{{3251,531},{303,28}}",
+			"textureRotated": true
+		},
+		"chest_01_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,58}",
+			"spriteSize": "{652,134}",
+			"spriteSourceSize": "{654,250}",
+			"textureRect": "{{2739,1},{652,134}}",
+			"textureRotated": false
+		},
+		"chest_01_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-71}",
+			"spriteSize": "{385,164}",
+			"spriteSourceSize": "{385,306}",
+			"textureRect": "{{2845,1622},{385,164}}",
+			"textureRotated": false
+		},
+		"chest_01_04_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,66}",
+			"spriteSize": "{324,196}",
+			"spriteSourceSize": "{324,328}",
+			"textureRect": "{{484,2230},{324,196}}",
+			"textureRotated": false
+		},
+		"chest_01_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,66}",
+			"spriteSize": "{295,150}",
+			"spriteSourceSize": "{295,282}",
+			"textureRect": "{{3291,772},{295,150}}",
+			"textureRotated": true
+		},
+		"chest_02_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{498,402}",
+			"spriteSourceSize": "{498,402}",
+			"textureRect": "{{1922,876},{498,402}}",
+			"textureRotated": false
+		},
+		"chest_02_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{482,386}",
+			"spriteSourceSize": "{482,388}",
+			"textureRect": "{{1369,2061},{482,386}}",
+			"textureRotated": false
+		},
+		"chest_02_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,4}",
+			"spriteSize": "{482,394}",
+			"spriteSourceSize": "{482,402}",
+			"textureRect": "{{2809,136},{482,394}}",
+			"textureRotated": false
+		},
+		"chest_02_03_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,18}",
+			"spriteSize": "{378,62}",
+			"spriteSourceSize": "{378,98}",
+			"textureRect": "{{3481,1},{378,62}}",
+			"textureRotated": true
+		},
+		"chest_02_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,73}",
+			"spriteSize": "{816,168}",
+			"spriteSourceSize": "{818,314}",
+			"textureRect": "{{1922,1},{816,168}}",
+			"textureRotated": false
+		},
+		"chest_02_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-88}",
+			"spriteSize": "{482,206}",
+			"spriteSourceSize": "{482,382}",
+			"textureRect": "{{1,2230},{482,206}}",
+			"textureRotated": false
+		},
+		"chest_02_04_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,83}",
+			"spriteSize": "{404,244}",
+			"spriteSourceSize": "{404,410}",
+			"textureRect": "{{1856,1765},{404,244}}",
+			"textureRotated": true
+		},
+		"chest_02_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,82}",
+			"spriteSize": "{368,188}",
+			"spriteSourceSize": "{368,352}",
+			"textureRect": "{{2798,1996},{368,188}}",
+			"textureRotated": false
+		},
+		"chest_03_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{482,386}",
+			"spriteSourceSize": "{482,388}",
+			"textureRect": "{{2904,848},{482,386}}",
+			"textureRotated": true
+		},
+		"chest_03_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,4}",
+			"spriteSize": "{482,394}",
+			"spriteSourceSize": "{482,402}",
+			"textureRect": "{{2421,878},{482,394}}",
+			"textureRotated": false
+		},
+		"chest_03_03_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,18}",
+			"spriteSize": "{378,62}",
+			"spriteSourceSize": "{378,98}",
+			"textureRect": "{{3481,380},{378,62}}",
+			"textureRotated": true
+		},
+		"chest_03_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,73}",
+			"spriteSize": "{816,168}",
+			"spriteSourceSize": "{818,314}",
+			"textureRect": "{{1922,1},{816,168}}",
+			"textureRotated": false
+		},
+		"chest_03_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-88}",
+			"spriteSize": "{482,206}",
+			"spriteSourceSize": "{482,382}",
+			"textureRect": "{{1856,1282},{482,206}}",
+			"textureRotated": true
+		},
+		"chest_03_04_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,83}",
+			"spriteSize": "{404,244}",
+			"spriteSourceSize": "{404,410}",
+			"textureRect": "{{2101,1762},{404,244}}",
+			"textureRotated": true
+		},
+		"chest_03_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,82}",
+			"spriteSize": "{368,188}",
+			"spriteSourceSize": "{368,352}",
+			"textureRect": "{{2798,1996},{368,188}}",
+			"textureRotated": false
+		},
+		"chest_04_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{482,386}",
+			"spriteSourceSize": "{482,388}",
+			"textureRect": "{{2063,1279},{482,386}}",
+			"textureRotated": true
+		},
+		"chest_04_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,4}",
+			"spriteSize": "{482,394}",
+			"spriteSourceSize": "{482,402}",
+			"textureRect": "{{2450,1273},{482,394}}",
+			"textureRotated": true
+		},
+		"chest_04_03_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,18}",
+			"spriteSize": "{378,62}",
+			"spriteSourceSize": "{378,98}",
+			"textureRect": "{{3481,759},{378,62}}",
+			"textureRotated": true
+		},
+		"chest_04_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,73}",
+			"spriteSize": "{816,168}",
+			"spriteSourceSize": "{818,314}",
+			"textureRect": "{{1,2061},{816,168}}",
+			"textureRotated": false
+		},
+		"chest_04_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-88}",
+			"spriteSize": "{482,206}",
+			"spriteSourceSize": "{482,382}",
+			"textureRect": "{{2346,1762},{482,206}}",
+			"textureRotated": true
+		},
+		"chest_04_04_back_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,83}",
+			"spriteSize": "{404,244}",
+			"spriteSourceSize": "{404,410}",
+			"textureRect": "{{2553,1756},{404,244}}",
+			"textureRotated": true
+		},
+		"chest_04_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,82}",
+			"spriteSize": "{368,188}",
+			"spriteSourceSize": "{368,352}",
+			"textureRect": "{{3292,136},{368,188}}",
+			"textureRotated": true
+		},
+		"chest_04_price_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{218,66}",
+			"spriteSourceSize": "{218,66}",
+			"textureRect": "{{3171,1787},{218,66}}",
+			"textureRotated": true
+		},
+		"chest_glow_bg_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-265,-35}",
+			"spriteSize": "{204,94}",
+			"spriteSourceSize": "{734,164}",
+			"textureRect": "{{3339,1738},{204,94}}",
+			"textureRotated": false
+		},
+		"chest_shadow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{478,72}",
+			"spriteSourceSize": "{478,72}",
+			"textureRect": "{{809,2342},{478,72}}",
+			"textureRotated": false
+		},
+		"getOrbsLabel_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-7}",
+			"spriteSize": "{182,150}",
+			"spriteSourceSize": "{182,164}",
+			"textureRect": "{{3333,1486},{182,150}}",
+			"textureRotated": false
+		},
+		"gj_videoRewardBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{378,290}",
+			"spriteSourceSize": "{380,290}",
+			"textureRect": "{{2845,1331},{378,290}}",
+			"textureRotated": false
+		},
+		"plushies_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{8,3}",
+			"spriteSize": "{372,208}",
+			"spriteSourceSize": "{392,218}",
+			"textureRect": "{{2798,1787},{372,208}}",
+			"textureRotated": false
+		},
+		"shopBG_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{1920,1280}",
+			"spriteSourceSize": "{1920,1280}",
+			"textureRect": "{{1,1},{1920,1280}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_eye_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{72,72}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{1288,2342},{72,72}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_eye_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-9}",
+			"spriteSize": "{72,54}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{2289,2167},{72,54}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_eye_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-19}",
+			"spriteSize": "{72,34}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3442,772},{72,34}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_eye_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-8}",
+			"spriteSize": "{60,10}",
+			"spriteSourceSize": "{60,26}",
+			"textureRect": "{{2739,136},{60,10}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_eye_05_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,16}",
+			"spriteSourceSize": "{62,16}",
+			"textureRect": "{{1,2437},{62,16}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_hand_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{84,48}",
+			"spriteSourceSize": "{84,48}",
+			"textureRect": "{{3361,2345},{84,48}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_head_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,132}",
+			"spriteSourceSize": "{268,132}",
+			"textureRect": "{{2023,2170},{268,132}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_jaw_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,100}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{2692,2161},{268,100}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_jaw_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,100}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{2793,2294},{268,100}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_jaw_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,108}",
+			"spriteSourceSize": "{268,108}",
+			"textureRect": "{{3224,1337},{268,108}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_mouth_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{168,168}",
+			"spriteSourceSize": "{168,168}",
+			"textureRect": "{{3339,1833},{168,168}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_pupil_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{28,28}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2809,531},{28,28}}",
+			"textureRotated": false
+		},
+		"shopKeeper2_pupil_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-6}",
+			"spriteSize": "{28,16}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2845,1302},{28,16}}",
+			"textureRotated": true
+		},
+		"shopKeeper2_torso_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{210,148}",
+			"spriteSourceSize": "{210,148}",
+			"textureRect": "{{3333,1337},{210,148}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_eye_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{72,72}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3392,1},{72,72}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_eye_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-9}",
+			"spriteSize": "{72,54}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3392,74},{72,54}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_eye_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-19}",
+			"spriteSize": "{72,34}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3508,1833},{72,34}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_eye_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-8}",
+			"spriteSize": "{60,10}",
+			"spriteSourceSize": "{60,26}",
+			"textureRect": "{{2739,136},{60,10}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_eye_05_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,16}",
+			"spriteSourceSize": "{62,16}",
+			"textureRect": "{{1,2437},{62,16}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_hand_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{84,48}",
+			"spriteSourceSize": "{84,48}",
+			"textureRect": "{{2793,2395},{84,48}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_head_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-11}",
+			"spriteSize": "{268,156}",
+			"spriteSourceSize": "{268,178}",
+			"textureRect": "{{3291,1068},{268,156}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_jaw_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-13}",
+			"spriteSize": "{268,74}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{3163,2185},{268,74}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_jaw_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,100}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{3062,2185},{268,100}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_jaw_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,108}",
+			"spriteSourceSize": "{268,108}",
+			"textureRect": "{{2583,2161},{268,108}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_mouth_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{168,168}",
+			"spriteSourceSize": "{168,168}",
+			"textureRect": "{{3167,2007},{168,168}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_pupil_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{28,28}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2865,848},{28,28}}",
+			"textureRotated": false
+		},
+		"shopKeeper3_pupil_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-6}",
+			"spriteSize": "{28,16}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2845,1302},{28,16}}",
+			"textureRotated": true
+		},
+		"shopKeeper3_torso_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{209,148}",
+			"spriteSourceSize": "{209,148}",
+			"textureRect": "{{2289,2245},{209,148}}",
+			"textureRotated": true
+		},
+		"shopKeeper_eye_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{72,72}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3448,1138},{72,72}}",
+			"textureRotated": false
+		},
+		"shopKeeper_eye_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-9}",
+			"spriteSize": "{72,54}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3339,2002},{72,54}}",
+			"textureRotated": false
+		},
+		"shopKeeper_eye_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-19}",
+			"spriteSize": "{72,34}",
+			"spriteSourceSize": "{72,72}",
+			"textureRect": "{{3442,845},{72,34}}",
+			"textureRotated": true
+		},
+		"shopKeeper_eye_04_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-8}",
+			"spriteSize": "{60,10}",
+			"spriteSourceSize": "{60,26}",
+			"textureRect": "{{2739,136},{60,10}}",
+			"textureRotated": false
+		},
+		"shopKeeper_eye_05_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,16}",
+			"spriteSourceSize": "{62,16}",
+			"textureRect": "{{1,2437},{62,16}}",
+			"textureRotated": false
+		},
+		"shopKeeper_hand_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{84,48}",
+			"spriteSourceSize": "{84,48}",
+			"textureRect": "{{2878,2395},{84,48}}",
+			"textureRotated": false
+		},
+		"shopKeeper_head_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,132}",
+			"spriteSourceSize": "{268,132}",
+			"textureRect": "{{2156,2167},{268,132}}",
+			"textureRotated": true
+		},
+		"shopKeeper_jaw_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,100}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{3231,1637},{268,100}}",
+			"textureRotated": false
+		},
+		"shopKeeper_jaw_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,100}",
+			"spriteSourceSize": "{268,100}",
+			"textureRect": "{{3238,1738},{268,100}}",
+			"textureRotated": true
+		},
+		"shopKeeper_jaw_03_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{268,108}",
+			"spriteSourceSize": "{268,108}",
+			"textureRect": "{{2793,2185},{268,108}}",
+			"textureRotated": false
+		},
+		"shopKeeper_mouth_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{168,168}",
+			"spriteSourceSize": "{168,168}",
+			"textureRect": "{{3238,2176},{168,168}}",
+			"textureRotated": false
+		},
+		"shopKeeper_pupil_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{28,28}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2845,1273},{28,28}}",
+			"textureRotated": false
+		},
+		"shopKeeper_pupil_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-6}",
+			"spriteSize": "{28,16}",
+			"spriteSourceSize": "{28,28}",
+			"textureRect": "{{2845,1302},{28,16}}",
+			"textureRotated": true
+		},
+		"shopKeeper_torso_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{208,144}",
+			"spriteSourceSize": "{208,144}",
+			"textureRect": "{{2438,2245},{208,144}}",
+			"textureRotated": true
+		},
+		"shopRope2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-99}",
+			"spriteSize": "{188,266}",
+			"spriteSourceSize": "{196,464}",
+			"textureRect": "{{3292,505},{188,266}}",
+			"textureRotated": false
+		},
+		"shopRope2_2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,0}",
+			"spriteSize": "{54,84}",
+			"spriteSourceSize": "{64,84}",
+			"textureRect": "{{2963,2395},{54,84}}",
+			"textureRotated": true
+		},
+		"shopRope3_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-99}",
+			"spriteSize": "{170,266}",
+			"spriteSourceSize": "{180,464}",
+			"textureRect": "{{1852,2170},{170,266}}",
+			"textureRotated": false
+		},
+		"shopRope3_2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,0}",
+			"spriteSize": "{54,84}",
+			"spriteSourceSize": "{64,84}",
+			"textureRect": "{{3448,1211},{54,84}}",
+			"textureRotated": false
+		},
+		"shopSign2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{564,348}",
+			"spriteSourceSize": "{564,354}",
+			"textureRect": "{{1922,170},{564,348}}",
+			"textureRotated": false
+		},
+		"shopSign3_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,-3}",
+			"spriteSize": "{556,356}",
+			"spriteSourceSize": "{558,362}",
+			"textureRect": "{{1922,519},{556,356}}",
+			"textureRotated": false
+		},
+		"shopSign_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,35}",
+			"spriteSize": "{550,280}",
+			"spriteSourceSize": "{556,350}",
+			"textureRect": "{{818,2061},{550,280}}",
+			"textureRotated": false
+		},
+		"storeDesk_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{1854,778}",
+			"spriteSourceSize": "{1854,778}",
+			"textureRect": "{{1,1282},{1854,778}}",
+			"textureRotated": false
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "GJ_ShopSheet-uhd.png",
+		"size": "{3544,2455}",
+		"smartupdate": "$TexturePacker:SmartUpdate:244f65df0e46718e0b55f81c5237af3e:0acc9828a7f85d396bca0a8c5bde3e25:5f0657c92403da5465d321bd4fa89561$",
+		"textureFileName": "GJ_ShopSheet-uhd.png"
+	}
+}

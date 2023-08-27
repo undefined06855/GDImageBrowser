@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="assets/web/favicon.ico" type="image/x-icon">
+
+        <title>GdImageBrowser</title>
+    </head>
+    <body>
+        <main>
+            <section class="white-overlay">
+                <h1>GdImageBrowser</h1>
+                <h5>(loading 0/0)</h5>
+                <div class="spacer"></div>
+                <label for="sheet_select">Sprite sheet: </label>
+                <select id="sheet_select"></select>
+                <br/>
+                <label for="quality_select">Quality: </label>
+                <select id="quality_select">
+                    <option value="sd">SD</option>
+                    <option value="hd">HD</option>
+                    <option value="uhd">UHD</option>
+                </select>
+                <hr>
+                <div id="name">Name: </div>
+                <div id="desc">Description: </div>
+                <div id="aliases">Aliases: </div>
+                <div id="offset">Offset: </div>
+                <div id="size">Size: </div>
+                <div id="ssize">Source size: </div>
+                <div id="rect">Rect: </div>
+                <div id="rot">Rotated: </div>
+            </section>
+
+            <div id="canvas-wrapper">
+                <canvas id="canvas"></canvas>
+            </div>
+        </main>
+
+        <div id="onevw"></div>
+
+        <script src="assets/assets.js"></script>
+        <script src="functions.js"></script>
+        <script src="loader.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

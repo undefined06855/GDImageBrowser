@@ -1,0 +1,4866 @@
+{
+	"frames":
+	{
+		"bird_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{155,70}",
+			"spriteSourceSize": "{155,70}",
+			"textureRect": "{{1488,1327},{155,70}}",
+			"textureRotated": false
+		},
+		"bird_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{162,82}",
+			"spriteSourceSize": "{162,88}",
+			"textureRect": "{{1728,2153},{162,82}}",
+			"textureRotated": false
+		},
+		"bird_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{158,74}",
+			"spriteSourceSize": "{158,76}",
+			"textureRect": "{{2139,1562},{158,74}}",
+			"textureRotated": true
+		},
+		"bird_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{165,74}",
+			"spriteSourceSize": "{165,74}",
+			"textureRect": "{{1910,1740},{165,74}}",
+			"textureRotated": true
+		},
+		"bird_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,6}",
+			"spriteSize": "{158,86}",
+			"spriteSourceSize": "{158,98}",
+			"textureRect": "{{2114,1730},{158,86}}",
+			"textureRotated": true
+		},
+		"bird_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{157,84}",
+			"spriteSourceSize": "{157,98}",
+			"textureRect": "{{2245,1924},{157,84}}",
+			"textureRotated": true
+		},
+		"bird_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,76}",
+			"spriteSourceSize": "{150,76}",
+			"textureRect": "{{2731,2016},{150,76}}",
+			"textureRotated": true
+		},
+		"bird_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,76}",
+			"spriteSourceSize": "{156,76}",
+			"textureRect": "{{2083,577},{156,76}}",
+			"textureRotated": true
+		},
+		"bird_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-1}",
+			"spriteSize": "{161,76}",
+			"spriteSourceSize": "{161,78}",
+			"textureRect": "{{2060,1566},{161,76}}",
+			"textureRotated": true
+		},
+		"bird_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-1}",
+			"spriteSize": "{126,80}",
+			"spriteSourceSize": "{126,82}",
+			"textureRect": "{{3515,488},{126,80}}",
+			"textureRotated": false
+		},
+		"bird_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{140,80}",
+			"spriteSourceSize": "{140,86}",
+			"textureRect": "{{1813,1316},{140,80}}",
+			"textureRotated": false
+		},
+		"bird_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,5}",
+			"spriteSize": "{148,74}",
+			"spriteSourceSize": "{148,84}",
+			"textureRect": "{{2196,1054},{148,74}}",
+			"textureRotated": false
+		},
+		"bird_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{154,70}",
+			"spriteSourceSize": "{154,70}",
+			"textureRect": "{{1910,506},{154,70}}",
+			"textureRotated": false
+		},
+		"bird_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{156,86}",
+			"spriteSourceSize": "{156,100}",
+			"textureRect": "{{2020,897},{156,86}}",
+			"textureRotated": true
+		},
+		"bird_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,13}",
+			"spriteSize": "{148,100}",
+			"spriteSourceSize": "{148,126}",
+			"textureRect": "{{2330,1},{148,100}}",
+			"textureRotated": true
+		},
+		"bird_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{166,86}",
+			"spriteSourceSize": "{166,100}",
+			"textureRect": "{{1918,1399},{166,86}}",
+			"textureRotated": true
+		},
+		"bird_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,15}",
+			"spriteSize": "{144,104}",
+			"spriteSourceSize": "{144,134}",
+			"textureRect": "{{2554,148},{144,104}}",
+			"textureRotated": true
+		},
+		"bird_18_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,8}",
+			"spriteSize": "{168,86}",
+			"spriteSourceSize": "{168,102}",
+			"textureRect": "{{1646,1982},{168,86}}",
+			"textureRotated": true
+		},
+		"bird_19_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{156,82}",
+			"spriteSourceSize": "{156,86}",
+			"textureRect": "{{2025,738},{156,82}}",
+			"textureRotated": true
+		},
+		"bird_20_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,4}",
+			"spriteSize": "{164,84}",
+			"spriteSourceSize": "{164,92}",
+			"textureRect": "{{2007,1399},{164,84}}",
+			"textureRotated": true
+		},
+		"bird_21_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-7}",
+			"spriteSize": "{136,108}",
+			"spriteSourceSize": "{136,122}",
+			"textureRect": "{{2347,1288},{136,108}}",
+			"textureRotated": false
+		},
+		"bird_22_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,2}",
+			"spriteSize": "{140,80}",
+			"spriteSourceSize": "{140,84}",
+			"textureRect": "{{1956,1316},{140,80}}",
+			"textureRotated": false
+		},
+		"bird_23_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{144,78}",
+			"spriteSourceSize": "{144,80}",
+			"textureRect": "{{2568,1},{144,78}}",
+			"textureRotated": true
+		},
+		"bird_24_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{172,76}",
+			"spriteSourceSize": "{172,76}",
+			"textureRect": "{{984,268},{172,76}}",
+			"textureRotated": false
+		},
+		"bird_25_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{144,76}",
+			"spriteSourceSize": "{144,76}",
+			"textureRect": "{{2649,1},{144,76}}",
+			"textureRotated": true
+		},
+		"bird_26_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,2}",
+			"spriteSize": "{138,84}",
+			"spriteSourceSize": "{138,88}",
+			"textureRect": "{{2659,869},{138,84}}",
+			"textureRotated": true
+		},
+		"bird_27_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{164,76}",
+			"spriteSourceSize": "{164,76}",
+			"textureRect": "{{1646,1321},{164,76}}",
+			"textureRotated": false
+		},
+		"bird_28_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{152,104}",
+			"spriteSourceSize": "{152,118}",
+			"textureRect": "{{2265,732},{152,104}}",
+			"textureRotated": true
+		},
+		"bird_29_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,10}",
+			"spriteSize": "{156,92}",
+			"spriteSourceSize": "{156,112}",
+			"textureRect": "{{1897,579},{156,92}}",
+			"textureRotated": true
+		},
+		"bird_30_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,21}",
+			"spriteSize": "{162,124}",
+			"spriteSourceSize": "{162,166}",
+			"textureRect": "{{1987,1735},{162,124}}",
+			"textureRotated": true
+		},
+		"bird_31_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,3}",
+			"spriteSize": "{160,76}",
+			"spriteSourceSize": "{160,82}",
+			"textureRect": "{{2065,1943},{160,76}}",
+			"textureRotated": true
+		},
+		"bird_32_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{152,92}",
+			"spriteSourceSize": "{152,106}",
+			"textureRect": "{{2504,1555},{152,92}}",
+			"textureRotated": true
+		},
+		"bird_33_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,13}",
+			"spriteSize": "{160,110}",
+			"spriteSourceSize": "{160,136}",
+			"textureRect": "{{2054,2125},{160,110}}",
+			"textureRotated": false
+		},
+		"bird_34_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{158,98}",
+			"spriteSourceSize": "{158,116}",
+			"textureRect": "{{1893,2138},{158,98}}",
+			"textureRotated": false
+		},
+		"bird_35_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,76}",
+			"spriteSourceSize": "{148,76}",
+			"textureRect": "{{2330,152},{148,76}}",
+			"textureRotated": true
+		},
+		"blackCogwheel_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-88,88}",
+			"spriteSize": "{178,178}",
+			"spriteSourceSize": "{356,358}",
+			"textureRect": "{{1424,1402},{178,178}}",
+			"textureRotated": false
+		},
+		"blackCogwheel_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{234,244}",
+			"spriteSourceSize": "{238,248}",
+			"textureRect": "{{1266,347},{234,244}}",
+			"textureRotated": false
+		},
+		"blackCogwheel_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{186,188}",
+			"spriteSourceSize": "{190,192}",
+			"textureRect": "{{1202,1813},{186,188}}",
+			"textureRotated": false
+		},
+		"bladeTrap01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-43,0}",
+			"spriteSize": "{88,134}",
+			"spriteSourceSize": "{176,140}",
+			"textureRect": "{{2872,1129},{88,134}}",
+			"textureRotated": false
+		},
+		"bladeTrap02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-33,0}",
+			"spriteSize": "{68,134}",
+			"spriteSourceSize": "{134,136}",
+			"textureRect": "{{2067,506},{68,134}}",
+			"textureRotated": true
+		},
+		"bladeTrap03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-29,4}",
+			"spriteSize": "{60,112}",
+			"spriteSourceSize": "{122,122}",
+			"textureRect": "{{809,1843},{60,112}}",
+			"textureRotated": true
+		},
+		"blade_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-88,88}",
+			"spriteSize": "{178,178}",
+			"spriteSourceSize": "{356,358}",
+			"textureRect": "{{1526,1140},{178,178}}",
+			"textureRotated": false
+		},
+		"blade_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{263,264}",
+			"spriteSourceSize": "{267,270}",
+			"textureRect": "{{984,1},{263,264}}",
+			"textureRotated": false
+		},
+		"blade_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{188,190}",
+			"spriteSourceSize": "{192,194}",
+			"textureRect": "{{1422,594},{188,190}}",
+			"textureRotated": false
+		},
+		"blade_b_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-88,88}",
+			"spriteSize": "{179,178}",
+			"spriteSourceSize": "{357,362}",
+			"textureRect": "{{1396,1591},{179,178}}",
+			"textureRotated": true
+		},
+		"blade_b_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,32}",
+			"spriteSize": "{256,228}",
+			"spriteSourceSize": "{260,298}",
+			"textureRect": "{{1168,788},{256,228}}",
+			"textureRotated": true
+		},
+		"blade_b_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{70,174}",
+			"spriteSourceSize": "{72,182}",
+			"textureRect": "{{625,715},{70,174}}",
+			"textureRotated": true
+		},
+		"blockOutlineOuter1_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-71,71}",
+			"spriteSize": "{24,24}",
+			"spriteSourceSize": "{166,170}",
+			"textureRect": "{{622,1877},{24,24}}",
+			"textureRotated": false
+		},
+		"blockOutlineOuter2_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-77,78}",
+			"spriteSize": "{36,38}",
+			"spriteSourceSize": "{196,200}",
+			"textureRect": "{{2339,1876},{36,38}}",
+			"textureRotated": false
+		},
+		"blockOutlineOuter3_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-91,92}",
+			"spriteSize": "{65,66}",
+			"spriteSourceSize": "{253,262}",
+			"textureRect": "{{3233,2072},{65,66}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,5}",
+			"spriteSize": "{120,50}",
+			"spriteSourceSize": "{120,68}",
+			"textureRect": "{{988,2178},{120,50}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,59}",
+			"spriteSize": "{137,50}",
+			"spriteSourceSize": "{161,176}",
+			"textureRect": "{{724,2181},{137,50}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,59}",
+			"spriteSize": "{149,50}",
+			"spriteSourceSize": "{159,176}",
+			"textureRect": "{{572,2181},{149,50}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-48,48}",
+			"spriteSize": "{25,24}",
+			"spriteSourceSize": "{121,120}",
+			"textureRect": "{{598,759},{25,24}}",
+			"textureRotated": true
+		},
+		"blockOutlineThick_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-48,47}",
+			"spriteSize": "{24,26}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{571,759},{24,26}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-42,47}",
+			"spriteSize": "{37,26}",
+			"spriteSourceSize": "{121,120}",
+			"textureRect": "{{531,759},{37,26}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,29}",
+			"spriteSize": "{88,50}",
+			"spriteSourceSize": "{98,116}",
+			"textureRect": "{{1399,991},{88,50}}",
+			"textureRotated": false
+		},
+		"blockOutlineThick_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,59}",
+			"spriteSize": "{121,50}",
+			"spriteSourceSize": "{121,176}",
+			"textureRect": "{{864,2179},{121,50}}",
+			"textureRotated": false
+		},
+		"blockOutlineThickb_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{121,88}",
+			"spriteSourceSize": "{121,118}",
+			"textureRect": "{{3272,850},{121,88}}",
+			"textureRotated": false
+		},
+		"blockOutlineThickb_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-14,58}",
+			"spriteSize": "{151,88}",
+			"spriteSourceSize": "{193,214}",
+			"textureRect": "{{2266,887},{151,88}}",
+			"textureRotated": true
+		},
+		"blockOutlineThickb_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,57}",
+			"spriteSize": "{179,86}",
+			"spriteSourceSize": "{195,210}",
+			"textureRect": "{{1032,1051},{179,86}}",
+			"textureRotated": false
+		},
+		"blockOutlineThickb_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-37,37}",
+			"spriteSize": "{46,46}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{1780,544},{46,46}}",
+			"textureRotated": false
+		},
+		"blockOutlineThickb_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-38,38}",
+			"spriteSize": "{45,44}",
+			"spriteSourceSize": "{121,120}",
+			"textureRect": "{{1638,198},{45,44}}",
+			"textureRotated": true
+		},
+		"blockOutlineThickb_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-27,38}",
+			"spriteSize": "{67,44}",
+			"spriteSourceSize": "{121,120}",
+			"textureRect": "{{1829,532},{67,44}}",
+			"textureRotated": false
+		},
+		"blockOutlineThickb_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,64}",
+			"spriteSize": "{120,88}",
+			"spriteSourceSize": "{120,226}",
+			"textureRect": "{{3749,226},{120,88}}",
+			"textureRotated": false
+		},
+		"blockOutline_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"blockOutline_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,44}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"blockOutline_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"blockOutline_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2302,1717},{156,140}}",
+			"textureRotated": true
+		},
+		"blockOutline_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-58,0}",
+			"spriteSize": "{42,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{1605,2178},{42,120}}",
+			"textureRotated": true
+		},
+		"blockOutline_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"blockOutline_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-57,57}",
+			"spriteSize": "{32,34}",
+			"spriteSourceSize": "{146,150}",
+			"textureRect": "{{1391,1969},{32,34}}",
+			"textureRotated": true
+		},
+		"blockOutline_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-55,58}",
+			"spriteSize": "{38,40}",
+			"spriteSourceSize": "{148,156}",
+			"textureRect": "{{2110,1900},{38,40}}",
+			"textureRotated": false
+		},
+		"blockOutline_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,44}",
+			"textureRect": "{{1482,2187},{120,42}}",
+			"textureRotated": false
+		},
+		"blockOutline_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{96,96}",
+			"spriteSourceSize": "{98,98}",
+			"textureRect": "{{3872,2121},{96,96}}",
+			"textureRotated": false
+		},
+		"blockOutline_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,96}",
+			"spriteSourceSize": "{158,98}",
+			"textureRect": "{{2632,2072},{156,96}}",
+			"textureRotated": true
+		},
+		"blockOutline_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{120,96}",
+			"spriteSourceSize": "{120,98}",
+			"textureRect": "{{2204,454},{120,96}}",
+			"textureRotated": true
+		},
+		"blockOutline_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{8,0}",
+			"spriteSize": "{140,96}",
+			"spriteSourceSize": "{158,98}",
+			"textureRect": "{{2605,1030},{140,96}}",
+			"textureRotated": false
+		},
+		"blockOutline_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-1}",
+			"spriteSize": "{144,146}",
+			"spriteSourceSize": "{150,154}",
+			"textureRect": "{{2468,577},{144,146}}",
+			"textureRotated": false
+		},
+		"blockOutline_14new_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{195,42}",
+			"spriteSourceSize": "{199,50}",
+			"textureRect": "{{1147,1357},{195,42}}",
+			"textureRotated": false
+		},
+		"blockOutline_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-1}",
+			"spriteSize": "{260,150}",
+			"spriteSourceSize": "{270,156}",
+			"textureRect": "{{1250,1},{260,150}}",
+			"textureRotated": true
+		},
+		"blockOutline_15new_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-3}",
+			"spriteSize": "{294,42}",
+			"spriteSourceSize": "{302,50}",
+			"textureRect": "{{1,1930},{294,42}}",
+			"textureRotated": true
+		},
+		"blockOutline_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-2}",
+			"spriteSize": "{104,106}",
+			"spriteSourceSize": "{110,114}",
+			"textureRect": "{{3364,2034},{104,106}}",
+			"textureRotated": true
+		},
+		"blockOutline_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{226,134}",
+			"spriteSourceSize": "{230,144}",
+			"textureRect": "{{994,1403},{226,134}}",
+			"textureRotated": true
+		},
+		"boost_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{168,210}",
+			"spriteSourceSize": "{170,212}",
+			"textureRect": "{{802,617},{168,210}}",
+			"textureRotated": true
+		},
+		"boost_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{160,260}",
+			"spriteSourceSize": "{162,262}",
+			"textureRect": "{{1103,347},{160,260}}",
+			"textureRotated": false
+		},
+		"boost_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{230,260}",
+			"spriteSourceSize": "{232,262}",
+			"textureRect": "{{935,788},{230,260}}",
+			"textureRotated": false
+		},
+		"boost_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{288,260}",
+			"spriteSourceSize": "{290,262}",
+			"textureRect": "{{46,1930},{288,260}}",
+			"textureRotated": true
+		},
+		"boost_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{312,260}",
+			"spriteSourceSize": "{314,262}",
+			"textureRect": "{{309,1910},{312,260}}",
+			"textureRotated": true
+		},
+		"brick_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{154,156}",
+			"spriteSourceSize": "{156,158}",
+			"textureRect": "{{2216,1558},{154,156}}",
+			"textureRotated": false
+		},
+		"bump_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,8}",
+			"spriteSize": "{128,34}",
+			"spriteSourceSize": "{132,54}",
+			"textureRect": "{{2378,1876},{128,34}}",
+			"textureRotated": false
+		},
+		"bump_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,9}",
+			"spriteSize": "{140,44}",
+			"spriteSourceSize": "{142,64}",
+			"textureRect": "{{1345,1355},{140,44}}",
+			"textureRotated": false
+		},
+		"bump_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{122,38}",
+			"spriteSourceSize": "{124,56}",
+			"textureRect": "{{2214,1883},{122,38}}",
+			"textureRotated": false
+		},
+		"checkpoint_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{95,152}",
+			"spriteSourceSize": "{97,156}",
+			"textureRect": "{{2445,1710},{95,152}}",
+			"textureRotated": false
+		},
+		"colorPlank_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,88}",
+			"spriteSourceSize": "{158,92}",
+			"textureRect": "{{1910,347},{156,88}}",
+			"textureRotated": true
+		},
+		"colorPlank_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{92,66}",
+			"spriteSourceSize": "{96,68}",
+			"textureRect": "{{1417,1044},{92,66}}",
+			"textureRotated": true
+		},
+		"colorSpike_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{144,150}",
+			"spriteSourceSize": "{148,158}",
+			"textureRect": "{{2663,1397},{144,150}}",
+			"textureRotated": false
+		},
+		"colorSpike_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{140,84}",
+			"spriteSourceSize": "{144,92}",
+			"textureRect": "{{3099,2152},{140,84}}",
+			"textureRotated": false
+		},
+		"colorSpike_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{104,104}",
+			"spriteSourceSize": "{106,114}",
+			"textureRect": "{{3365,743},{104,104}}",
+			"textureRotated": false
+		},
+		"colorSpike_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{74,76}",
+			"spriteSourceSize": "{76,86}",
+			"textureRect": "{{2939,2161},{74,76}}",
+			"textureRotated": true
+		},
+		"colorSquare_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{96,96}",
+			"spriteSourceSize": "{98,98}",
+			"textureRect": "{{3971,1990},{96,96}}",
+			"textureRotated": false
+		},
+		"darkblade_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-89,90}",
+			"spriteSize": "{180,182}",
+			"spriteSourceSize": "{362,364}",
+			"textureRect": "{{1714,593},{180,182}}",
+			"textureRotated": false
+		},
+		"darkblade_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{240,272}",
+			"spriteSourceSize": "{244,278}",
+			"textureRect": "{{572,1906},{240,272}}",
+			"textureRotated": false
+		},
+		"darkblade_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{192,194}",
+			"spriteSourceSize": "{196,200}",
+			"textureRect": "{{1600,347},{192,194}}",
+			"textureRotated": false
+		},
+		"dart_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{110,90}",
+			"spriteSourceSize": "{110,90}",
+			"textureRect": "{{3757,758},{110,90}}",
+			"textureRotated": false
+		},
+		"dart_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{110,90}",
+			"spriteSourceSize": "{110,90}",
+			"textureRect": "{{3757,758},{110,90}}",
+			"textureRotated": false
+		},
+		"dart_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-6,0}",
+			"spriteSize": "{124,90}",
+			"spriteSourceSize": "{136,90}",
+			"textureRect": "{{4003,220},{124,90}}",
+			"textureRotated": true
+		},
+		"dart_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{112,90}",
+			"spriteSourceSize": "{112,90}",
+			"textureRect": "{{3688,2124},{112,90}}",
+			"textureRotated": true
+		},
+		"dart_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,0}",
+			"spriteSize": "{124,88}",
+			"spriteSourceSize": "{134,88}",
+			"textureRect": "{{3665,723},{124,88}}",
+			"textureRotated": true
+		},
+		"dart_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-6,0}",
+			"spriteSize": "{126,90}",
+			"spriteSourceSize": "{138,90}",
+			"textureRect": "{{3581,2012},{126,90}}",
+			"textureRotated": true
+		},
+		"dart_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,0}",
+			"spriteSize": "{120,90}",
+			"spriteSourceSize": "{128,90}",
+			"textureRect": "{{2303,454},{120,90}}",
+			"textureRotated": true
+		},
+		"dart_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,0}",
+			"spriteSize": "{112,104}",
+			"spriteSourceSize": "{122,104}",
+			"textureRect": "{{2486,1283},{112,104}}",
+			"textureRotated": true
+		},
+		"dart_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{116,90}",
+			"spriteSourceSize": "{118,90}",
+			"textureRect": "{{4003,347},{116,90}}",
+			"textureRotated": true
+		},
+		"dart_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{110,88}",
+			"spriteSourceSize": "{110,88}",
+			"textureRect": "{{3757,851},{110,88}}",
+			"textureRotated": false
+		},
+		"dart_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{110,90}",
+			"spriteSourceSize": "{110,90}",
+			"textureRect": "{{4003,702},{110,90}}",
+			"textureRotated": true
+		},
+		"dart_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{112,84}",
+			"spriteSourceSize": "{118,84}",
+			"textureRect": "{{3757,489},{112,84}}",
+			"textureRotated": false
+		},
+		"dart_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{110,92}",
+			"spriteSourceSize": "{110,92}",
+			"textureRect": "{{4003,1},{110,92}}",
+			"textureRotated": true
+		},
+		"dart_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{114,96}",
+			"spriteSourceSize": "{114,96}",
+			"textureRect": "{{2799,1280},{114,96}}",
+			"textureRotated": true
+		},
+		"dart_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{114,90}",
+			"spriteSourceSize": "{116,90}",
+			"textureRect": "{{4003,585},{114,90}}",
+			"textureRotated": true
+		},
+		"dart_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,0}",
+			"spriteSize": "{114,94}",
+			"spriteSourceSize": "{118,94}",
+			"textureRect": "{{3369,2141},{114,94}}",
+			"textureRotated": false
+		},
+		"dart_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{112,98}",
+			"spriteSourceSize": "{114,98}",
+			"textureRect": "{{2698,1282},{112,98}}",
+			"textureRotated": true
+		},
+		"dart_18_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{116,88}",
+			"spriteSourceSize": "{118,88}",
+			"textureRect": "{{3396,850},{116,88}}",
+			"textureRotated": false
+		},
+		"dart_19_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-6,0}",
+			"spriteSize": "{106,100}",
+			"spriteSourceSize": "{118,100}",
+			"textureRect": "{{3647,620},{106,100}}",
+			"textureRotated": false
+		},
+		"dart_20_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{114,88}",
+			"spriteSourceSize": "{116,88}",
+			"textureRect": "{{3665,850},{114,88}}",
+			"textureRotated": true
+		},
+		"dart_21_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{110,96}",
+			"spriteSourceSize": "{112,96}",
+			"textureRect": "{{3757,659},{110,96}}",
+			"textureRotated": false
+		},
+		"dart_22_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,0}",
+			"spriteSize": "{110,78}",
+			"spriteSourceSize": "{124,78}",
+			"textureRect": "{{3534,662},{110,78}}",
+			"textureRotated": false
+		},
+		"dart_23_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{118,92}",
+			"spriteSourceSize": "{120,92}",
+			"textureRect": "{{3567,2141},{118,92}}",
+			"textureRotated": false
+		},
+		"dart_24_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,0}",
+			"spriteSize": "{110,88}",
+			"spriteSourceSize": "{114,88}",
+			"textureRect": "{{3534,571},{110,88}}",
+			"textureRotated": false
+		},
+		"dart_25_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{112,80}",
+			"spriteSourceSize": "{114,80}",
+			"textureRect": "{{3757,576},{112,80}}",
+			"textureRotated": false
+		},
+		"dart_26_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,0}",
+			"spriteSize": "{112,88}",
+			"spriteSourceSize": "{116,88}",
+			"textureRect": "{{3781,2124},{112,88}}",
+			"textureRotated": true
+		},
+		"dart_27_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,4}",
+			"spriteSize": "{116,80}",
+			"spriteSourceSize": "{116,88}",
+			"textureRect": "{{4011,991},{116,80}}",
+			"textureRotated": true
+		},
+		"dart_28_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{103,92}",
+			"spriteSourceSize": "{103,92}",
+			"textureRect": "{{4003,114},{103,92}}",
+			"textureRotated": true
+		},
+		"dart_29_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{116,90}",
+			"spriteSourceSize": "{122,90}",
+			"textureRect": "{{4003,466},{116,90}}",
+			"textureRotated": true
+		},
+		"dart_30_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{108,74}",
+			"spriteSourceSize": "{108,74}",
+			"textureRect": "{{2828,2161},{108,74}}",
+			"textureRotated": false
+		},
+		"dart_31_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,0}",
+			"spriteSize": "{124,94}",
+			"spriteSourceSize": "{138,94}",
+			"textureRect": "{{3242,2141},{124,94}}",
+			"textureRotated": false
+		},
+		"dart_32_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{103,88}",
+			"spriteSourceSize": "{103,88}",
+			"textureRect": "{{3665,967},{103,88}}",
+			"textureRotated": true
+		},
+		"dart_33_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,0}",
+			"spriteSize": "{116,80}",
+			"spriteSourceSize": "{122,80}",
+			"textureRect": "{{3887,918},{116,80}}",
+			"textureRotated": false
+		},
+		"dart_34_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,0}",
+			"spriteSize": "{120,78}",
+			"spriteSourceSize": "{128,78}",
+			"textureRect": "{{3749,408},{120,78}}",
+			"textureRotated": false
+		},
+		"dart_35_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{108,86}",
+			"spriteSourceSize": "{110,86}",
+			"textureRect": "{{4007,1859},{108,86}}",
+			"textureRotated": true
+		},
+		"dashRing_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{8,0}",
+			"spriteSize": "{170,174}",
+			"spriteSourceSize": "{192,182}",
+			"textureRect": "{{1649,966},{170,174}}",
+			"textureRotated": true
+		},
+		"dashRing_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{8,0}",
+			"spriteSize": "{170,174}",
+			"spriteSourceSize": "{192,182}",
+			"textureRect": "{{1649,966},{170,174}}",
+			"textureRotated": true
+		},
+		"dropRing_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{161,162}",
+			"spriteSourceSize": "{163,166}",
+			"textureRect": "{{1901,1960},{161,162}}",
+			"textureRotated": false
+		},
+		"emptyGlow.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{2,2}",
+			"spriteSourceSize": "{2,2}",
+			"textureRect": "{{206,784},{2,2}}",
+			"textureRotated": false
+		},
+		"gravJumpRing_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{146,148}",
+			"spriteSourceSize": "{148,152}",
+			"textureRect": "{{2510,879},{146,148}}",
+			"textureRotated": false
+		},
+		"gravbump_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{122,42}",
+			"spriteSourceSize": "{126,60}",
+			"textureRect": "{{1234,2189},{122,42}}",
+			"textureRotated": false
+		},
+		"gravring_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{152,154}",
+			"spriteSourceSize": "{154,158}",
+			"textureRect": "{{2132,1132},{152,154}}",
+			"textureRotated": false
+		},
+		"iceSpike_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-4}",
+			"spriteSize": "{145,148}",
+			"spriteSourceSize": "{147,158}",
+			"textureRect": "{{2724,1129},{145,148}}",
+			"textureRotated": false
+		},
+		"iceSpike_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{143,92}",
+			"spriteSourceSize": "{145,100}",
+			"textureRect": "{{2661,148},{143,92}}",
+			"textureRotated": true
+		},
+		"iceSpike_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{105,108}",
+			"spriteSourceSize": "{109,118}",
+			"textureRect": "{{2099,1291},{105,108}}",
+			"textureRotated": true
+		},
+		"invis_plank_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,88}",
+			"spriteSourceSize": "{158,92}",
+			"textureRect": "{{2001,347},{156,88}}",
+			"textureRotated": true
+		},
+		"invis_plank_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{94,66}",
+			"spriteSourceSize": "{96,68}",
+			"textureRect": "{{2020,1056},{94,66}}",
+			"textureRotated": false
+		},
+		"invis_spike_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,-3}",
+			"spriteSize": "{146,150}",
+			"spriteSourceSize": "{148,158}",
+			"textureRect": "{{2599,1551},{146,150}}",
+			"textureRotated": false
+		},
+		"invis_spike_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{139,84}",
+			"spriteSourceSize": "{143,92}",
+			"textureRect": "{{2615,577},{139,84}}",
+			"textureRotated": true
+		},
+		"invis_spike_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{105,104}",
+			"spriteSourceSize": "{107,114}",
+			"textureRect": "{{3473,2034},{105,104}}",
+			"textureRotated": false
+		},
+		"invis_spike_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{75,76}",
+			"spriteSourceSize": "{77,86}",
+			"textureRect": "{{2117,1054},{75,76}}",
+			"textureRotated": true
+		},
+		"invis_square_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{1973,1132},{156,156}}",
+			"textureRotated": false
+		},
+		"invis_square_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{96,96}",
+			"spriteSourceSize": "{98,98}",
+			"textureRect": "{{3971,2089},{96,96}}",
+			"textureRotated": false
+		},
+		"invis_triangle_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-3}",
+			"spriteSize": "{148,150}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2543,1710},{148,150}}",
+			"textureRotated": false
+		},
+		"invis_triangle_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-2}",
+			"spriteSize": "{266,152}",
+			"spriteSourceSize": "{278,158}",
+			"textureRect": "{{793,348},{266,152}}",
+			"textureRotated": true
+		},
+		"invisibleOutline_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,-20}",
+			"spriteSize": "{124,80}",
+			"spriteSourceSize": "{142,120}",
+			"textureRect": "{{4011,1728},{124,80}}",
+			"textureRotated": true
+		},
+		"invisibleOutline_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-19}",
+			"spriteSize": "{172,74}",
+			"spriteSourceSize": "{174,112}",
+			"textureRect": "{{1615,1762},{172,74}}",
+			"textureRotated": true
+		},
+		"invisibleOutline_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-20}",
+			"spriteSize": "{270,75}",
+			"spriteSourceSize": "{278,115}",
+			"textureRect": "{{815,1906},{270,75}}",
+			"textureRotated": true
+		},
+		"invisibleOutline_b_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-12,-21}",
+			"spriteSize": "{120,90}",
+			"spriteSourceSize": "{144,132}",
+			"textureRect": "{{3749,133},{120,90}}",
+			"textureRotated": false
+		},
+		"invisibleOutline_b_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-10,-19}",
+			"spriteSize": "{171,76}",
+			"spriteSourceSize": "{193,114}",
+			"textureRect": "{{1159,268},{171,76}}",
+			"textureRotated": false
+		},
+		"invisibleOutline_b_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-12,-28}",
+			"spriteSize": "{262,91}",
+			"spriteSourceSize": "{288,147}",
+			"textureRect": "{{841,788},{262,91}}",
+			"textureRotated": true
+		},
+		"lightBlade_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-85,86}",
+			"spriteSize": "{172,174}",
+			"spriteSourceSize": "{344,348}",
+			"textureRect": "{{1798,1139},{172,174}}",
+			"textureRotated": false
+		},
+		"lightBlade_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{232,242}",
+			"spriteSourceSize": "{234,248}",
+			"textureRect": "{{1403,1},{232,242}}",
+			"textureRotated": false
+		},
+		"lightBlade_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{168,170}",
+			"spriteSourceSize": "{170,176}",
+			"textureRect": "{{1015,617},{168,170}}",
+			"textureRotated": true
+		},
+		"lightsquare_01_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"lightsquare_01_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"lightsquare_01_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"lightsquare_01_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"lightsquare_01_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"lightsquare_01_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"lightsquare_02_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"lightsquare_02_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"lightsquare_02_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"lightsquare_02_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"lightsquare_02_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"lightsquare_02_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"lightsquare_02_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,51}",
+			"spriteSize": "{120,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{206,763},{120,18}}",
+			"textureRotated": false
+		},
+		"lightsquare_03_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"lightsquare_03_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"lightsquare_03_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"lightsquare_03_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"lightsquare_03_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"lightsquare_03_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"lightsquare_04_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{80,42}",
+			"spriteSourceSize": "{80,158}",
+			"textureRect": "{{1621,1937},{80,42}}",
+			"textureRotated": false
+		},
+		"lightsquare_04_sideLine_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-58,0}",
+			"spriteSize": "{42,80}",
+			"spriteSourceSize": "{158,80}",
+			"textureRect": "{{1704,1924},{42,80}}",
+			"textureRotated": true
+		},
+		"lightsquare_05_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"lightsquare_05_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"lightsquare_05_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"lightsquare_05_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"lightsquare_05_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"lightsquare_05_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"plank_01_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{120,88}",
+			"spriteSourceSize": "{120,92}",
+			"textureRect": "{{3749,317},{120,88}}",
+			"textureRotated": false
+		},
+		"plank_01_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{8,0}",
+			"spriteSize": "{140,88}",
+			"spriteSourceSize": "{156,92}",
+			"textureRect": "{{2523,726},{140,88}}",
+			"textureRotated": true
+		},
+		"plank_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,88}",
+			"spriteSourceSize": "{158,92}",
+			"textureRect": "{{1992,579},{156,88}}",
+			"textureRotated": true
+		},
+		"plank_01_slope_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-2}",
+			"spriteSize": "{142,144}",
+			"spriteSourceSize": "{150,154}",
+			"textureRect": "{{2409,152},{142,144}}",
+			"textureRotated": false
+		},
+		"plank_01_slope_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-1}",
+			"spriteSize": "{260,150}",
+			"spriteSourceSize": "{270,156}",
+			"textureRect": "{{994,1140},{260,150}}",
+			"textureRotated": true
+		},
+		"plank_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{94,66}",
+			"spriteSourceSize": "{96,68}",
+			"textureRect": "{{2731,2169},{94,66}}",
+			"textureRotated": false
+		},
+		"plank_01_square_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,2}",
+			"spriteSize": "{78,80}",
+			"spriteSourceSize": "{90,86}",
+			"textureRect": "{{3365,662},{78,80}}",
+			"textureRotated": true
+		},
+		"plank_01_square_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,1}",
+			"spriteSize": "{128,82}",
+			"spriteSourceSize": "{150,90}",
+			"textureRect": "{{3579,743},{128,82}}",
+			"textureRotated": true
+		},
+		"playerDash2_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-83,1}",
+			"spriteSize": "{344,188}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{793,1},{344,188}}",
+			"textureRotated": true
+		},
+		"playerDash2_002.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-87,2}",
+			"spriteSize": "{352,188}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{602,360},{352,188}}",
+			"textureRotated": true
+		},
+		"playerDash2_003.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-90,3}",
+			"spriteSize": "{358,184}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{614,1155},{358,184}}",
+			"textureRotated": true
+		},
+		"playerDash2_004.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-95,1}",
+			"spriteSize": "{368,186}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{218,1539},{368,186}}",
+			"textureRotated": true
+		},
+		"playerDash2_005.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-97,-1}",
+			"spriteSize": "{372,182}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{417,384},{372,182}}",
+			"textureRotated": true
+		},
+		"playerDash2_006.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-97,-2}",
+			"spriteSize": "{372,180}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{419,1},{372,180}}",
+			"textureRotated": true
+		},
+		"playerDash2_007.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-89,1}",
+			"spriteSize": "{356,188}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{602,1},{356,188}}",
+			"textureRotated": true
+		},
+		"playerDash2_008.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-85,-2}",
+			"spriteSize": "{350,190}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{801,1141},{350,190}}",
+			"textureRotated": true
+		},
+		"playerDash2_009.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-90,0}",
+			"spriteSize": "{360,188}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{423,1155},{360,188}}",
+			"textureRotated": true
+		},
+		"playerDash2_010.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-89,-2}",
+			"spriteSize": "{358,184}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{622,1516},{358,184}}",
+			"textureRotated": true
+		},
+		"playerDash2_011.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-83,1}",
+			"spriteSize": "{346,182}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{809,1494},{346,182}}",
+			"textureRotated": true
+		},
+		"playerDash2_012.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-76,0}",
+			"spriteSize": "{332,184}",
+			"spriteSourceSize": "{574,200}",
+			"textureRect": "{{924,1843},{332,184}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-82,2}",
+			"spriteSize": "{364,212}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{407,1539},{364,212}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_002.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-85,2}",
+			"spriteSize": "{370,208}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{212,1166},{370,208}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_003.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-88,3}",
+			"spriteSize": "{376,208}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{206,384},{376,208}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_004.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-93,1}",
+			"spriteSize": "{386,206}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{1,789},{386,206}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_005.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-95,-1}",
+			"spriteSize": "{390,202}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{1,396},{390,202}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_006.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-96,-2}",
+			"spriteSize": "{392,202}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{1,1},{392,202}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_007.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-87,0}",
+			"spriteSize": "{374,210}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{210,789},{374,210}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_008.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-85,-2}",
+			"spriteSize": "{370,214}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{1,1557},{370,214}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_009.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-89,-1}",
+			"spriteSize": "{380,210}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{206,1},{380,210}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_010.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-87,-2}",
+			"spriteSize": "{376,208}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{1,1178},{376,208}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_011.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-82,0}",
+			"spriteSize": "{364,204}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{423,788},{364,204}}",
+			"textureRotated": true
+		},
+		"playerDash2_outline_012.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-74,0}",
+			"spriteSize": "{350,208}",
+			"spriteSourceSize": "{592,218}",
+			"textureRect": "{{630,788},{350,208}}",
+			"textureRotated": true
+		},
+		"player_00_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{133,132}",
+			"spriteSourceSize": "{133,132}",
+			"textureRect": "{{2217,2103},{133,132}}",
+			"textureRotated": true
+		},
+		"player_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2879,978},{129,128}}",
+			"textureRotated": true
+		},
+		"player_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2970,560},{129,128}}",
+			"textureRotated": true
+		},
+		"player_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2991,414},{129,128}}",
+			"textureRotated": true
+		},
+		"player_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2970,560},{129,128}}",
+			"textureRotated": true
+		},
+		"player_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3077,271},{129,128}}",
+			"textureRotated": true
+		},
+		"player_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3152,134},{129,128}}",
+			"textureRotated": true
+		},
+		"player_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3276,1},{129,128}}",
+			"textureRotated": true
+		},
+		"player_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2972,692},{129,128}}",
+			"textureRotated": true
+		},
+		"player_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3101,546},{129,128}}",
+			"textureRotated": true
+		},
+		"player_100_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_101_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_102_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_103_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_104_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{154,128}",
+			"spriteSourceSize": "{156,128}",
+			"textureRect": "{{2287,1131},{154,128}}",
+			"textureRotated": true
+		},
+		"player_105_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-2}",
+			"spriteSize": "{135,134}",
+			"spriteSourceSize": "{139,138}",
+			"textureRect": "{{2702,577},{135,134}}",
+			"textureRotated": true
+		},
+		"player_106_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_107_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_108_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,132}",
+			"spriteSourceSize": "{128,132}",
+			"textureRect": "{{3225,1802},{128,132}}",
+			"textureRotated": false
+		},
+		"player_109_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{131,128}",
+			"spriteSourceSize": "{131,128}",
+			"textureRect": "{{2748,995},{131,128}}",
+			"textureRotated": true
+		},
+		"player_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3122,403},{129,128}}",
+			"textureRotated": true
+		},
+		"player_110_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{135,134}",
+			"spriteSourceSize": "{135,134}",
+			"textureRect": "{{2721,439},{135,134}}",
+			"textureRotated": true
+		},
+		"player_111_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{135,136}",
+			"spriteSourceSize": "{135,136}",
+			"textureRect": "{{2701,719},{135,136}}",
+			"textureRotated": false
+		},
+		"player_112_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,130}",
+			"spriteSourceSize": "{129,130}",
+			"textureRect": "{{3020,138},{129,130}}",
+			"textureRotated": false
+		},
+		"player_113_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,0}",
+			"spriteSize": "{149,128}",
+			"spriteSourceSize": "{151,128}",
+			"textureRect": "{{2810,2009},{149,128}}",
+			"textureRotated": true
+		},
+		"player_114_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{130,130}",
+			"spriteSourceSize": "{130,130}",
+			"textureRect": "{{2839,712},{130,130}}",
+			"textureRotated": false
+		},
+		"player_115_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{132,128}",
+			"spriteSourceSize": "{132,128}",
+			"textureRect": "{{2898,1266},{132,128}}",
+			"textureRotated": false
+		},
+		"player_116_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{141,130}",
+			"spriteSourceSize": "{141,130}",
+			"textureRect": "{{2756,146},{141,130}}",
+			"textureRotated": true
+		},
+		"player_117_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3419,1469},{128,128}}",
+			"textureRotated": false
+		},
+		"player_118_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3419,1469},{128,128}}",
+			"textureRotated": false
+		},
+		"player_119_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3419,1469},{128,128}}",
+			"textureRotated": false
+		},
+		"player_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3208,266},{129,128}}",
+			"textureRotated": true
+		},
+		"player_120_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3516,1600},{128,128}}",
+			"textureRotated": false
+		},
+		"player_121_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{142,132}",
+			"spriteSourceSize": "{142,134}",
+			"textureRect": "{{2678,294},{142,132}}",
+			"textureRotated": true
+		},
+		"player_122_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{130,130}",
+			"spriteSourceSize": "{130,130}",
+			"textureRect": "{{2877,845},{130,130}}",
+			"textureRotated": false
+		},
+		"player_123_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3618,1731},{128,128}}",
+			"textureRotated": false
+		},
+		"player_124_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{132,132}",
+			"spriteSourceSize": "{132,132}",
+			"textureRect": "{{2953,1397},{132,132}}",
+			"textureRotated": false
+		},
+		"player_125_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3626,1862},{128,128}}",
+			"textureRotated": false
+		},
+		"player_126_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{144,132}",
+			"spriteSourceSize": "{144,132}",
+			"textureRect": "{{2433,1},{144,132}}",
+			"textureRotated": true
+		},
+		"player_127_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{134,128}",
+			"spriteSourceSize": "{134,128}",
+			"textureRect": "{{2889,144},{134,128}}",
+			"textureRotated": true
+		},
+		"player_128_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{132,132}",
+			"spriteSourceSize": "{132,132}",
+			"textureRect": "{{3022,1532},{132,132}}",
+			"textureRotated": false
+		},
+		"player_129_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3674,1993},{128,128}}",
+			"textureRotated": false
+		},
+		"player_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2970,560},{129,128}}",
+			"textureRotated": true
+		},
+		"player_130_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,1},{128,128}}",
+			"textureRotated": false
+		},
+		"player_131_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,132},{128,128}}",
+			"textureRotated": false
+		},
+		"player_132_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,263},{128,128}}",
+			"textureRotated": false
+		},
+		"player_133_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{130,130}",
+			"spriteSourceSize": "{130,130}",
+			"textureRect": "{{2858,427},{130,130}}",
+			"textureRotated": false
+		},
+		"player_134_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{130,130}",
+			"spriteSourceSize": "{130,130}",
+			"textureRect": "{{2944,281},{130,130}}",
+			"textureRotated": false
+		},
+		"player_135_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,2}",
+			"spriteSize": "{128,134}",
+			"spriteSourceSize": "{128,138}",
+			"textureRect": "{{2813,290},{128,134}}",
+			"textureRotated": false
+		},
+		"player_136_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,394},{128,128}}",
+			"textureRotated": false
+		},
+		"player_137_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,6}",
+			"spriteSize": "{140,142}",
+			"spriteSourceSize": "{144,154}",
+			"textureRect": "{{2728,1},{140,142}}",
+			"textureRotated": false
+		},
+		"player_138_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3601,265},{128,128}}",
+			"textureRotated": false
+		},
+		"player_139_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,525},{128,128}}",
+			"textureRotated": false
+		},
+		"player_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3283,133},{129,128}}",
+			"textureRotated": true
+		},
+		"player_140_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,656},{128,128}}",
+			"textureRotated": false
+		},
+		"player_141_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{132,132}",
+			"spriteSourceSize": "{132,132}",
+			"textureRect": "{{3119,1667},{132,132}}",
+			"textureRotated": false
+		},
+		"player_142_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3872,787},{128,128}}",
+			"textureRotated": false
+		},
+		"player_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3407,1},{129,128}}",
+			"textureRotated": true
+		},
+		"player_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{2963,1110},{129,128}}",
+			"textureRotated": true
+		},
+		"player_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3033,1242},{129,128}}",
+			"textureRotated": true
+		},
+		"player_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3088,1374},{129,128}}",
+			"textureRotated": true
+		},
+		"player_18_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3157,1506},{129,128}}",
+			"textureRotated": true
+		},
+		"player_19_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3254,1638},{129,128}}",
+			"textureRotated": true
+		},
+		"player_20_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3356,1770},{129,128}}",
+			"textureRotated": true
+		},
+		"player_21_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3364,1902},{129,128}}",
+			"textureRotated": true
+		},
+		"player_22_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3010,824},{129,128}}",
+			"textureRotated": true
+		},
+		"player_23_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3103,678},{129,128}}",
+			"textureRotated": true
+		},
+		"player_24_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3232,535},{129,128}}",
+			"textureRotated": true
+		},
+		"player_25_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3253,398},{129,128}}",
+			"textureRotated": true
+		},
+		"player_26_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3339,265},{129,128}}",
+			"textureRotated": true
+		},
+		"player_27_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3414,133},{129,128}}",
+			"textureRotated": true
+		},
+		"player_28_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3538,1},{129,128}}",
+			"textureRotated": true
+		},
+		"player_29_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3010,956},{129,128}}",
+			"textureRotated": true
+		},
+		"player_30_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3094,1088},{129,128}}",
+			"textureRotated": true
+		},
+		"player_31_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3164,1220},{129,128}}",
+			"textureRotated": true
+		},
+		"player_32_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3219,1352},{129,128}}",
+			"textureRotated": true
+		},
+		"player_33_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3288,1484},{129,128}}",
+			"textureRotated": true
+		},
+		"player_34_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3385,1616},{129,128}}",
+			"textureRotated": true
+		},
+		"player_35_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3487,1748},{129,128}}",
+			"textureRotated": true
+		},
+		"player_36_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3495,1880},{129,128}}",
+			"textureRotated": true
+		},
+		"player_37_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3141,810},{129,128}}",
+			"textureRotated": true
+		},
+		"player_38_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3234,667},{129,128}}",
+			"textureRotated": true
+		},
+		"player_39_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3363,530},{129,128}}",
+			"textureRotated": true
+		},
+		"player_40_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3384,397},{129,128}}",
+			"textureRotated": true
+		},
+		"player_41_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3470,265},{129,128}}",
+			"textureRotated": true
+		},
+		"player_42_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3545,133},{129,128}}",
+			"textureRotated": true
+		},
+		"player_43_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3669,1},{129,128}}",
+			"textureRotated": true
+		},
+		"player_44_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3141,942},{129,128}}",
+			"textureRotated": true
+		},
+		"player_45_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3225,1074},{129,128}}",
+			"textureRotated": true
+		},
+		"player_46_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{129,128}",
+			"spriteSourceSize": "{129,128}",
+			"textureRect": "{{3295,1206},{129,128}}",
+			"textureRotated": true
+		},
+		"player_47_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3272,942},{128,128}}",
+			"textureRotated": false
+		},
+		"player_48_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3356,1073},{128,128}}",
+			"textureRotated": false
+		},
+		"player_49_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3403,942},{128,128}}",
+			"textureRotated": false
+		},
+		"player_50_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3426,1204},{128,128}}",
+			"textureRotated": false
+		},
+		"player_51_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{132,128}",
+			"spriteSourceSize": "{132,128}",
+			"textureRect": "{{2839,577},{132,128}}",
+			"textureRotated": true
+		},
+		"player_52_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{136,128}",
+			"spriteSourceSize": "{136,128}",
+			"textureRect": "{{2582,446},{136,128}}",
+			"textureRotated": false
+		},
+		"player_53_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_54_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3487,1073},{128,128}}",
+			"textureRotated": false
+		},
+		"player_55_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_56_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_57_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3534,942},{128,128}}",
+			"textureRotated": false
+		},
+		"player_58_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3481,1335},{128,128}}",
+			"textureRotated": false
+		},
+		"player_59_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3557,1204},{128,128}}",
+			"textureRotated": false
+		},
+		"player_60_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_61_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_62_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_63_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3618,1073},{128,128}}",
+			"textureRotated": false
+		},
+		"player_64_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3550,1466},{128,128}}",
+			"textureRotated": false
+		},
+		"player_65_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3612,1335},{128,128}}",
+			"textureRotated": false
+		},
+		"player_66_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3688,1204},{128,128}}",
+			"textureRotated": false
+		},
+		"player_67_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3749,1073},{128,128}}",
+			"textureRotated": false
+		},
+		"player_68_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{152,128}",
+			"spriteSourceSize": "{152,128}",
+			"textureRect": "{{2373,1555},{152,128}}",
+			"textureRotated": true
+		},
+		"player_69_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3756,942},{128,128}}",
+			"textureRotated": false
+		},
+		"player_70_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3647,1597},{128,128}}",
+			"textureRotated": false
+		},
+		"player_71_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_72_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3681,1466},{128,128}}",
+			"textureRotated": false
+		},
+		"player_73_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_74_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{134,128}",
+			"spriteSourceSize": "{134,128}",
+			"textureRect": "{{3014,1},{134,128}}",
+			"textureRotated": true
+		},
+		"player_75_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3743,1335},{128,128}}",
+			"textureRotated": false
+		},
+		"player_76_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_77_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3819,1204},{128,128}}",
+			"textureRotated": false
+		},
+		"player_78_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,130}",
+			"spriteSourceSize": "{128,130}",
+			"textureRect": "{{3145,1},{128,130}}",
+			"textureRotated": false
+		},
+		"player_79_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3880,1073},{128,128}}",
+			"textureRotated": false
+		},
+		"player_80_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{134,128}",
+			"spriteSourceSize": "{134,128}",
+			"textureRect": "{{2746,858},{134,128}}",
+			"textureRotated": true
+		},
+		"player_81_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3749,1728},{128,128}}",
+			"textureRotated": false
+		},
+		"player_82_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3778,1597},{128,128}}",
+			"textureRotated": false
+		},
+		"player_83_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3812,1466},{128,128}}",
+			"textureRotated": false
+		},
+		"player_84_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_85_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3350,1338},{128,128}}",
+			"textureRotated": false
+		},
+		"player_86_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3874,1335},{128,128}}",
+			"textureRotated": false
+		},
+		"player_87_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3950,1204},{128,128}}",
+			"textureRotated": false
+		},
+		"player_88_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3757,1859},{128,128}}",
+			"textureRotated": false
+		},
+		"player_89_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3880,1728},{128,128}}",
+			"textureRotated": false
+		},
+		"player_90_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{128,132}",
+			"spriteSourceSize": "{128,134}",
+			"textureRect": "{{3233,1937},{128,132}}",
+			"textureRotated": false
+		},
+		"player_91_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3909,1597},{128,128}}",
+			"textureRotated": false
+		},
+		"player_92_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{160,146}",
+			"spriteSourceSize": "{160,160}",
+			"textureRect": "{{1712,198},{160,146}}",
+			"textureRotated": false
+		},
+		"player_93_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,128}",
+			"spriteSourceSize": "{150,128}",
+			"textureRect": "{{2694,1704},{150,128}}",
+			"textureRotated": true
+		},
+		"player_94_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,128}",
+			"spriteSourceSize": "{150,128}",
+			"textureRect": "{{2748,1550},{150,128}}",
+			"textureRotated": true
+		},
+		"player_95_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3943,1466},{128,128}}",
+			"textureRotated": false
+		},
+		"player_96_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3943,1466},{128,128}}",
+			"textureRotated": false
+		},
+		"player_97_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-4}",
+			"spriteSize": "{148,138}",
+			"spriteSourceSize": "{148,146}",
+			"textureRect": "{{3092,2001},{148,138}}",
+			"textureRotated": true
+		},
+		"player_98_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{128,128}",
+			"spriteSourceSize": "{128,128}",
+			"textureRect": "{{3805,1990},{128,128}}",
+			"textureRotated": false
+		},
+		"player_99_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{144,132}",
+			"spriteSourceSize": "{144,132}",
+			"textureRect": "{{2543,299},{144,132}}",
+			"textureRotated": true
+		},
+		"player_ball_00_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{153,152}",
+			"spriteSourceSize": "{153,152}",
+			"textureRect": "{{2110,736},{153,152}}",
+			"textureRotated": true
+		},
+		"player_ball_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2781,1857},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{149,148}",
+			"spriteSourceSize": "{149,148}",
+			"textureRect": "{{2825,1703},{149,148}}",
+			"textureRotated": true
+		},
+		"player_ball_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2932,1855},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2028,1},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,150}",
+			"spriteSourceSize": "{150,150}",
+			"textureRect": "{{2357,887},{150,150}}",
+			"textureRotated": false
+		},
+		"player_ball_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,0}",
+			"spriteSize": "{140,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2810,1397},{140,148}}",
+			"textureRotated": false
+		},
+		"player_ball_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,0}",
+			"spriteSize": "{140,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2879,1548},{140,148}}",
+			"textureRotated": false
+		},
+		"player_ball_18_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_19_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_20_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_21_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_22_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2028,152},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_23_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_24_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_25_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_26_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_27_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_28_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_29_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2941,2006},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_30_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2092,303},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_31_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{146,146}",
+			"spriteSourceSize": "{146,146}",
+			"textureRect": "{{2394,303},{146,146}}",
+			"textureRotated": false
+		},
+		"player_ball_32_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2179,1},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_33_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-4}",
+			"spriteSize": "{148,140}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2976,1699},{148,140}}",
+			"textureRotated": true
+		},
+		"player_ball_34_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,150}",
+			"spriteSourceSize": "{150,150}",
+			"textureRect": "{{2418,1130},{150,150}}",
+			"textureRotated": false
+		},
+		"player_ball_35_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,149}",
+			"spriteSourceSize": "{150,149}",
+			"textureRect": "{{2511,1398},{150,149}}",
+			"textureRotated": true
+		},
+		"player_ball_36_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,148}",
+			"spriteSourceSize": "{150,148}",
+			"textureRect": "{{1875,196},{150,148}}",
+			"textureRotated": false
+		},
+		"player_ball_37_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2179,152},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_38_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{152,153}",
+			"spriteSourceSize": "{152,153}",
+			"textureRect": "{{2356,1399},{152,153}}",
+			"textureRotated": false
+		},
+		"player_ball_39_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{150,150}",
+			"spriteSourceSize": "{150,150}",
+			"textureRect": "{{2571,1129},{150,150}}",
+			"textureRotated": false
+		},
+		"player_ball_40_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{152,152}",
+			"spriteSourceSize": "{152,152}",
+			"textureRect": "{{2162,577},{152,152}}",
+			"textureRotated": false
+		},
+		"player_ball_41_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2243,303},{148,148}}",
+			"textureRotated": false
+		},
+		"player_ball_42_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,0}",
+			"spriteSize": "{139,148}",
+			"spriteSourceSize": "{147,148}",
+			"textureRect": "{{3083,1850},{139,148}}",
+			"textureRotated": false
+		},
+		"player_ball_43_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{148,148}",
+			"textureRect": "{{2317,577},{148,148}}",
+			"textureRotated": false
+		},
+		"ring_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{152,154}",
+			"spriteSourceSize": "{154,158}",
+			"textureRect": "{{2132,1132},{152,154}}",
+			"textureRotated": false
+		},
+		"ring_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{163,166}",
+			"spriteSourceSize": "{167,172}",
+			"textureRect": "{{1735,1969},{163,166}}",
+			"textureRotated": false
+		},
+		"ring_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{153,154}",
+			"spriteSourceSize": "{155,158}",
+			"textureRect": "{{2352,2083},{153,154}}",
+			"textureRotated": true
+		},
+		"ring_custom_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{154,154}",
+			"spriteSourceSize": "{160,160}",
+			"textureRect": "{{2109,897},{154,154}}",
+			"textureRotated": false
+		},
+		"robot_01_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,0}",
+			"spriteSize": "{118,86}",
+			"spriteSourceSize": "{120,86}",
+			"textureRect": "{{2484,1040},{118,86}}",
+			"textureRotated": false
+		},
+		"robot_01_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1650,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_01_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_01_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,42}",
+			"spriteSourceSize": "{62,42}",
+			"textureRect": "{{1854,1915},{62,42}}",
+			"textureRotated": false
+		},
+		"robot_02_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,0}",
+			"spriteSize": "{126,88}",
+			"spriteSourceSize": "{134,88}",
+			"textureRect": "{{3515,397},{126,88}}",
+			"textureRotated": false
+		},
+		"robot_02_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1715,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_02_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_02_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{60,40}",
+			"spriteSourceSize": "{60,40}",
+			"textureRect": "{{1984,1908},{60,40}}",
+			"textureRotated": false
+		},
+		"robot_03_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,5}",
+			"spriteSize": "{128,106}",
+			"spriteSourceSize": "{130,116}",
+			"textureRect": "{{3647,489},{128,106}}",
+			"textureRotated": true
+		},
+		"robot_03_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1650,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_03_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_03_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,40}",
+			"spriteSourceSize": "{62,40}",
+			"textureRect": "{{1919,1908},{62,40}}",
+			"textureRotated": false
+		},
+		"robot_04_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,0}",
+			"spriteSize": "{128,116}",
+			"spriteSourceSize": "{130,116}",
+			"textureRect": "{{3888,1859},{128,116}}",
+			"textureRotated": true
+		},
+		"robot_04_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1650,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_04_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_04_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{62,42}",
+			"spriteSourceSize": "{62,42}",
+			"textureRect": "{{1854,1915},{62,42}}",
+			"textureRotated": false
+		},
+		"robot_05_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{112,102}",
+			"spriteSourceSize": "{112,106}",
+			"textureRect": "{{2593,1282},{112,102}}",
+			"textureRotated": true
+		},
+		"robot_05_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1650,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_05_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_05_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{64,42}",
+			"spriteSourceSize": "{64,42}",
+			"textureRect": "{{1787,1924},{64,42}}",
+			"textureRotated": false
+		},
+		"robot_06_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{6,-5}",
+			"spriteSize": "{134,106}",
+			"spriteSourceSize": "{146,116}",
+			"textureRect": "{{2210,1289},{134,106}}",
+			"textureRotated": false
+		},
+		"robot_06_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{46,62}",
+			"spriteSourceSize": "{46,62}",
+			"textureRect": "{{1650,544},{46,62}}",
+			"textureRotated": true
+		},
+		"robot_06_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{26,58}",
+			"spriteSourceSize": "{26,58}",
+			"textureRect": "{{417,759},{26,58}}",
+			"textureRotated": true
+		},
+		"robot_06_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{64,42}",
+			"spriteSourceSize": "{64,42}",
+			"textureRect": "{{1787,1924},{64,42}}",
+			"textureRotated": false
+		},
+		"ship_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{157,98}",
+			"spriteSourceSize": "{157,98}",
+			"textureRect": "{{2144,1943},{157,98}}",
+			"textureRotated": true
+		},
+		"ship_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{157,96}",
+			"spriteSourceSize": "{157,98}",
+			"textureRect": "{{2203,1723},{157,96}}",
+			"textureRotated": true
+		},
+		"ship_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-6,0}",
+			"spriteSize": "{175,100}",
+			"spriteSourceSize": "{187,100}",
+			"textureRect": "{{1605,1400},{175,100}}",
+			"textureRotated": true
+		},
+		"ship_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,-5}",
+			"spriteSize": "{187,98}",
+			"spriteSourceSize": "{193,108}",
+			"textureRect": "{{1522,246},{187,98}}",
+			"textureRotated": false
+		},
+		"ship_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-4}",
+			"spriteSize": "{170,96}",
+			"spriteSourceSize": "{176,104}",
+			"textureRect": "{{1692,1751},{170,96}}",
+			"textureRotated": true
+		},
+		"ship_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,0}",
+			"spriteSize": "{180,104}",
+			"spriteSourceSize": "{190,104}",
+			"textureRect": "{{1391,1786},{180,104}}",
+			"textureRotated": true
+		},
+		"ship_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,-3}",
+			"spriteSize": "{174,88}",
+			"spriteSourceSize": "{188,94}",
+			"textureRect": "{{1929,955},{174,88}}",
+			"textureRotated": true
+		},
+		"ship_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{6,-1}",
+			"spriteSize": "{174,98}",
+			"spriteSourceSize": "{186,100}",
+			"textureRect": "{{1831,778},{174,98}}",
+			"textureRotated": true
+		},
+		"ship_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-5}",
+			"spriteSize": "{182,102}",
+			"spriteSourceSize": "{182,112}",
+			"textureRect": "{{1923,1},{182,102}}",
+			"textureRotated": true
+		},
+		"ship_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-6}",
+			"spriteSize": "{168,104}",
+			"spriteSourceSize": "{176,116}",
+			"textureRect": "{{1811,1400},{168,104}}",
+			"textureRotated": true
+		},
+		"ship_11_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,-8}",
+			"spriteSize": "{182,100}",
+			"spriteSourceSize": "{196,116}",
+			"textureRect": "{{1234,2004},{182,100}}",
+			"textureRotated": true
+		},
+		"ship_12_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,-8}",
+			"spriteSize": "{170,104}",
+			"spriteSourceSize": "{184,120}",
+			"textureRect": "{{1664,1578},{170,104}}",
+			"textureRotated": true
+		},
+		"ship_13_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-2}",
+			"spriteSize": "{166,96}",
+			"spriteSourceSize": "{172,100}",
+			"textureRect": "{{1866,1571},{166,96}}",
+			"textureRotated": true
+		},
+		"ship_14_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-7}",
+			"spriteSize": "{164,92}",
+			"spriteSourceSize": "{168,106}",
+			"textureRect": "{{1965,1568},{164,92}}",
+			"textureRotated": true
+		},
+		"ship_15_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-4}",
+			"spriteSize": "{170,100}",
+			"spriteSourceSize": "{180,108}",
+			"textureRect": "{{1708,1400},{170,100}}",
+			"textureRotated": true
+		},
+		"ship_16_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-7}",
+			"spriteSize": "{184,98}",
+			"spriteSourceSize": "{188,112}",
+			"textureRect": "{{1613,593},{184,98}}",
+			"textureRotated": true
+		},
+		"ship_17_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{183,84}",
+			"spriteSourceSize": "{183,84}",
+			"textureRect": "{{1629,780},{183,84}}",
+			"textureRotated": true
+		},
+		"ship_18_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-4}",
+			"spriteSize": "{186,80}",
+			"spriteSourceSize": "{196,88}",
+			"textureRect": "{{1333,264},{186,80}}",
+			"textureRotated": false
+		},
+		"ship_19_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,0}",
+			"spriteSize": "{192,88}",
+			"spriteSourceSize": "{206,88}",
+			"textureRect": "{{1111,1838},{192,88}}",
+			"textureRotated": true
+		},
+		"ship_20_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{14,2}",
+			"spriteSize": "{182,112}",
+			"spriteSourceSize": "{210,116}",
+			"textureRect": "{{1795,347},{182,112}}",
+			"textureRotated": true
+		},
+		"ship_21_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,-6}",
+			"spriteSize": "{204,90}",
+			"spriteSourceSize": "{218,102}",
+			"textureRect": "{{994,1632},{204,90}}",
+			"textureRotated": true
+		},
+		"ship_22_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,7}",
+			"spriteSize": "{184,102}",
+			"spriteSourceSize": "{184,116}",
+			"textureRect": "{{1524,787},{184,102}}",
+			"textureRotated": true
+		},
+		"ship_23_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,10}",
+			"spriteSize": "{166,116}",
+			"spriteSourceSize": "{180,136}",
+			"textureRect": "{{1791,1746},{166,116}}",
+			"textureRotated": true
+		},
+		"ship_24_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{1,3}",
+			"spriteSize": "{170,92}",
+			"spriteSourceSize": "{172,98}",
+			"textureRect": "{{1771,1573},{170,92}}",
+			"textureRotated": true
+		},
+		"ship_25_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{194,92}",
+			"spriteSourceSize": "{194,96}",
+			"textureRect": "{{1638,1},{194,92}}",
+			"textureRotated": true
+		},
+		"ship_26_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,0}",
+			"spriteSize": "{181,104}",
+			"spriteSourceSize": "{195,104}",
+			"textureRect": "{{1337,2004},{181,104}}",
+			"textureRotated": true
+		},
+		"ship_27_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-2}",
+			"spriteSize": "{177,94}",
+			"spriteSourceSize": "{185,98}",
+			"textureRect": "{{1549,1998},{177,94}}",
+			"textureRotated": true
+		},
+		"ship_28_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-6}",
+			"spriteSize": "{175,88}",
+			"spriteSourceSize": "{179,100}",
+			"textureRect": "{{1707,1139},{175,88}}",
+			"textureRotated": true
+		},
+		"ship_29_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,-8}",
+			"spriteSize": "{188,84}",
+			"spriteSourceSize": "{194,100}",
+			"textureRect": "{{841,1053},{188,84}}",
+			"textureRotated": false
+		},
+		"ship_30_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,-5}",
+			"spriteSize": "{192,94}",
+			"spriteSourceSize": "{202,104}",
+			"textureRect": "{{1733,1},{192,94}}",
+			"textureRotated": true
+		},
+		"ship_31_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,12}",
+			"spriteSize": "{177,114}",
+			"spriteSourceSize": "{183,138}",
+			"textureRect": "{{1498,1773},{177,114}}",
+			"textureRotated": true
+		},
+		"ship_32_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{15,-3}",
+			"spriteSize": "{203,96}",
+			"spriteSourceSize": "{233,102}",
+			"textureRect": "{{1087,1632},{203,96}}",
+			"textureRotated": true
+		},
+		"ship_33_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{9,-7}",
+			"spriteSize": "{191,106}",
+			"spriteSourceSize": "{209,120}",
+			"textureRect": "{{1313,594},{191,106}}",
+			"textureRotated": true
+		},
+		"ship_34_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-6}",
+			"spriteSize": "{175,122}",
+			"spriteSourceSize": "{183,134}",
+			"textureRect": "{{1188,610},{175,122}}",
+			"textureRotated": true
+		},
+		"ship_35_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,-6}",
+			"spriteSize": "{214,90}",
+			"spriteSourceSize": "{224,102}",
+			"textureRect": "{{1147,1140},{214,90}}",
+			"textureRotated": true
+		},
+		"ship_36_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-8}",
+			"spriteSize": "{180,102}",
+			"spriteSourceSize": "{188,118}",
+			"textureRect": "{{1444,2004},{180,102}}",
+			"textureRotated": true
+		},
+		"ship_37_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-6}",
+			"spriteSize": "{190,82}",
+			"spriteSourceSize": "{196,94}",
+			"textureRect": "{{1236,1402},{190,82}}",
+			"textureRotated": true
+		},
+		"ship_38_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{190,120}",
+			"spriteSourceSize": "{192,120}",
+			"textureRect": "{{1111,2033},{190,120}}",
+			"textureRotated": true
+		},
+		"ship_39_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,1}",
+			"spriteSize": "{198,94}",
+			"spriteSourceSize": "{212,96}",
+			"textureRect": "{{1503,347},{198,94}}",
+			"textureRotated": true
+		},
+		"ship_40_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,-9}",
+			"spriteSize": "{190,88}",
+			"spriteSourceSize": "{200,106}",
+			"textureRect": "{{1186,1620},{190,88}}",
+			"textureRotated": true
+		},
+		"ship_41_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,-9}",
+			"spriteSize": "{174,100}",
+			"spriteSourceSize": "{180,118}",
+			"textureRect": "{{1826,959},{174,100}}",
+			"textureRotated": true
+		},
+		"ship_42_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-4}",
+			"spriteSize": "{200,90}",
+			"spriteSourceSize": "{200,98}",
+			"textureRect": "{{1214,1047},{200,90}}",
+			"textureRotated": false
+		},
+		"ship_43_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-4}",
+			"spriteSize": "{186,100}",
+			"spriteSourceSize": "{190,108}",
+			"textureRect": "{{1321,1402},{186,100}}",
+			"textureRotated": true
+		},
+		"ship_44_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-7,0}",
+			"spriteSize": "{214,102}",
+			"spriteSourceSize": "{228,102}",
+			"textureRect": "{{1131,1403},{214,102}}",
+			"textureRotated": true
+		},
+		"ship_45_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,-5}",
+			"spriteSize": "{176,84}",
+			"spriteSourceSize": "{178,94}",
+			"textureRect": "{{1577,1583},{176,84}}",
+			"textureRotated": true
+		},
+		"ship_46_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-5,-3}",
+			"spriteSize": "{192,90}",
+			"spriteSourceSize": "{202,96}",
+			"textureRect": "{{1830,1},{192,90}}",
+			"textureRotated": true
+		},
+		"ship_47_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-3,2}",
+			"spriteSize": "{200,122}",
+			"spriteSourceSize": "{206,126}",
+			"textureRect": "{{1399,788},{200,122}}",
+			"textureRotated": true
+		},
+		"ship_48_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-11,-5}",
+			"spriteSize": "{188,116}",
+			"spriteSourceSize": "{210,126}",
+			"textureRect": "{{1277,1595},{188,116}}",
+			"textureRotated": true
+		},
+		"ship_49_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{6,0}",
+			"spriteSize": "{178,112}",
+			"spriteSourceSize": "{190,112}",
+			"textureRect": "{{1716,778},{178,112}}",
+			"textureRotated": true
+		},
+		"ship_50_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,2}",
+			"spriteSize": "{160,100}",
+			"spriteSourceSize": "{160,104}",
+			"textureRect": "{{2094,1399},{160,100}}",
+			"textureRotated": true
+		},
+		"ship_51_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,3}",
+			"spriteSize": "{184,110}",
+			"spriteSourceSize": "{192,116}",
+			"textureRect": "{{1413,1140},{184,110}}",
+			"textureRotated": true
+		},
+		"smallOutline_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{60,40}",
+			"spriteSourceSize": "{60,44}",
+			"textureRect": "{{2047,1900},{60,40}}",
+			"textureRotated": false
+		},
+		"smallOutline_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-8,8}",
+			"spriteSize": "{79,78}",
+			"spriteSourceSize": "{97,98}",
+			"textureRect": "{{3018,2157},{79,78}}",
+			"textureRotated": true
+		},
+		"smallOutline_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,8}",
+			"spriteSize": "{93,78}",
+			"spriteSourceSize": "{97,98}",
+			"textureRect": "{{3486,2141},{93,78}}",
+			"textureRotated": true
+		},
+		"smallOutline_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-27,0}",
+			"spriteSize": "{39,60}",
+			"spriteSourceSize": "{97,60}",
+			"textureRect": "{{2151,1891},{39,60}}",
+			"textureRotated": true
+		},
+		"smallOutline_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-18,18}",
+			"spriteSize": "{24,24}",
+			"spriteSourceSize": "{60,60}",
+			"textureRect": "{{649,1877},{24,24}}",
+			"textureRotated": false
+		},
+		"spike_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{144,150}",
+			"spriteSourceSize": "{148,158}",
+			"textureRect": "{{2634,1863},{144,150}}",
+			"textureRotated": false
+		},
+		"spike_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-2}",
+			"spriteSize": "{140,84}",
+			"spriteSourceSize": "{144,92}",
+			"textureRect": "{{2614,726},{140,84}}",
+			"textureRotated": true
+		},
+		"spike_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{104,104}",
+			"spriteSourceSize": "{106,114}",
+			"textureRect": "{{3472,743},{104,104}}",
+			"textureRotated": false
+		},
+		"spike_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,-3}",
+			"spriteSize": "{74,76}",
+			"spriteSourceSize": "{76,86}",
+			"textureRect": "{{2939,2161},{74,76}}",
+			"textureRotated": true
+		},
+		"spinBlade01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-50,83}",
+			"spriteSize": "{212,170}",
+			"spriteSourceSize": "{314,340}",
+			"textureRect": "{{1240,1140},{212,170}}",
+			"textureRotated": true
+		},
+		"spinBlade02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-34,38}",
+			"spriteSize": "{146,156}",
+			"spriteSourceSize": "{218,236}",
+			"textureRect": "{{1490,991},{146,156}}",
+			"textureRotated": true
+		},
+		"square_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"square_01_small_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{96,96}",
+			"spriteSourceSize": "{98,98}",
+			"textureRect": "{{3872,2121},{96,96}}",
+			"textureRotated": false
+		},
+		"square_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"square_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"square_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-51,51}",
+			"spriteSize": "{18,18}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{329,763},{18,18}}",
+			"textureRotated": false
+		},
+		"square_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"square_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"square_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"square_b_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,29}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,102}",
+			"textureRect": "{{1498,1953},{120,42}}",
+			"textureRotated": false
+		},
+		"square_b_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,29}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,102}",
+			"textureRect": "{{1498,1953},{120,42}}",
+			"textureRotated": false
+		},
+		"square_b_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,29}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,102}",
+			"textureRect": "{{1498,1953},{120,42}}",
+			"textureRotated": false
+		},
+		"square_b_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,29}",
+			"spriteSize": "{144,42}",
+			"spriteSourceSize": "{148,102}",
+			"textureRect": "{{1503,548},{144,42}}",
+			"textureRotated": false
+		},
+		"square_f_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"square_f_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,58}",
+			"spriteSize": "{120,42}",
+			"spriteSourceSize": "{120,158}",
+			"textureRect": "{{1359,2188},{120,42}}",
+			"textureRotated": false
+		},
+		"square_f_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-9,9}",
+			"spriteSize": "{140,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2871,1},{140,140}}",
+			"textureRotated": false
+		},
+		"square_f_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,9}",
+			"spriteSize": "{156,140}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2491,1913},{156,140}}",
+			"textureRotated": true
+		},
+		"square_f_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,0}",
+			"spriteSize": "{156,120}",
+			"spriteSourceSize": "{158,120}",
+			"textureRect": "{{2509,2072},{156,120}}",
+			"textureRotated": true
+		},
+		"square_h_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{156,90}",
+			"spriteSourceSize": "{158,122}",
+			"textureRect": "{{1932,738},{156,90}}",
+			"textureRotated": true
+		},
+		"square_h_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{156,90}",
+			"spriteSourceSize": "{158,122}",
+			"textureRect": "{{1932,738},{156,90}}",
+			"textureRotated": true
+		},
+		"square_h_03_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{156,90}",
+			"spriteSourceSize": "{158,122}",
+			"textureRect": "{{1932,738},{156,90}}",
+			"textureRotated": true
+		},
+		"square_h_04_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2197,1399},{156,156}}",
+			"textureRotated": false
+		},
+		"square_h_05_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-17,16}",
+			"spriteSize": "{122,90}",
+			"spriteSourceSize": "{158,122}",
+			"textureRect": "{{2396,452},{122,90}}",
+			"textureRotated": true
+		},
+		"square_h_06_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{156,156}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2332,1924},{156,156}}",
+			"textureRotated": false
+		},
+		"square_h_07_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{90,90}",
+			"spriteSourceSize": "{92,122}",
+			"textureRect": "{{3644,396},{90,90}}",
+			"textureRotated": false
+		},
+		"square_h_08_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{156,90}",
+			"spriteSourceSize": "{158,122}",
+			"textureRect": "{{1932,738},{156,90}}",
+			"textureRotated": true
+		},
+		"square_h_09_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{88,90}",
+			"spriteSourceSize": "{92,122}",
+			"textureRect": "{{4003,815},{88,90}}",
+			"textureRotated": true
+		},
+		"square_h_10_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,16}",
+			"spriteSize": "{122,90}",
+			"spriteSourceSize": "{124,122}",
+			"textureRect": "{{2489,452},{122,90}}",
+			"textureRotated": true
+		},
+		"triangle_b_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-1}",
+			"spriteSize": "{144,146}",
+			"spriteSourceSize": "{150,154}",
+			"textureRect": "{{2468,577},{144,146}}",
+			"textureRotated": false
+		},
+		"triangle_b_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{3,-1}",
+			"spriteSize": "{260,150}",
+			"spriteSourceSize": "{270,156}",
+			"textureRect": "{{1250,1},{260,150}}",
+			"textureRotated": true
+		},
+		"triangle_b_square_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-44,44}",
+			"spriteSize": "{32,32}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{1428,1969},{32,32}}",
+			"textureRotated": false
+		},
+		"triangle_b_square_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-35,47}",
+			"spriteSize": "{50,26}",
+			"spriteSourceSize": "{120,120}",
+			"textureRect": "{{478,759},{50,26}}",
+			"textureRotated": false
+		},
+		"triangle_h_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{4,-4}",
+			"spriteSize": "{148,148}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{2372,728},{148,148}}",
+			"textureRotated": false
+		},
+		"triangle_h_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{5,-2}",
+			"spriteSize": "{266,152}",
+			"spriteSourceSize": "{278,158}",
+			"textureRect": "{{948,348},{266,152}}",
+			"textureRotated": true
+		},
+		"triangle_h_square_01_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-37,37}",
+			"spriteSize": "{82,84}",
+			"spriteSourceSize": "{158,158}",
+			"textureRect": "{{4011,906},{82,84}}",
+			"textureRotated": true
+		},
+		"triangle_h_square_02_glow_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-72,36}",
+			"spriteSize": "{134,86}",
+			"spriteSourceSize": "{278,158}",
+			"textureRect": "{{2347,1041},{134,86}}",
+			"textureRotated": false
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "GJ_GameSheetGlow-uhd.png",
+		"size": "{4096,2237}",
+		"smartupdate": "$TexturePacker:SmartUpdate:bfaf065601a085f122d55772e8aaff4b:2ba686fe57087a985ef94b5b4ac4b5d9:95dfc380109ea8476501349e95381cd2$",
+		"textureFileName": "GJ_GameSheetGlow-uhd.png"
+	}
+}

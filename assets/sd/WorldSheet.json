@@ -1,0 +1,78 @@
+{
+	"frames":
+	{
+		"worldDot_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{8,5}",
+			"spriteSourceSize": "{8,5}",
+			"textureRect": "{{487,1},{8,5}}",
+			"textureRotated": false
+		},
+		"worldIsland_01.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{440,207}",
+			"spriteSourceSize": "{440,207}",
+			"textureRect": "{{1,1},{440,207}}",
+			"textureRotated": false
+		},
+		"worldIsland_02.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{420,274}",
+			"spriteSourceSize": "{420,274}",
+			"textureRect": "{{1,230},{420,274}}",
+			"textureRotated": false
+		},
+		"worldLabel_01_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{226,40}",
+			"spriteSourceSize": "{226,40}",
+			"textureRect": "{{444,1},{226,40}}",
+			"textureRotated": true
+		},
+		"worldLabel_02_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{269,36}",
+			"spriteSourceSize": "{269,36}",
+			"textureRect": "{{424,230},{269,36}}",
+			"textureRotated": true
+		},
+		"worldLevelBtn_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-2,5}",
+			"spriteSize": "{32,32}",
+			"spriteSourceSize": "{36,42}",
+			"textureRect": "{{463,230},{32,32}}",
+			"textureRotated": false
+		},
+		"worldLevelBtn_locked_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,1}",
+			"spriteSize": "{25,21}",
+			"spriteSourceSize": "{25,23}",
+			"textureRect": "{{463,265},{25,21}}",
+			"textureRotated": false
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "WorldSheet.png",
+		"size": "{496,505}",
+		"smartupdate": "$TexturePacker:SmartUpdate:fef97fb2d77bf8552229993c11fb2fff:db6cdd91dee993bb1aaf871b3389805e:1f2c487a29fed75430ca63a242a20b91$",
+		"textureFileName": "WorldSheet.png"
+	}
+}

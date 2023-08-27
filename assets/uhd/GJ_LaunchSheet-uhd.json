@@ -1,0 +1,60 @@
+{
+	"frames":
+	{
+		"GJ_lite_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{2,-3}",
+			"spriteSize": "{356,118}",
+			"spriteSourceSize": "{360,124}",
+			"textureRect": "{{1,3562},{356,118}}",
+			"textureRotated": true
+		},
+		"GJ_logo_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,-7}",
+			"spriteSize": "{1702,194}",
+			"spriteSourceSize": "{1716,208}",
+			"textureRect": "{{1,585},{1702,194}}",
+			"textureRotated": true
+		},
+		"GJ_md_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{6,-7}",
+			"spriteSize": "{736,140}",
+			"spriteSourceSize": "{748,154}",
+			"textureRect": "{{1,2824},{736,140}}",
+			"textureRotated": true
+		},
+		"RobTopLogoBig_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-1,-3}",
+			"spriteSize": "{582,204}",
+			"spriteSourceSize": "{592,222}",
+			"textureRect": "{{1,1},{582,204}}",
+			"textureRotated": true
+		},
+		"gj_worldLogo_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{7,-6}",
+			"spriteSize": "{533,156}",
+			"spriteSourceSize": "{547,168}",
+			"textureRect": "{{1,2289},{533,156}}",
+			"textureRotated": true
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "GJ_LaunchSheet-uhd.png",
+		"size": "{206,3919}",
+		"smartupdate": "$TexturePacker:SmartUpdate:d81614112b2b21e163064ab207678ab0:390f5f978c473cf11002d32983f3ee46:bc2caf3178ecdc5f70cbf6a8b499a4ef$",
+		"textureFileName": "GJ_LaunchSheet-uhd.png"
+	}
+}

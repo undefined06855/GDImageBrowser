@@ -1,0 +1,33 @@
+{
+	"frames":
+	{
+		"dungeonShine_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{0,0}",
+			"spriteSize": "{115,127}",
+			"spriteSourceSize": "{115,129}",
+			"textureRect": "{{332,1},{115,127}}",
+			"textureRotated": false
+		},
+		"dungeon_gate_001.png":
+		{
+			"aliases": [],
+			"spriteOffset": "{-4,17}",
+			"spriteSize": "{328,286}",
+			"spriteSourceSize": "{342,320}",
+			"textureRect": "{{1,1},{328,286}}",
+			"textureRotated": false
+		}
+	},
+	"metadata":
+	{
+		"format": 3,
+		"pixelFormat": "RGBA4444",
+		"premultiplyAlpha": false,
+		"realTextureFileName": "DungeonSheet.png",
+		"size": "{448,288}",
+		"smartupdate": "$TexturePacker:SmartUpdate:6506a477a5fe94c2174016c8494c17bd:363eaa01fbe330733ec1026b1e232543:39c8688f9d1d3bc4272b59a83a444a6e$",
+		"textureFileName": "DungeonSheet.png"
+	}
+}
