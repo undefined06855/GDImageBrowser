@@ -17,21 +17,26 @@
         <main>
             <section class="white-overlay">
                 <h1>GdImageBrowser</h1>
-                <h5>(loading 0/0)</h5>
                 <div class="spacer"></div>
+                <label for="version_select">Version: </label>
+                <select id="version_select">
+                    <option value=0>2.113</option>
+                    <option value=1 selected>2.204</option>
+                </select>
+                <br/>
                 <label for="sheet_select">Sprite sheet: </label>
-                <select id="sheet_select"></select>
+                <select id="sheet_select">
+
+                </select>
                 <br/>
                 <label for="quality_select">Quality: </label>
                 <select id="quality_select">
-                    <option value="sd">SD</option>
-                    <option value="hd">HD</option>
-                    <option value="uhd">UHD</option>
+                    <option value=0>SD</option>
+                    <option value=1>HD</option>
+                    <option value=2>UHD</option>
                 </select>
                 <hr/>
                 <div id="name">Name: </div>
-                <div id="desc">Description: </div>
-                <div id="aliases">Aliases: </div>
                 <div id="offset">Offset: </div>
                 <div id="size">Size: </div>
                 <div id="ssize">Source size: </div>
@@ -39,7 +44,8 @@
                 <div id="rot">Rotated: </div>
                 <hr/>
                 
-                <div>Double click to "lock" an image to be able to download it. Right click on the preview below, and click "Save As" to download the image.</div>
+                <div>Right click to download an image.</div>
+                <h5 id="loader" style="display: none">(loading)</h5>
 
                 <div id="preview-wrapper">
                     <canvas id="preview"></canvas>
@@ -51,9 +57,8 @@
             </div>
         </main>
 
-        <script src="assets/assets.js"></script>
-        <script src="functions.js"></script>
-        <script src="loader.js"></script>
+        <script src="PlistDict.js"></script>
+        <script src="ComboDeal.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
