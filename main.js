@@ -10,17 +10,17 @@ let loading = 0
 let currentCombo = null
 
 /** @type PlistDict */
-let selectedDict = null
+let currentDict = null
 
 function getSelectedVersion() { return Number(document.querySelector("#version_select").value) || Version.V2113 }
 function getSelectedSheet() { return document.querySelector("#sheet_select").value }
 function getSelectedResolution() { return Number(document.querySelector("#quality_select").value) || Resolution.sd}
 
 function getPath(name, resolution, version, type) {
-    let resolutionString
     let versionString
     let typeString
-    
+    let resolutionString
+
     if (resolution == Resolution.hd) resolutionString = "-hd"
     else if (resolution == Resolution.sd) resolutionString = ""
     else if (resolution == Resolution.uhd) resolutionString = "-uhd"
@@ -87,6 +87,7 @@ async function autoGetImageAndPlist() {
 
 function populateSheetSelect() {
     let sheetSelect = document.querySelector("#sheet_select")
+    let prevSelected = sheetSelect.value
     sheetSelect.innerText = ""
     let sheets = []
     if (getSelectedVersion() == Version.V2204) {
@@ -136,6 +137,9 @@ function populateSheetSelect() {
         element.value = sheet
         sheetSelect.appendChild(element)
     }
+
+    if (sheets.includes(prevSelected))
+        sheetSelect.value = prevSelected
 }
 
 function updateCanvasSize() {
@@ -149,7 +153,7 @@ function updateCanvasSize() {
 }
 
 async function updateCurrentCombo() {
-    selectedDict = null
+    currentDict = null
     currentCombo = await autoGetImageAndPlist()
 }
 
@@ -173,18 +177,27 @@ function draw() {
         return
     }
 
-    ctx.drawImage(currentCombo.image, 0, 0, canvas.width, (canvas.width / currentCombo.image.width) * currentCombo.image.height)
+    if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height) 
+        ctx.drawImage(currentCombo.image, 0, 0, canvas.width, (canvas.width / currentCombo.image.width) * currentCombo.image.height)
+    else
+        ctx.drawImage(currentCombo.image, 0, 0, (canvas.height / currentCombo.image.height) * currentCombo.image.width, canvas.height)
+
 
     // draw a box where the cursor is selecting a sprite
-    if (selectedDict != null) {
-        let scale = canvas.width / currentCombo.image.width
+    if (currentDict != null) {
+        let scale
+
+        if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height)
+            scale = canvas.width / currentCombo.image.width
+        else
+            scale = canvas.height / currentCombo.image.height
 
         ctx.strokeStyle = "red"
         ctx.lineWidth = 2
-        if (selectedDict.textureRotated) {
-            ctx.strokeRect(selectedDict.textureRect.x * scale, selectedDict.textureRect.y * scale, selectedDict.textureRect.h * scale, selectedDict.textureRect.w * scale)
+        if (currentDict.textureRotated) {
+            ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, currentDict.textureRect.h * scale, currentDict.textureRect.w * scale)
         } else {
-            ctx.strokeRect(selectedDict.textureRect.x * scale, selectedDict.textureRect.y * scale, selectedDict.textureRect.w * scale, selectedDict.textureRect.h * scale)
+            ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, currentDict.textureRect.w * scale, currentDict.textureRect.h * scale)
         }
     }
 
@@ -210,7 +223,13 @@ function tickCursor(event) {
     let mx = event.pageX - rect.left
     let my = event.pageY - rect.top
 
-    let scale = canvas.width / currentCombo.image.width
+    let scale
+    
+    if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height)
+        scale = canvas.width / currentCombo.image.width
+    else
+        scale = canvas.height / currentCombo.image.height
+
     // instead of multiplying everything by scale
     // i can divide the mouse cursor by scale :bigbrain:
     mx /= scale
@@ -224,7 +243,7 @@ function tickCursor(event) {
             // rotated
             (dict.textureRotated && dict.textureRect.x < mx && dict.textureRect.y < my && dict.textureRect.x + dict.textureRect.h > mx && dict.textureRect.y + dict.textureRect.w > my)
         ) {
-            selectedDict = dict
+            currentDict = dict
 
             // fill out info
             document.querySelector("#name").innerText = "Name: " + dict.key
@@ -239,7 +258,12 @@ function tickCursor(event) {
             let canvas = document.querySelector("#preview")
             let ctx = canvas.getContext("2d")
             ctx.clearRect(0, 0, canvas.width, canvas.height)
-            ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.w, dict.textureRect.h, 0, 0, canvas.width, canvas.height )
+            
+            if (dict.textureRotated) {
+                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.h, dict.textureRect.w, 0, 0, canvas.width, canvas.height)
+            } else {
+                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.w, dict.textureRect.h, 0, 0, canvas.width, canvas.height)
+            }
 
             return
         }
@@ -248,8 +272,55 @@ function tickCursor(event) {
 
 // runs on contextmenu
 function downloadPart(event) {
+    // please someone make it so that when it downloads it rotates the image if currentDict.textureRotated thanks
     event.preventDefault()
-    console.log("downlod")
+
+    // create a canvas to put the image part onto
+    const offscreenCanvas = new OffscreenCanvas(currentDict.textureRect.w, currentDict.textureRect.h)
+    if (currentDict.textureRotated) {
+        offscreenCanvas.width = currentDict.textureRect.h
+        offscreenCanvas.height = currentDict.textureRect.w
+    }
+    
+    const ctx = offscreenCanvas.getContext("2d")
+
+    if (currentDict.textureRotated) {
+        ctx.drawImage(
+            currentCombo.image,
+            currentDict.textureRect.x,
+            currentDict.textureRect.y,
+            currentDict.textureRect.h,
+            currentDict.textureRect.w,
+            0, 0,
+            currentDict.textureRect.h,
+            currentDict.textureRect.w
+        )
+    } else {
+        ctx.drawImage(
+            currentCombo.image,
+            currentDict.textureRect.x,
+            currentDict.textureRect.y,
+            currentDict.textureRect.w,
+            currentDict.textureRect.h,
+            0, 0,
+            currentDict.textureRect.w,
+            currentDict.textureRect.h
+        )
+    }
+
+
+
+    // turn it into a blob
+    offscreenCanvas.convertToBlob()
+    .then(blob => {
+        // create link to download
+        const link = document.createElement("a")
+        link.href = URL.createObjectURL(blob)
+        link.download = currentDict.key.replace(".png", "") + (getSelectedResolution() == Resolution.hd ? "-hd" : (getSelectedResolution() == Resolution.uhd ? "-uhd" : "-sd")) + ".png"
+
+        // then click
+        link.click()
+    })
 }
 
 // -----------------------------------------------------------------------------
