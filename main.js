@@ -1,6 +1,8 @@
 // This is actually, genuinely the worse codebase in the world
 // please dont attempt to make a pr
 
+// don't worry ive seen (and made) worse
+
 /** @type Array<PlistAndImageComboDeal> */
 let loadedStuff = []
 
@@ -258,11 +260,15 @@ function tickCursor(event) {
             let canvas = document.querySelector("#preview")
             let ctx = canvas.getContext("2d")
             ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+            const maxDimension = Math.max(dict.textureRect.w, dict.textureRect.h)
+            const widthScaling = dict.textureRect.w / maxDimension
+            const heightScaling = dict.textureRect.h / maxDimension
             
             if (dict.textureRotated) {
-                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.h, dict.textureRect.w, 0, 0, canvas.width, canvas.height)
+                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.h, dict.textureRect.w, 0, 0, canvas.width * heightScaling, canvas.height * widthScaling)
             } else {
-                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.w, dict.textureRect.h, 0, 0, canvas.width, canvas.height)
+                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.w, dict.textureRect.h, 0, 0, canvas.width * widthScaling, canvas.height * heightScaling)
             }
 
             return
