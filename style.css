@@ -23,12 +23,13 @@ main {
 }
 
 .white-overlay {
-    background-color: #ffffff8a;
+    background: #ffffff8a;
+    background: linear-gradient(90deg, #ffffff8a calc(30vw - 20px), #ffffff00 30vw);
 }
 
 section {
-    padding-left: 5px;
-    padding-top: 5px;
+    padding: 5px;
+    padding-right: 25px;
 }
 
 section {
@@ -54,4 +55,15 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gh-icon {
+    width: 1.5em;
+    height: 1.5em;
 }
