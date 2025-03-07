@@ -330,28 +330,55 @@ function redrawCanvas() {
     let maxRatio = max.width / max.height
     let curRatio = cur.width / cur.height
 
-    let minSize = 100;
-    
+    let scale = 1
     if (maxRatio > curRatio) {
         // adjust for height
         let maxSize = max.height
+        let minSize = max.height * 0.5
         if (cur.height > maxSize) {
-            canvas.style.transform += ` scale(${maxSize / cur.height})`
+            scale = maxSize / cur.height
         } else if (cur.height < minSize) {
-            canvas.style.transform += ` scale(${minSize / cur.height})`
+            scale = minSize / cur.height
         }
     } else {
         // adjust for width
         let maxSize = max.width
+        let minSize = max.width * 0.5
         if (cur.width > maxSize) {
-            canvas.style.transform += ` scale(${maxSize / cur.width})`
+            scale = maxSize / cur.width
         } else if (cur.width < minSize) {
-            canvas.style.transform += ` scale(${minSize / cur.width})`
+            scale = minSize / cur.width
         }
     }
+    canvas.style.transform += ` scale(${scale})`
+    document.querySelector("#preview-scale").innerText = `(${scale.toFixed(3)}x scale)`
 
     if (currentDict.textureRotated) {
         canvas.style.transform += ` translateX(-${sourceWidth}px)`
+    }
+}
+
+/**
+ * @returns {OffscreenCanvas}
+ */
+function unrotatePreviewCanvas() {
+    /** @type {HTMLCanvasElement} */
+    let canvas = document.querySelector("#preview")
+    
+    let rotated = canvas.style.transform.includes("rotate")
+
+    if (rotated) {
+        let offscreen = new OffscreenCanvas(canvas.height, canvas.width)
+        let ctx = offscreen.getContext("2d")
+        ctx.translate(0, canvas.width)
+        ctx.rotate(-90 * Math.PI / 180)
+        ctx.drawImage(canvas, 0, 0)
+        return offscreen
+    } else {
+        let offscreen = new OffscreenCanvas(canvas.width, canvas.height)
+        let ctx = offscreen.getContext("2d")
+        ctx.drawImage(canvas, 0, 0)
+        return offscreen
     }
 }
 
@@ -360,7 +387,7 @@ function downloadPart(event) {
     event.preventDefault()
 
     // blobbage
-    document.querySelector("#preview").toBlob(blob => {
+    unrotatePreviewCanvas().convertToBlob().then(blob => {
         // create link to download
         const link = document.createElement("a")
         link.href = URL.createObjectURL(blob)
@@ -376,7 +403,7 @@ function copyPart(event) {
     event.preventDefault()
 
     // blobbage
-    document.querySelector("#preview").toBlob(blob => {
+    unrotatePreviewCanvas().convertToBlob().then(blob => {
         navigator.clipboard.write([new ClipboardItem({'image/png' : blob})]);
     })
 }
