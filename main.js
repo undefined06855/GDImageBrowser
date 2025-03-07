@@ -1,7 +1,4 @@
-// This is actually, genuinely the worse codebase in the world
-// please dont attempt to make a pr
-
-// don't worry ive seen (and made) worse
+// balls code
 
 /** @type Array<PlistAndImageComboDeal> */
 let loadedStuff = []
@@ -14,7 +11,9 @@ let currentCombo = null
 /** @type PlistDict */
 let currentDict = null
 
-function getSelectedVersion() { return Number(document.querySelector("#version_select").value) || Version.V2113 }
+let currentDictLocked = false
+
+function getSelectedVersion() { return Number(document.querySelector("#version_select").value) || Version.V22074 }
 function getSelectedSheet() { return document.querySelector("#sheet_select").value }
 function getSelectedResolution() { return Number(document.querySelector("#quality_select").value) || Resolution.sd}
 
@@ -29,6 +28,7 @@ function getPath(name, resolution, version, type) {
 
     if (version == Version.V2113) versionString = "2.113"
     else if (version == Version.V2204) versionString = "2.204"
+    else if (version == Version.V22074) versionString = "2.2074"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
@@ -92,7 +92,7 @@ function populateSheetSelect() {
     let prevSelected = sheetSelect.value
     sheetSelect.innerText = ""
     let sheets = []
-    if (getSelectedVersion() == Version.V2204) {
+    if (getSelectedVersion() == Version.V2204 || getSelectedVersion() == Version.V22074) {
         sheets = [
             "DungeonSheet",
             "FireSheet_01",
@@ -146,12 +146,10 @@ function populateSheetSelect() {
 
 function updateCanvasSize() {
     let canvas = document.querySelector("#canvas")
-    canvas.width = window.innerWidth * 0.7
-    canvas.height = window.innerHeight
-
-    let prevCanvas = document.querySelector("#preview")
-    prevCanvas.width = window.innerWidth * 0.3
-    prevCanvas.height = window.innerHeight * 0.6
+    let canvasWrap = document.querySelector("#canvas-wrapper")
+    let rect = canvasWrap.getBoundingClientRect()
+    canvas.width = rect.width
+    canvas.height = rect.height
 }
 
 async function updateCurrentCombo() {
@@ -194,12 +192,26 @@ function draw() {
         else
             scale = canvas.height / currentCombo.image.height
 
+        let width, height
+        if (currentDict.textureRotated) {
+            width = currentDict.textureRect.h * scale
+            height = currentDict.textureRect.w * scale
+        } else {
+            width = currentDict.textureRect.w * scale
+            height = currentDict.textureRect.h * scale
+        }
+
         ctx.strokeStyle = "red"
         ctx.lineWidth = 2
-        if (currentDict.textureRotated) {
-            ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, currentDict.textureRect.h * scale, currentDict.textureRect.w * scale)
-        } else {
-            ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, currentDict.textureRect.w * scale, currentDict.textureRect.h * scale)
+        ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, width, height)
+        
+        if (currentDictLocked) {
+            // dont tell anyone i borrowed the idea from colon
+            ctx.beginPath()
+            ctx.rect(0, 0, canvas.width, canvas.height)
+            ctx.rect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, width, height)
+            ctx.fillStyle = "#00000056"
+            ctx.fill("evenodd")
         }
     }
 
@@ -217,9 +229,13 @@ function draw() {
 }
 
 // runs on mousemove
-/** @param {MouseEvent} event  */
+/** 
+ * @param {MouseEvent} event
+ * @returns {boolean} whether the mouse is hovering something
+ */
 function tickCursor(event) {
-    if (currentCombo == null) return
+    if (currentCombo == null) return false
+    if (currentDictLocked) return false
 
     let rect = document.querySelector("#canvas").getBoundingClientRect()
     let mx = event.pageX - rect.left
@@ -248,77 +264,103 @@ function tickCursor(event) {
             currentDict = dict
 
             // fill out info
-            document.querySelector("#name").innerText = "Name: " + dict.key
-            document.querySelector("#offset").innerText = "Offset: " + dict.spriteOffset
-            document.querySelector("#size").innerText = "Size: " + dict.spriteSize.toString(true)
-            document.querySelector("#ssize").innerText = "Source size: " + dict.spriteSourceSize.toString(true)
-            document.querySelector("#rect").innerText = "Rect: " + dict.textureRect
-            document.querySelector("#rot").innerText = "Rotated: " + (dict.textureRotated ? "True" : "False")
+            document.querySelector("#name").innerHTML = dict.key
+            document.querySelector("#offset").innerHTML = dict.spriteOffset
+            document.querySelector("#size").innerHTML = dict.spriteSize.toString(true)
+            document.querySelector("#ssize").innerHTML =  dict.spriteSourceSize.toString(true)
+            document.querySelector("#rect").innerHTML = dict.textureRect
+            document.querySelector("#rot").innerHTML = (dict.textureRotated ? "True" : "False")
 
-            // and draw onto preview canvas
-            /** @type HTMLCanvasElement */
-            let canvas = document.querySelector("#preview")
-            let ctx = canvas.getContext("2d")
-            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            redrawCanvas()
 
-            const maxDimension = Math.max(dict.textureRect.w, dict.textureRect.h)
-            const widthScaling = dict.textureRect.w / maxDimension
-            const heightScaling = dict.textureRect.h / maxDimension
-            
-            if (dict.textureRotated) {
-                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.h, dict.textureRect.w, 0, 0, canvas.width * heightScaling, canvas.height * widthScaling)
-            } else {
-                ctx.drawImage(currentCombo.image, dict.textureRect.x, dict.textureRect.y, dict.textureRect.w, dict.textureRect.h, 0, 0, canvas.width * widthScaling, canvas.height * heightScaling)
-            }
-
-            return
+            return true
         }
+    }
+}
+
+function redrawCanvas() {
+    /** @type HTMLCanvasElement */
+    let canvas = document.querySelector("#preview")
+    let ctx = canvas.getContext("2d")
+
+    if (currentDict == null) {
+        return
+    }
+
+
+    let sourceWidth, sourceHeight
+    if (currentDict.textureRotated) {
+        sourceWidth = currentDict.textureRect.h
+        sourceHeight = currentDict.textureRect.w
+    } else {
+        sourceWidth = currentDict.textureRect.w
+        sourceHeight = currentDict.textureRect.h
+    }
+
+    canvas.width = sourceWidth
+    canvas.height = sourceHeight
+
+    ctx.drawImage(
+        currentCombo.image,
+        currentDict.textureRect.x,
+        currentDict.textureRect.y,
+        sourceWidth, sourceHeight,
+        0, 0,
+        canvas.width, canvas.height
+    )
+
+    if (currentDict.textureRotated) {
+        // translateX and sourceWidth used here which seems counter-intuitive but
+        // it's been rotated so you need to use the other way around if that makes
+        // sense
+        // also this is a SHIT way to do it but the gdimagebrowser codebase is already
+        // so fucking bad at this point it's built on top of itself too many times :sob:
+        // not even following 80 column with these comments
+        canvas.style.transform = `rotate(-90deg)`
+    } else {
+        canvas.style.transform = ""
+    }
+
+    let wrap = document.querySelector("#preview-wrapper")
+    let max = wrap.getBoundingClientRect()
+    let cur = canvas.getBoundingClientRect()
+
+    // taken from object nodes LOL
+
+    let maxRatio = max.width / max.height
+    let curRatio = cur.width / cur.height
+
+    let minSize = 100;
+    
+    if (maxRatio > curRatio) {
+        // adjust for height
+        let maxSize = max.height
+        if (cur.height > maxSize) {
+            canvas.style.transform += ` scale(${maxSize / cur.height})`
+        } else if (cur.height < minSize) {
+            canvas.style.transform += ` scale(${minSize / cur.height})`
+        }
+    } else {
+        // adjust for width
+        let maxSize = max.width
+        if (cur.width > maxSize) {
+            canvas.style.transform += ` scale(${maxSize / cur.width})`
+        } else if (cur.width < minSize) {
+            canvas.style.transform += ` scale(${minSize / cur.width})`
+        }
+    }
+
+    if (currentDict.textureRotated) {
+        canvas.style.transform += ` translateX(-${sourceWidth}px)`
     }
 }
 
 // runs on contextmenu
 function downloadPart(event) {
-    // please someone make it so that when it downloads it rotates the image if currentDict.textureRotated thanks
     event.preventDefault()
 
-    // create a canvas to put the image part onto
-    const offscreenCanvas = new OffscreenCanvas(currentDict.textureRect.w, currentDict.textureRect.h)
-    if (currentDict.textureRotated) {
-        offscreenCanvas.width = currentDict.textureRect.h
-        offscreenCanvas.height = currentDict.textureRect.w
-    }
-    
-    const ctx = offscreenCanvas.getContext("2d")
-
-    if (currentDict.textureRotated) {
-        ctx.drawImage(
-            currentCombo.image,
-            currentDict.textureRect.x,
-            currentDict.textureRect.y,
-            currentDict.textureRect.h,
-            currentDict.textureRect.w,
-            0, 0,
-            currentDict.textureRect.h,
-            currentDict.textureRect.w
-        )
-    } else {
-        ctx.drawImage(
-            currentCombo.image,
-            currentDict.textureRect.x,
-            currentDict.textureRect.y,
-            currentDict.textureRect.w,
-            currentDict.textureRect.h,
-            0, 0,
-            currentDict.textureRect.w,
-            currentDict.textureRect.h
-        )
-    }
-
-
-
-    // turn it into a blob
-    offscreenCanvas.convertToBlob()
-    .then(blob => {
+    // blobbage
+    document.querySelector("#preview").toBlob(blob => {
         // create link to download
         const link = document.createElement("a")
         link.href = URL.createObjectURL(blob)
@@ -326,6 +368,16 @@ function downloadPart(event) {
 
         // then click
         link.click()
+    })
+}
+
+// runs on dblclick
+function copyPart(event) {
+    event.preventDefault()
+
+    // blobbage
+    document.querySelector("#preview").toBlob(blob => {
+        navigator.clipboard.write([new ClipboardItem({'image/png' : blob})]);
     })
 }
 
@@ -340,7 +392,10 @@ document.querySelector("#sheet_select").addEventListener("change", () => {update
 document.querySelector("#quality_select").addEventListener("change", () => {updateCurrentCombo()})
 
 document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
-document.querySelector("#canvas").addEventListener("contextmenu", downloadPart)
+document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
+document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
+//                                                                                                      shoddy way of doing this but whatever i guess
+document.querySelector("#canvas").addEventListener("click", event => { currentDictLocked = tickCursor(event) ? !currentDictLocked : false })
 
 window.addEventListener("resize", updateCanvasSize)
 updateCanvasSize()
