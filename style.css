@@ -62,7 +62,13 @@ section {
 #preview-wrapper {
     width: var(--section-width);
     height: var(--section-width);
-    margin: 6px;
+    margin: 5px;
+}
+
+#preview-scale {
+    position: absolute;
+    bottom: 5px;
+    font-size: 18px;
 }
 
 canvas#preview {
