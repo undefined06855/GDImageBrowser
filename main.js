@@ -13,9 +13,9 @@ let currentDict = null
 
 let currentDictLocked = false
 
-function getSelectedVersion() { return Number(document.querySelector("#version_select").value) || Version.V22074 }
+function getSelectedVersion() { return Number(document.querySelector("#version_select").value) ?? Version.V22074 }
 function getSelectedSheet() { return document.querySelector("#sheet_select").value }
-function getSelectedResolution() { return Number(document.querySelector("#quality_select").value) || Resolution.sd}
+function getSelectedResolution() { return Number(document.querySelector("#quality_select").value) ?? Resolution.uhd}
 
 function getPath(name, resolution, version, type) {
     let versionString
