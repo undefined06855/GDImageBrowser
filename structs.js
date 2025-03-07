@@ -7,6 +7,7 @@ const Resolution = {
 
 /** @enum */
 const Version = {
+    VLitePinkMoreGames: -1,
     V2113: 0,
     V2204: 1,
     V22074: 2

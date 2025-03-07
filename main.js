@@ -13,9 +13,9 @@ let currentDict = null
 
 let currentDictLocked = false
 
-function getSelectedVersion() { return Number(document.querySelector("#version_select").value) ?? Version.V22074 }
-function getSelectedSheet() { return document.querySelector("#sheet_select").value }
-function getSelectedResolution() { return Number(document.querySelector("#quality_select").value) ?? Resolution.uhd}
+function getSelectedVersion() { return Number(document.querySelector("#version-select").value) ?? Version.V22074 }
+function getSelectedSheet() { return document.querySelector("#sheet-select").value }
+function getSelectedResolution() { return Number(document.querySelector("#quality-select").value) ?? Resolution.uhd}
 
 function getPath(name, resolution, version, type) {
     let versionString
@@ -29,6 +29,7 @@ function getPath(name, resolution, version, type) {
     if (version == Version.V2113) versionString = "2.113"
     else if (version == Version.V2204) versionString = "2.204"
     else if (version == Version.V22074) versionString = "2.2074"
+    else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
@@ -45,11 +46,11 @@ function getPath(name, resolution, version, type) {
 async function getImageAndPlist(name, resolution, version) {
     return new Promise(async resolve => {
         // check if it's loaded
-        let combo = loadedStuff.filter(value => (value.name == name && value.resolution == resolution && value.version == version))
-        if (combo.length > 0) {
+        let combo = loadedStuff.find(value => (value.name == name && value.resolution == resolution && value.version == version))
+        if (combo) {
             // yes!
             console.log("%s at %s (%s) is loaded!", name, resolution, version)
-            resolve(combo[0])
+            resolve(combo)
         } else {
             // no :(
             console.log("need to load %s at %s (%s)", name, resolution, version)
@@ -64,9 +65,12 @@ async function getImageAndPlist(name, resolution, version) {
             let plistDOM = new DOMParser().parseFromString(plistString, "text/xml")
             let plistBody = plistDOM.querySelector("dict").querySelector("dict")
 
+            // only integer tag is the format, naive approach but works
+            let format = plistDOM.querySelector("integer").innerHTML
+
             let plist = []
             for (let i = 0; i < plistBody.children.length; i += 2) {
-                plist.push(new PlistDict(plistBody.children[i].innerHTML, plistBody.children[i + 1]))
+                plist.push(new PlistDict(plistBody.children[i].innerHTML, plistBody.children[i + 1], format))
             }
 
             // load the image
@@ -88,10 +92,12 @@ async function autoGetImageAndPlist() {
 }
 
 function populateSheetSelect() {
-    let sheetSelect = document.querySelector("#sheet_select")
+    let sheetSelect = document.querySelector("#sheet-select")
     let prevSelected = sheetSelect.value
     sheetSelect.innerText = ""
     let sheets = []
+    let noUhd = false
+    let notes = ""
     if (getSelectedVersion() == Version.V2204 || getSelectedVersion() == Version.V22074) {
         sheets = [
             "DungeonSheet",
@@ -131,6 +137,13 @@ function populateSheetSelect() {
             "SecretSheet",
             "WorldSheet",
         ]
+    } else if (getSelectedVersion() == Version.VLitePinkMoreGames) {
+        sheets = [
+            "GJ_GameSheet",
+            "GJ_LaunchSheet"
+        ]
+        noUhd = true
+        notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
     }
 
     for (let sheet of sheets) {
@@ -142,6 +155,25 @@ function populateSheetSelect() {
 
     if (sheets.includes(prevSelected))
         sheetSelect.value = prevSelected
+
+    let versionNotesElement = document.querySelector("#version-notes")
+    versionNotesElement.innerHTML = notes
+
+    // remove or add uhd for old sheets
+    let defintionSelector = document.querySelector("#quality-select")
+    if (defintionSelector.children.length == 2 && noUhd == false) {
+        let uhdOption = document.createElement("option")
+        uhdOption.innerText = "UHD"
+        uhdOption.value = Resolution.uhd
+        uhdOption.selected = true // any truthy value
+        defintionSelector.appendChild(uhdOption)
+    } else if (defintionSelector.children.length == 3 && noUhd) {
+        let uhdOption = Array.from(defintionSelector.querySelectorAll("option")).find(el => el.value == Resolution.uhd)
+        defintionSelector.removeChild(uhdOption)
+
+        let hdOption = Array.from(defintionSelector.querySelectorAll("option")).find(el => el.value == Resolution.hd)
+        hdOption.selected = true // any truthy
+    }
 }
 
 function updateCanvasSize() {
@@ -414,9 +446,9 @@ populateSheetSelect()
 updateCurrentCombo() // sets currentCombo
 draw()
 
-document.querySelector("#version_select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
-document.querySelector("#sheet_select").addEventListener("change", () => {updateCurrentCombo()})
-document.querySelector("#quality_select").addEventListener("change", () => {updateCurrentCombo()})
+document.querySelector("#version-select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
+document.querySelector("#sheet-select").addEventListener("change", () => {updateCurrentCombo()})
+document.querySelector("#quality-select").addEventListener("change", () => {updateCurrentCombo()})
 
 document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
 document.querySelector("#canvas").addEventListener("dblclick", downloadPart)

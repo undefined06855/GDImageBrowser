@@ -45,15 +45,26 @@ class PlistDict {
     /**
      * @param {string} key 
      * @param {HTMLElement} plistDictElement 
+     * @param {number} format
      */
-    constructor(key, plistDictElement) {
+    constructor(key, plistDictElement, format) {
         this.key = key
-        // unused afaik
-        //this.aliases = plistDictElement.children[1].innerHTML
-        this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
-        this.spriteSize = new PlistVector(plistDictElement.children[5].innerHTML)
-        this.spriteSourceSize = new PlistVector(plistDictElement.children[7].innerHTML)
-        this.textureRect = new PlistRect(plistDictElement.children[9].innerHTML)
-        this.textureRotated = plistDictElement.children[11].tagName == "true"
+
+        if (format == 3) {
+            // post 2.0
+            //this.aliases = plistDictElement.children[1].innerHTML
+            this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
+            this.spriteSize = new PlistVector(plistDictElement.children[5].innerHTML)
+            this.spriteSourceSize = new PlistVector(plistDictElement.children[7].innerHTML)
+            this.textureRect = new PlistRect(plistDictElement.children[9].innerHTML)
+            this.textureRotated = plistDictElement.children[11].tagName == "true"
+        } else {
+            // pre 2.0 i think?
+            this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
+            this.spriteSize = new PlistVector("{0,0}")
+            this.spriteSourceSize = new PlistVector(plistDictElement.children[9].innerHTML)
+            this.textureRect = new PlistRect(plistDictElement.children[1].innerHTML)
+            this.textureRotated = plistDictElement.children[5].tagName == "true"
+        }
     }
 }
