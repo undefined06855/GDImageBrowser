@@ -60,8 +60,8 @@ section {
 }
 
 #preview-wrapper {
-    width: var(--section-width);
-    height: var(--section-width);
+    width: calc(var(--section-inner-width) - 15px);
+    height: calc(var(--section-inner-width) - 15px);
     margin: 5px;
 }
 
@@ -84,4 +84,13 @@ canvas#preview {
 .gh-icon {
     width: 1.5em;
     height: 1.5em;
+}
+
+.mono.legacy-doesnt-exist {
+    font-size: 0px;
+}
+
+.mono.legacy-doesnt-exist::after {
+    content: "(None)";
+    font-size: 16px;
 }

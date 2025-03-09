@@ -28,6 +28,7 @@ function getPath(name, resolution, version, type) {
 
     if (version == Version.V2113) versionString = "2.113"
     else if (version == Version.V2204) versionString = "2.204"
+    else if (version == Version.V22073) versionString = "2.2073"
     else if (version == Version.V22074) versionString = "2.2074"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
 
@@ -95,10 +96,17 @@ function populateSheetSelect() {
     let sheetSelect = document.querySelector("#sheet-select")
     let prevSelected = sheetSelect.value
     sheetSelect.innerText = ""
+
     let sheets = []
     let noUhd = false
+    let isLegacy = false
     let notes = ""
-    if (getSelectedVersion() == Version.V2204 || getSelectedVersion() == Version.V22074) {
+
+    if (
+        getSelectedVersion() == Version.V2204
+        || getSelectedVersion() == Version.V22073
+        || getSelectedVersion() == Version.V22074
+    ) {
         sheets = [
             "DungeonSheet",
             "FireSheet_01",
@@ -143,6 +151,7 @@ function populateSheetSelect() {
             "GJ_LaunchSheet"
         ]
         noUhd = true
+        isLegacy = true
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
     }
 
@@ -174,6 +183,14 @@ function populateSheetSelect() {
         let hdOption = Array.from(defintionSelector.querySelectorAll("option")).find(el => el.value == Resolution.hd)
         hdOption.selected = true // any truthy
     }
+
+    // remove or add size for legacy sheets
+    let size = document.querySelector("#size")
+    if (isLegacy) {
+        size.classList.add("legacy-doesnt-exist")
+    } else {
+        size.classList.remove("legacy-doesnt-exist")
+    }
 }
 
 function updateCanvasSize() {
@@ -182,6 +199,7 @@ function updateCanvasSize() {
     let rect = canvasWrap.getBoundingClientRect()
     canvas.width = rect.width
     canvas.height = rect.height
+    updatePreview()
 }
 
 async function updateCurrentCombo() {
@@ -303,14 +321,14 @@ function tickCursor(event) {
             document.querySelector("#rect").innerHTML = dict.textureRect
             document.querySelector("#rot").innerHTML = (dict.textureRotated ? "True" : "False")
 
-            redrawCanvas()
+            updatePreview()
 
             return true
         }
     }
 }
 
-function redrawCanvas() {
+function updatePreview() {
     /** @type HTMLCanvasElement */
     let canvas = document.querySelector("#preview")
     let ctx = canvas.getContext("2d")

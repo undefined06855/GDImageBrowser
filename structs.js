@@ -10,7 +10,8 @@ const Version = {
     VLitePinkMoreGames: -1,
     V2113: 0,
     V2204: 1,
-    V22074: 2
+    V22073: 2,
+    V22074: 3
 }
 
 /** @enum */
