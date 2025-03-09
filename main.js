@@ -155,6 +155,10 @@ function populateSheetSelect() {
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
     }
 
+    if (getSelectedVersion() == Version.V22073) {
+        notes = "Pretty sure this is identical to 2.2074 but it was on my laptop so might as well archive it."
+    }
+
     for (let sheet of sheets) {
         let element = document.createElement("option")
         element.innerText = sheet
