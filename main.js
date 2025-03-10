@@ -1,17 +1,19 @@
 // balls code
 
-/** @type Array<PlistAndImageComboDeal> */
+/** @type Array<{PlistAndImageComboDeal}> */
 let loadedStuff = []
 
 let loading = 0
 
-/** @type PlistAndImageComboDeal */
+/** @type {PlistAndImageComboDeal} */
 let currentCombo = null
 
-/** @type PlistDict */
+/** @type {PlistDict} */
 let currentDict = null
 
 let currentDictLocked = false
+
+let currentAnimationName = ""
 
 function getSelectedVersion() { return Number(document.querySelector("#version-select").value) ?? Version.V22074 }
 function getSelectedSheet() { return document.querySelector("#sheet-select").value }
@@ -318,18 +320,22 @@ function tickCursor(event) {
             currentDict = dict
 
             // fill out info
-            document.querySelector("#name").innerHTML = dict.key
-            document.querySelector("#offset").innerHTML = dict.spriteOffset
-            document.querySelector("#size").innerHTML = dict.spriteSize.toString(true)
-            document.querySelector("#ssize").innerHTML =  dict.spriteSourceSize.toString(true)
-            document.querySelector("#rect").innerHTML = dict.textureRect
-            document.querySelector("#rot").innerHTML = (dict.textureRotated ? "True" : "False")
-
-            updatePreview()
+            updateInfoAndPreview()
 
             return true
         }
     }
+}
+
+function updateInfoAndPreview() {
+    document.querySelector("#name").innerHTML = currentDict.key
+    document.querySelector("#offset").innerHTML = currentDict.spriteOffset
+    document.querySelector("#size").innerHTML = currentDict.spriteSize.toString(true)
+    document.querySelector("#ssize").innerHTML =  currentDict.spriteSourceSize.toString(true)
+    document.querySelector("#rect").innerHTML = currentDict.textureRect
+    document.querySelector("#rot").innerHTML = (currentDict.textureRotated ? "True" : "False")
+
+    updatePreview()
 }
 
 function updatePreview() {
@@ -412,6 +418,73 @@ function updatePreview() {
     }
 }
 
+let animationSpeed = Number(document.querySelector("#animate-speed").value)
+function checkShouldAnimate(first) {
+    if (currentDict == null) return
+    if (!document.querySelector("#animate").checked) return
+
+    // see if any other sprites exist that are the in the same animation
+    let regex = new RegExp(/^(.+?)_(\d\d\d)\.png$/)
+    let match = currentDict.key.match(regex)
+    let name = match[1]
+    let index = Number(match[2])
+
+    if (first) {
+        // skip this iter, dont immediately overwrite sprite, set currentAnimationName
+        currentAnimationName = name
+        setTimeout(() => {
+            checkShouldAnimate(false)
+        }, animationSpeed)
+        return
+    }
+
+    if (name != currentAnimationName) return
+
+    console.log("finding next %s (%s to %s?)...", name, index, index+1)
+
+    let potentialResetSprite = null
+    let found = false
+    for (let dict of currentCombo.plist) {
+        let match = dict.key.match(regex)
+        if (match == null) continue
+
+        if (match[1] == name) {
+            // ah ha, found another
+            let newIndex = Number(match[2])
+
+            if (newIndex == index + 1) {
+                // this is the next one
+                console.log("found")
+                currentDict = dict
+                found = true
+                break
+            }
+
+            if (newIndex == 1) {
+                console.log("found potential reset")
+                // this could potentially be the next one to wrap around to
+                potentialResetSprite = dict
+            }
+        }
+    }
+
+    if (!found && potentialResetSprite != null) {
+        // nothing found but we have a reset sprite
+        currentDict = potentialResetSprite
+        found = true
+    }
+
+    if (found) {
+        // update shit
+        console.log("found")
+        updateInfoAndPreview()
+    }
+
+    setTimeout(() => {
+        checkShouldAnimate(false)
+    }, animationSpeed)
+}
+
 /**
  * @returns {OffscreenCanvas}
  */
@@ -475,8 +548,25 @@ document.querySelector("#quality-select").addEventListener("change", () => {upda
 document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
 document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
 document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
-//                                                                                                      shoddy way of doing this but whatever i guess
-document.querySelector("#canvas").addEventListener("click", event => { currentDictLocked = tickCursor(event) ? !currentDictLocked : false })
+document.querySelector("#canvas").addEventListener("click", event => {
+    // returns whether the cursor is hovering over something
+    let ret = tickCursor(event)
+    if (ret) {
+        currentDictLocked = !currentDictLocked
+        checkShouldAnimate(true)
+    }
+    // if not hovering over anything, unlock
+    else currentDictLocked = false
+})
+
+document.querySelector("#animate").addEventListener("change", () => {
+    checkShouldAnimate(false)
+})
+
+document.querySelector("#animate-speed").addEventListener("input", () => {
+    animationSpeed = Number(document.querySelector("#animate-speed").value)
+})
+
 
 window.addEventListener("resize", updateCanvasSize)
 updateCanvasSize()
