@@ -421,6 +421,7 @@ function updatePreview() {
 let animationSpeed = Number(document.querySelector("#animate-speed").value)
 function checkShouldAnimate(first) {
     if (currentDict == null) return
+    if (!currentDictLocked) return
     if (!document.querySelector("#animate").checked) return
 
     // see if any other sprites exist that are the in the same animation
