@@ -11,13 +11,13 @@
 
         <link rel="shortcut icon" href="./favicon.png" type="image/png">
 
-        <title>GdImageBrowser</title>
+        <title>GDImageBrowser</title>
     </head>
     <body>
         <main>
             <section class="white-overlay">
                 <span class="title-wrapper">
-                    <h1>GdImageBrowser</h1>
+                    <h1>GDImageBrowser</h1>
                     <a href="https://github.com/undefined06855/GDImageBrowser" target="_blank">
                         <img src="./assets/web/gh-icon.png" class="gh-icon" />
                     </a>
@@ -54,7 +54,11 @@
                 <div>Rotated: <span class="mono" id="rot"></span></div>
                 <hr/>
                 
-                <div>Click to select, right click to copy, double click to download an image.</div>
+                <details>
+                    <summary>Controls</summary>
+                    Click to select, right click to copy, double click to download. Use the dropdowns at the top left to change the version, spritesheet and quality.
+                </details>
+
                 <div><input id="animate" type="checkbox" checked /><label for="animate"> Animate? (if possible)</label></div>
                 <div><input id="animate-speed" type="range" min="20" max="100" value="50" /><label for="animate-speed"> Animation Speed</label></div>
                 <h5 id="loader" style="display: none">(loading)</h5>

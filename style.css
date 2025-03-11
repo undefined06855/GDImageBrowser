@@ -33,6 +33,10 @@ main {
     background-blend-mode: multiply;
 }
 
+summary {
+    cursor: pointer;
+}
+
 .white-overlay {
     background: #ffffff8a;
     background: linear-gradient(90deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
@@ -41,9 +45,7 @@ main {
 section {
     padding: 5px;
     padding-right: calc(var(--blur-width) + 5px);
-}
 
-section {
     position: fixed;
     left: 0;
     top: 0;
