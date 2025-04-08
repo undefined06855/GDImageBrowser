@@ -96,3 +96,29 @@ canvas#preview {
     content: "(None)";
     font-size: 16px;
 }
+
+#search-wrap {
+    position: fixed;
+    top: -70px;
+    right: 5px;
+
+    transition: translate .2s linear;
+
+    background-color: #ffffff8a;
+}
+
+#search-wrap:has(#search-bar:focus) {
+    translate: 0px 75px;
+}
+
+#search-bar {
+    width: 250px;
+    height: 30px;
+
+    padding: 5px;
+}
+
+#search-info {
+    width: 250px;
+    padding: 5px;
+}

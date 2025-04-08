@@ -533,9 +533,31 @@ function copyPart(event) {
     })
 }
 
+let currentSearchTerm = ""
+let currentSearchIndex = 0
+
 function searchCurrentCombo(name) {
-    if (!currentCombo) return undefined
-    return currentCombo.plist.find(dict => dict.key.startsWith(name))
+    if (!currentCombo) return {
+        result: undefined,
+        results: 0,
+        current: 0
+    }
+
+    if (name == currentSearchTerm) {
+        currentSearchIndex++
+    } else {
+        currentSearchIndex = 0
+    }
+    
+    currentSearchTerm = name
+
+    console.log(currentSearchIndex, currentSearchTerm)
+    let results = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(name.toLowerCase()))
+    return {
+        result: results[currentSearchIndex % results.length],
+        results: results.length,
+        current: currentSearchIndex % results.length
+    }
 }
 
 function populateSelectionFromURL() {
@@ -573,7 +595,7 @@ function populateSelectionFromURL() {
 
         if (term == "!") {
             // selected dict
-            currentDict = searchCurrentCombo(part)
+            currentDict = searchCurrentCombo(part).result
             console.log(currentDict)
             if (currentDict) currentDictLocked = true
             continue
@@ -588,13 +610,6 @@ function populateSelectionFromURL() {
 // -----------------------------------------------------------------------------
 
 (async () => {
-    populateSelectionFromURL() // version + resolution
-    populateSheetSelect()
-    populateSelectionFromURL() // sheet
-    await updateCurrentCombo() // sets currentCombo
-    populateSelectionFromURL() // currentDict
-    draw()
-
     document.querySelector("#version-select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
     document.querySelector("#sheet-select").addEventListener("change", () => {updateCurrentCombo()})
     document.querySelector("#quality-select").addEventListener("change", () => {updateCurrentCombo()})
@@ -624,4 +639,53 @@ function populateSelectionFromURL() {
 
     window.addEventListener("resize", updateCanvasSize)
     updateCanvasSize()
+
+    let searchBar = document.querySelector("#search-bar")
+    // use keyup instead of input to capture enter key as well
+    searchBar.addEventListener("keyup", event => {
+        let searchTerm = searchBar.value
+
+        // unrelated key pressed
+        if (!event.code.startsWith("Key") && event.code != "Enter") {
+            return
+        }
+
+        if (searchTerm == "") {
+            currentDictLocked = false
+            return
+        }
+
+        let result = searchCurrentCombo(searchTerm)
+
+        if (result) {
+            currentDictLocked = true
+            currentDict = result.result
+            if (currentDict) {
+                updateInfoAndPreview()
+                document.querySelector("#search-info").innerText = `Result ${result.current + 1} of ${result.results}`
+            } else {
+                document.querySelector("#search-info").innerText = `No results!`
+            }
+        }
+    })
+
+    window.addEventListener("keydown", event => {
+        if (event.code == "KeyF" && event.ctrlKey) {
+            event.preventDefault()
+            searchBar.value = ""
+            searchBar.focus()
+        }
+
+        if (event.code == "Escape") {
+            searchBar.value = ""
+            searchBar.blur()
+        }
+    })
+
+    populateSelectionFromURL() // version + resolution
+    populateSheetSelect()
+    populateSelectionFromURL() // sheet
+    await updateCurrentCombo() // sets currentCombo
+    populateSelectionFromURL() // currentDict
+    draw()
 })()
