@@ -1,6 +1,6 @@
 // balls code
 
-/** @type Array<{PlistAndImageComboDeal}> */
+/** @type {Array<PlistAndImageComboDeal>} */
 let loadedStuff = []
 
 let loading = 0
@@ -17,7 +17,7 @@ let currentAnimationName = ""
 
 function getSelectedVersion() { return Number(document.querySelector("#version-select").value) ?? Version.V22074 }
 function getSelectedSheet() { return document.querySelector("#sheet-select").value }
-function getSelectedResolution() { return Number(document.querySelector("#quality-select").value) ?? Resolution.uhd}
+function getSelectedResolution() { return Number(document.querySelector("#quality-select").value) ?? Resolution.uhd }
 
 function getPath(name, resolution, version, type) {
     let versionString
@@ -104,10 +104,11 @@ function populateSheetSelect() {
     let isLegacy = false
     let notes = ""
 
+    let version = getSelectedVersion()
     if (
-        getSelectedVersion() == Version.V2204
-        || getSelectedVersion() == Version.V22073
-        || getSelectedVersion() == Version.V22074
+        version == Version.V2204
+        || version == Version.V22073
+        || version == Version.V22074
     ) {
         sheets = [
             "DungeonSheet",
@@ -132,7 +133,7 @@ function populateSheetSelect() {
             "TreasureRoomSheet",
             "WorldSheet",
         ]
-    } else if (getSelectedVersion() == Version.V2113) {
+    } else if (version == Version.V2113) {
         sheets = [
             "DungeonSheet",
             "FireSheet_01",
@@ -147,7 +148,7 @@ function populateSheetSelect() {
             "SecretSheet",
             "WorldSheet",
         ]
-    } else if (getSelectedVersion() == Version.VLitePinkMoreGames) {
+    } else if (version == Version.VLitePinkMoreGames) {
         sheets = [
             "GJ_GameSheet",
             "GJ_LaunchSheet"
@@ -157,7 +158,7 @@ function populateSheetSelect() {
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
     }
 
-    if (getSelectedVersion() == Version.V22073) {
+    if (version == Version.V22073) {
         notes = "Pretty sure this is identical to 2.2074 but it was on my laptop so might as well archive it."
     }
 
@@ -175,18 +176,18 @@ function populateSheetSelect() {
     versionNotesElement.innerHTML = notes
 
     // remove or add uhd for old sheets
-    let defintionSelector = document.querySelector("#quality-select")
-    if (defintionSelector.children.length == 2 && noUhd == false) {
+    let definitionSelector = document.querySelector("#quality-select")
+    if (definitionSelector.children.length == 2 && noUhd == false) {
         let uhdOption = document.createElement("option")
         uhdOption.innerText = "UHD"
         uhdOption.value = Resolution.uhd
         uhdOption.selected = true // any truthy value
-        defintionSelector.appendChild(uhdOption)
-    } else if (defintionSelector.children.length == 3 && noUhd) {
-        let uhdOption = Array.from(defintionSelector.querySelectorAll("option")).find(el => el.value == Resolution.uhd)
-        defintionSelector.removeChild(uhdOption)
+        definitionSelector.appendChild(uhdOption)
+    } else if (definitionSelector.children.length == 3 && noUhd) {
+        let uhdOption = Array.from(definitionSelector.querySelectorAll("option")).find(el => el.value == Resolution.uhd)
+        definitionSelector.removeChild(uhdOption)
 
-        let hdOption = Array.from(defintionSelector.querySelectorAll("option")).find(el => el.value == Resolution.hd)
+        let hdOption = Array.from(definitionSelector.querySelectorAll("option")).find(el => el.value == Resolution.hd)
         hdOption.selected = true // any truthy
     }
 
@@ -441,7 +442,6 @@ function checkShouldAnimate(first) {
 
     if (name != currentAnimationName) return
 
-    console.log("finding next %s (%s to %s?)...", name, index, index+1)
 
     let potentialResetSprite = null
     let found = false
@@ -455,14 +455,12 @@ function checkShouldAnimate(first) {
 
             if (newIndex == index + 1) {
                 // this is the next one
-                console.log("found")
                 currentDict = dict
                 found = true
                 break
             }
 
             if (newIndex == 1) {
-                console.log("found potential reset")
                 // this could potentially be the next one to wrap around to
                 potentialResetSprite = dict
             }
@@ -477,7 +475,6 @@ function checkShouldAnimate(first) {
 
     if (found) {
         // update shit
-        console.log("found")
         updateInfoAndPreview()
     }
 
@@ -536,38 +533,95 @@ function copyPart(event) {
     })
 }
 
+function searchCurrentCombo(name) {
+    if (!currentCombo) return undefined
+    return currentCombo.plist.find(dict => dict.key.startsWith(name))
+}
+
+function populateSelectionFromURL() {
+    let hash = new URL(window.location.href).hash
+    if (hash == "") return
+    
+    let sheet = null
+    let resolution = null
+    let version = null
+
+    let split = hash.split(/(?=[#@\-!])/)
+    console.log(split)
+
+    for (let part of split) {
+        let term = part.charAt(0)
+        part = part.substring(1)
+
+        if (term == "#") {
+            // sheet
+            sheet = part
+            continue
+        }
+
+        if (term == "-") {
+            // resolution
+            resolution = eval(`Resolution.${part}`) ?? Resolution.uhd
+            continue
+        }
+
+        if (term == "@") {
+            // version
+            version = eval(`Version.V${part.replace(".", "")}`) ?? Version.V22074
+            continue
+        }
+
+        if (term == "!") {
+            // selected dict
+            currentDict = searchCurrentCombo(part)
+            console.log(currentDict)
+            if (currentDict) currentDictLocked = true
+            continue
+        }
+    }
+    
+    if (version) document.querySelector("#version-select").value = version
+    if (sheet) document.querySelector("#sheet-select").value = sheet
+    if (resolution) document.querySelector("#quality-select").value = resolution
+}
+
 // -----------------------------------------------------------------------------
 
-populateSheetSelect()
-updateCurrentCombo() // sets currentCombo
-draw()
+(async () => {
+    populateSelectionFromURL() // version + resolution
+    populateSheetSelect()
+    populateSelectionFromURL() // sheet
+    await updateCurrentCombo() // sets currentCombo
+    populateSelectionFromURL() // currentDict
+    draw()
 
-document.querySelector("#version-select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
-document.querySelector("#sheet-select").addEventListener("change", () => {updateCurrentCombo()})
-document.querySelector("#quality-select").addEventListener("change", () => {updateCurrentCombo()})
+    document.querySelector("#version-select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
+    document.querySelector("#sheet-select").addEventListener("change", () => {updateCurrentCombo()})
+    document.querySelector("#quality-select").addEventListener("change", () => {updateCurrentCombo()})
 
-document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
-document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
-document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
-document.querySelector("#canvas").addEventListener("click", event => {
-    // returns whether the cursor is hovering over something
-    let ret = tickCursor(event)
-    if (ret) {
-        currentDictLocked = !currentDictLocked
-        checkShouldAnimate(true)
-    }
-    // if not hovering over anything, unlock
-    else currentDictLocked = false
-})
+    document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
+    document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
+    document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
+    document.querySelector("#canvas").addEventListener("click", event => {
+        // returns whether the cursor is hovering over something
+        let ret = tickCursor(event)
+        if (ret) {
+            currentDictLocked = !currentDictLocked
+            checkShouldAnimate(true)
+        }
+        // if not hovering over anything, unlock
+        else currentDictLocked = false
+    })
 
-document.querySelector("#animate").addEventListener("change", () => {
-    checkShouldAnimate(false)
-})
+    document.querySelector("#animate").addEventListener("change", () => {
+        checkShouldAnimate(false)
+    })
 
-document.querySelector("#animate-speed").addEventListener("input", () => {
-    animationSpeed = Number(document.querySelector("#animate-speed").value)
-})
+    document.querySelector("#animate-speed").addEventListener("input", () => {
+        animationSpeed = Number(document.querySelector("#animate-speed").value)
+    })
 
 
-window.addEventListener("resize", updateCanvasSize)
-updateCanvasSize()
+    window.addEventListener("resize", updateCanvasSize)
+    updateCanvasSize()
+})()
