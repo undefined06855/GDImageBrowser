@@ -580,9 +580,9 @@ function populateSelectionFromURL() {
         }
     }
     
-    if (version) document.querySelector("#version-select").value = version
-    if (sheet) document.querySelector("#sheet-select").value = sheet
-    if (resolution) document.querySelector("#quality-select").value = resolution
+    if (version != null) document.querySelector("#version-select").value = version
+    if (sheet != null) document.querySelector("#sheet-select").value = sheet
+    if (resolution != null) document.querySelector("#quality-select").value = resolution
 }
 
 // -----------------------------------------------------------------------------
