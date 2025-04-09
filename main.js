@@ -730,6 +730,6 @@ function populateSelectionFromURL() {
     populateSelectionFromURL() // sheet after populating options
     await updateCurrentCombo() // currentCombo after being set
     populateSelectionFromURL() // currentDict after combo set
-    updateInfoAndPreview()
+    if (currentDict) updateInfoAndPreview()
     draw()
 })()
