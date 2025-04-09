@@ -551,7 +551,6 @@ function searchCurrentCombo(name) {
     
     currentSearchTerm = name
 
-    console.log(currentSearchIndex, currentSearchTerm)
     let results = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(name.toLowerCase()))
     return {
         result: results[currentSearchIndex % results.length],
@@ -609,6 +608,7 @@ function populateSelectionFromURL() {
 
 // -----------------------------------------------------------------------------
 
+// allow top level await
 (async () => {
     document.querySelector("#version-select").addEventListener("change", () => {populateSheetSelect(); updateCurrentCombo()})
     document.querySelector("#sheet-select").addEventListener("change", () => {updateCurrentCombo()})
@@ -646,12 +646,13 @@ function populateSelectionFromURL() {
         let searchTerm = searchBar.value
 
         // unrelated key pressed
-        if (!event.code.startsWith("Key") && event.code != "Enter") {
+        if (!event.code.startsWith("Key") && event.code != "Enter" && event.code != "Backspace") {
             return
         }
 
         if (searchTerm == "") {
             currentDictLocked = false
+            document.querySelector("#search-info").innerText = "Type to search..."
             return
         }
 
@@ -673,12 +674,17 @@ function populateSelectionFromURL() {
         if (event.code == "KeyF" && event.ctrlKey) {
             event.preventDefault()
             searchBar.value = ""
+            document.querySelector("#search-info").innerText = "Type to search..."
             searchBar.focus()
         }
 
         if (event.code == "Escape") {
-            searchBar.value = ""
-            searchBar.blur()
+            if (searchBar == document.activeElement) {
+                searchBar.value = ""
+                searchBar.blur()
+            } else {
+                currentDictLocked = false
+            }
         }
     })
 
