@@ -65,6 +65,8 @@ section {
     width: calc(var(--section-inner-width) - 15px);
     height: calc(var(--section-inner-width) - 15px);
     margin: 5px;
+
+    position: relative;
 }
 
 #preview-scale {
@@ -73,7 +75,8 @@ section {
     font-size: 18px;
 }
 
-canvas#preview {
+canvas#preview, canvas#preview2 {
+    position: absolute;
     transform-origin: top left;
 }
 
@@ -121,4 +124,8 @@ canvas#preview {
 #search-info {
     width: 250px;
     padding: 5px;
+}
+
+label {
+    user-select: none;
 }

@@ -339,15 +339,22 @@ function updateInfoAndPreview() {
     updatePreview()
 }
 
-function updatePreview() {
-    /** @type HTMLCanvasElement */
-    let canvas = document.querySelector("#preview")
+function updatePreview(useAltCanvas = false) {
+    /** @type {HTMLCanvasElement} */
+    let canvas
+    if (useAltCanvas) {
+        canvas = document.querySelector("#preview2")
+        canvas.style.display = "block"
+    } else {
+        canvas = document.querySelector("#preview")
+        document.querySelector("#preview2").style.display = "none"
+    }
+
     let ctx = canvas.getContext("2d")
 
     if (currentDict == null) {
         return
     }
-
 
     let sourceWidth, sourceHeight
     if (currentDict.textureRotated) {
@@ -416,6 +423,33 @@ function updatePreview() {
 
     if (currentDict.textureRotated) {
         canvas.style.transform += ` translateX(-${sourceWidth}px)`
+    }
+
+    if (document.querySelector("#include-offset").checked) {
+        if (currentDict.textureRotated) {
+            canvas.style.transform += ` translate(${currentDict.spriteOffset.x}px, ${currentDict.spriteOffset.y}px)`
+        } else {
+            canvas.style.transform += ` translate(${currentDict.spriteOffset.y}px, ${currentDict.spriteOffset.x}px)`
+        }
+    }
+
+    if (!useAltCanvas 
+        && document.querySelector("#find-portal").checked 
+        && currentDict.key.startsWith("portal_")
+        && !currentDict.key.includes("extra")) {
+        let otherName
+        if (currentDict.key.includes("front")) otherName = currentDict.key.replace("front", "back")
+        else otherName = currentDict.key.replace("back", "front")
+
+        let other = searchCurrentCombo(otherName, true)
+        if (other.result) {
+            let prevDict = currentDict
+            currentDict = other.result
+            updatePreview(true)
+            currentDict = prevDict
+        } else {
+            console.log("portal other side not found!")
+        }
     }
 }
 
@@ -536,7 +570,7 @@ function copyPart(event) {
 let currentSearchTerm = ""
 let currentSearchIndex = 0
 
-function searchCurrentCombo(name) {
+function searchCurrentCombo(name, exact = false) {
     if (!currentCombo) return {
         result: undefined,
         results: 0,
@@ -551,7 +585,10 @@ function searchCurrentCombo(name) {
     
     currentSearchTerm = name
 
-    let results = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(name.toLowerCase()))
+    let results
+    if (exact) results = currentCombo.plist.filter(dict => dict.key == name)
+    else results = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(name.toLowerCase()))
+    
     return {
         result: results[currentSearchIndex % results.length],
         results: results.length,
@@ -688,10 +725,11 @@ function populateSelectionFromURL() {
         }
     })
 
-    populateSelectionFromURL() // version + resolution
+    populateSelectionFromURL() // version + resolution before inital select populate
     populateSheetSelect()
-    populateSelectionFromURL() // sheet
-    await updateCurrentCombo() // sets currentCombo
-    populateSelectionFromURL() // currentDict
+    populateSelectionFromURL() // sheet after populating options
+    await updateCurrentCombo() // currentCombo after being set
+    populateSelectionFromURL() // currentDict after combo set
+    updateInfoAndPreview()
     draw()
 })()
