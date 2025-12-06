@@ -633,7 +633,7 @@ function populateSelectionFromURL() {
 
         if (term == "@") {
             // version
-            version = eval(`Version.V${part.replace(".", "")}`) ?? Version.V22074
+            version = eval(`Version.V${part.replace(/\./g, "")}`) ?? Version.V22074
             continue
         }
 
