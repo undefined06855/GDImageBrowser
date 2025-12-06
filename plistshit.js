@@ -52,12 +52,13 @@ class PlistDict {
 
         if (format == 3) {
             // post 2.0
+            const offset = plistDictElement.children[1].tagName == "array" ? 2 : 0
             //this.aliases = plistDictElement.children[1].innerHTML
-            this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
-            this.spriteSize = new PlistVector(plistDictElement.children[5].innerHTML)
-            this.spriteSourceSize = new PlistVector(plistDictElement.children[7].innerHTML)
-            this.textureRect = new PlistRect(plistDictElement.children[9].innerHTML)
-            this.textureRotated = plistDictElement.children[11].tagName == "true"
+            this.spriteOffset = new PlistVector(plistDictElement.children[offset + 1].innerHTML)
+            this.spriteSize = new PlistVector(plistDictElement.children[offset + 3].innerHTML)
+            this.spriteSourceSize = new PlistVector(plistDictElement.children[offset + 5].innerHTML)
+            this.textureRect = new PlistRect(plistDictElement.children[offset + 7].innerHTML)
+            this.textureRotated = plistDictElement.children[offset + 9].tagName == "true"
         } else {
             // pre 2.0 i think?
             this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
