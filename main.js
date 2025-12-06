@@ -33,6 +33,7 @@ function getPath(name, resolution, version, type) {
     else if (version == Version.V22073) versionString = "2.2073"
     else if (version == Version.V22074) versionString = "2.2074"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
+    else if (version == Version.GeodeV4100) versionString = "geode-4.10.0"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
@@ -133,9 +134,6 @@ function populateSheetSelect() {
             "TreasureRoomSheet",
             "WorldSheet",
         ]
-        if (version == Version.V22074) {
-            sheets.push("geode.loader/APISheet", "geode.loader/BlankSheet", "geode.loader/EventSheet", "geode.loader/LogoSheet")
-        }
     } else if (version == Version.V2113) {
         sheets = [
             "DungeonSheet",
@@ -159,6 +157,13 @@ function populateSheetSelect() {
         noUhd = true
         isLegacy = true
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
+    } else if (version == Version.GeodeV4100) {
+        sheets = [
+            "APISheet",
+            "BlankSheet",
+            "EventSheet",
+            "LogoSheet"
+        ]
     }
 
     if (version == Version.V22073) {
