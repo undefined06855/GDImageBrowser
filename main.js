@@ -133,6 +133,9 @@ function populateSheetSelect() {
             "TreasureRoomSheet",
             "WorldSheet",
         ]
+        if (version == Version.V22074) {
+            sheets.push("geode.loader/APISheet", "geode.loader/BlankSheet", "geode.loader/EventSheet", "geode.loader/LogoSheet")
+        }
     } else if (version == Version.V2113) {
         sheets = [
             "DungeonSheet",
