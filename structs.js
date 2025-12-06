@@ -12,7 +12,7 @@ const Version = {
     V2204: 1,
     V22073: 2,
     V22074: 3,
-    GeodeV4100: 4
+    VGeode4100: 4
 }
 
 /** @enum */
