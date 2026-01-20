@@ -1,7 +1,19 @@
-:root {
-    --section-width: 30vw;
-    --blur-width: 20px;
-    --section-inner-width: calc(var(--section-width) - var(--blur-width))
+@media (max-width: 700px) {
+    /* mobile */
+    :root {
+        --section-width: 30vh;
+        --blur-width: 20px;
+        --section-inner-width: calc(var(--section-width) - var(--blur-width))
+    }
+}
+
+@media (min-width: 700px) {
+    /* pc */
+    :root {
+        --section-width: 30vw;
+        --blur-width: 20px;
+        --section-inner-width: calc(var(--section-width) - var(--blur-width))
+    }
 }
 
 * {
@@ -37,37 +49,82 @@ summary {
     cursor: pointer;
 }
 
-.white-overlay {
-    background: #ffffff8a;
-    background: linear-gradient(90deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
+@media (min-width: 700px) {
+    /* pc */
+    section {
+        padding: 5px;
+        padding-right: calc(var(--blur-width) + 5px);
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: var(--section-width);
+        height: 100%;
+    }
+
+    #canvas-wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: calc(100vw - var(--section-width));
+        height: 100%;
+    }
+
+    #preview-wrapper {
+        width: calc(var(--section-inner-width) - 15px);
+        height: calc(var(--section-inner-width) - 15px);
+        margin: 5px;
+
+        position: relative;
+    }
+
+    canvas#canvas {
+        width: 100%;
+    }
+
+    .white-overlay {
+        background: #ffffff8a;
+        background: linear-gradient(90deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
+    }
 }
 
-section {
-    padding: 5px;
-    padding-right: calc(var(--blur-width) + 5px);
+@media (max-width: 700px) {
+    /* mobile */
+    section {
+        padding: 5px;
+        padding-bottom: calc(var(--blur-width) + 5px);
 
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: var(--section-width);
-    height: 100%
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: var(--section-width);
+        width: 100%;
+
+        overflow-y: scroll;
+    }
+
+    #canvas-wrapper {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - var(--section-width));
+    }
+
+    canvas#canvas {
+        height: 100%;
+    }
+
+    #preview-wrapper, #preview-scale {
+        display: none;
+    }
+
+    .white-overlay {
+        background: #ffffff8a;
+        background: linear-gradient(180deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
+    }
 }
 
-#canvas-wrapper {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100vw - var(--section-width));
-    height: 100%;
-}
-
-#preview-wrapper {
-    width: calc(var(--section-inner-width) - 15px);
-    height: calc(var(--section-inner-width) - 15px);
-    margin: 5px;
-
-    position: relative;
-}
 
 #preview-scale {
     position: absolute;
@@ -128,4 +185,15 @@ canvas#preview, canvas#preview2 {
 
 label {
     user-select: none;
+}
+
+#physical-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#physical-buttons > button {
+    flex: 1 1 auto;
+    height: 30px;
 }

@@ -31,7 +31,7 @@
             gtag('js', new Date());
             gtag('config', 'G-8ZG03L0CXR');
         </script>
-        
+
         <main>
             <section class="white-overlay">
                 <span class="title-wrapper">
@@ -65,22 +65,27 @@
                 <div id="version-notes"></div>
 
                 <hr/>
-                <div>Name: <span class="mono" id="name"></span></div>
-                <div>Offset: <span class="mono" id="offset"></span></div>
-                <div>Size: <span class="mono" id="size"></span></div>
-                <div>Source size: <span class="mono" id="ssize"></span></div>
-                <div>Rect: <span class="mono" id="rect"></span></div>
-                <div>Rotated: <span class="mono" id="rot"></span></div>
+                <div><label>Name: </label><span class="mono" id="name"></span></div>
+                <div><label>Offset: </label><span class="mono" id="offset"></span></div>
+                <div><label>Size: </label><span class="mono" id="size"></span></div>
+                <div><label>Source s</label>ize: <span class="mono" id="ssize"></span></div>
+                <div><label>Rect: </label><span class="mono" id="rect"></span></div>
+                <div><label>Rotated: </label><span class="mono" id="rot"></span></div>
+                <div id="physical-buttons">
+                    <button id="copy">Copy (name)</button>
+                    <button id="copy-image">Copy (image)</button>
+                    <button id="download">Download</button>
+                </div>
                 <hr/>
-                
-                <details>
+
+                <details open>
                     <summary>Controls</summary>
                     Click to select, right click to copy, double click to download.
                     Use the dropdowns at the top left to change the version, spritesheet and quality.
                     Press Ctrl+F to search.
                 </details>
 
-                <div><input id="animate" type="checkbox" checked /><label for="animate"> Animate? (if possible)</label></div>
+                <div><input id="animate" type="checkbox" /><label for="animate"> Animate? (if possible)</label></div>
                 <div><input id="animate-speed" type="range" min="50" max="200" value="100" /><label for="animate-speed"> Animation Speed</label></div>
                 <div><input id="include-offset" type="checkbox" /><label for="include-offset"> Consider sprite offset</label></div>
                 <div><input id="find-portal" type="checkbox" /><label for="find-portal"> Find rest of portal sprites (very broken)</label></div>

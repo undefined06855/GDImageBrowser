@@ -32,6 +32,7 @@ function getPath(name, resolution, version, type) {
     else if (version == Version.V2204) versionString = "2.204"
     else if (version == Version.V22073) versionString = "2.2073"
     else if (version == Version.V22074) versionString = "2.2074"
+    else if (version == Version.V2208) versionString = "2.208"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
 
@@ -42,9 +43,9 @@ function getPath(name, resolution, version, type) {
 }
 
 /**
- * @param {string} name 
- * @param {number} resolution 
- * @param {number} version 
+ * @param {string} name
+ * @param {number} resolution
+ * @param {number} version
  * @returns {Promise<PlistAndImageComboDeal>}
  */
 async function getImageAndPlist(name, resolution, version) {
@@ -58,7 +59,7 @@ async function getImageAndPlist(name, resolution, version) {
         } else {
             // no :(
             console.log("need to load %s at %s (%s)", name, resolution, version)
-            
+
             let imagePath = getPath(name, resolution, version, FileType.Image)
             let plistPath = getPath(name, resolution, version, FileType.Plist)
 
@@ -104,12 +105,14 @@ function populateSheetSelect() {
     let noUhd = false
     let isLegacy = false
     let notes = ""
+    let defaultSheet = ""
 
     let version = getSelectedVersion()
     if (
         version == Version.V2204
         || version == Version.V22073
         || version == Version.V22074
+        || version == Version.V2208
     ) {
         sheets = [
             "DungeonSheet",
@@ -134,6 +137,8 @@ function populateSheetSelect() {
             "TreasureRoomSheet",
             "WorldSheet",
         ]
+
+        defaultSheet = "GJ_GameSheet03"
     } else if (version == Version.V2113) {
         sheets = [
             "DungeonSheet",
@@ -149,6 +154,8 @@ function populateSheetSelect() {
             "SecretSheet",
             "WorldSheet",
         ]
+
+        defaultSheet = "GJ_GameSheet03"
     } else if (version == Version.VLitePinkMoreGames) {
         sheets = [
             "GJ_GameSheet",
@@ -157,6 +164,7 @@ function populateSheetSelect() {
         noUhd = true
         isLegacy = true
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
+        defaultSheet = "GJ_GameSheet"
     } else if (version == Version.VGeode4100) {
         sheets = [
             "APISheet",
@@ -164,6 +172,8 @@ function populateSheetSelect() {
             "EventSheet",
             "LogoSheet"
         ]
+
+        defaultSheet = "APISheet"
     }
 
     if (version == Version.V22073) {
@@ -206,14 +216,21 @@ function populateSheetSelect() {
     } else {
         size.classList.remove("legacy-doesnt-exist")
     }
+
+    // default
+    document.querySelector("#sheet-select").value = defaultSheet
 }
 
 function updateCanvasSize() {
     let canvas = document.querySelector("#canvas")
     let canvasWrap = document.querySelector("#canvas-wrapper")
     let rect = canvasWrap.getBoundingClientRect()
-    canvas.width = rect.width
-    canvas.height = rect.height
+
+    // thanks prevter
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = rect.width * dpr
+    canvas.height = rect.height * dpr
+
     updatePreview()
 }
 
@@ -228,7 +245,7 @@ function draw() {
     let ctx = canvas.getContext("2d")
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    
+
     // this also handles showing #loader
     if (loading > 0) {
         document.querySelector("#loader").style.display = "block"
@@ -242,7 +259,7 @@ function draw() {
         return
     }
 
-    if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height) 
+    if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height)
         ctx.drawImage(currentCombo.image, 0, 0, canvas.width, (canvas.width / currentCombo.image.width) * currentCombo.image.height)
     else
         ctx.drawImage(currentCombo.image, 0, 0, (canvas.height / currentCombo.image.height) * currentCombo.image.width, canvas.height)
@@ -269,7 +286,7 @@ function draw() {
         ctx.strokeStyle = "red"
         ctx.lineWidth = 2
         ctx.strokeRect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, width, height)
-        
+
         if (currentDictLocked) {
             // dont tell anyone i borrowed the idea from colon
             ctx.beginPath()
@@ -294,7 +311,7 @@ function draw() {
 }
 
 // runs on mousemove
-/** 
+/**
  * @param {MouseEvent} event
  * @returns {boolean} whether the mouse is hovering something
  */
@@ -306,8 +323,13 @@ function tickCursor(event) {
     let mx = event.pageX - rect.left
     let my = event.pageY - rect.top
 
+    // thanks prevter
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+    mx *= dpr
+    my *= dpr
+
     let scale
-    
+
     if (canvas.width / canvas.height < currentCombo.image.width / currentCombo.image.height)
         scale = canvas.width / currentCombo.image.width
     else
@@ -441,8 +463,8 @@ function updatePreview(useAltCanvas = false) {
         }
     }
 
-    if (!useAltCanvas 
-        && document.querySelector("#find-portal").checked 
+    if (!useAltCanvas
+        && document.querySelector("#find-portal").checked
         && currentDict.key.startsWith("portal_")
         && !currentDict.key.includes("extra")) {
         let otherName
@@ -531,7 +553,7 @@ function checkShouldAnimate(first) {
 function unrotatePreviewCanvas() {
     /** @type {HTMLCanvasElement} */
     let canvas = document.querySelector("#preview")
-    
+
     let rotated = canvas.style.transform.includes("rotate")
 
     if (rotated) {
@@ -590,13 +612,13 @@ function searchCurrentCombo(name, exact = false) {
     } else {
         currentSearchIndex = 0
     }
-    
+
     currentSearchTerm = name
 
     let results
     if (exact) results = currentCombo.plist.filter(dict => dict.key == name)
     else results = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(name.toLowerCase()))
-    
+
     return {
         result: results[currentSearchIndex % results.length],
         results: results.length,
@@ -607,7 +629,7 @@ function searchCurrentCombo(name, exact = false) {
 function populateSelectionFromURL() {
     let hash = new URL(window.location.href).hash
     if (hash == "") return
-    
+
     let sheet = null
     let resolution = null
     let version = null
@@ -645,7 +667,7 @@ function populateSelectionFromURL() {
             continue
         }
     }
-    
+
     if (version != null) document.querySelector("#version-select").value = version
     if (sheet != null) document.querySelector("#sheet-select").value = sheet
     if (resolution != null) document.querySelector("#quality-select").value = resolution
@@ -679,6 +701,18 @@ function populateSelectionFromURL() {
 
     document.querySelector("#animate-speed").addEventListener("input", () => {
         animationSpeed = Number(document.querySelector("#animate-speed").value)
+    })
+
+    document.querySelector("#copy").addEventListener("click", () => {
+        navigator.clipboard.writeText(currentDict.key)
+    })
+
+    document.querySelector("#copy-image").addEventListener("click", () => {
+        copyPart({ preventDefault: () => {} })
+    })
+
+    document.querySelector("#download").addEventListener("click", () => {
+        downloadPart({ preventDefault: () => {} })
     })
 
 

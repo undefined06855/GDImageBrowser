@@ -8,11 +8,14 @@ const Resolution = {
 /** @enum */
 const Version = {
     VLitePinkMoreGames: -1,
+    
     V2113: 0,
     V2204: 1,
     V22073: 2,
     V22074: 3,
-    VGeode4100: 4
+    V2208: 4,
+
+    VGeode4100: 1000
 }
 
 /** @enum */
@@ -24,11 +27,11 @@ const FileType = {
 // this is a great name and you cannot convince me otherwise
 class PlistAndImageComboDeal {
     /**
-     * @param {string} name 
-     * @param {number} resolution 
-     * @param {number} version 
-     * @param {HTMLImageElement} imageElement 
-     * @param {Array<PlistDict>} plistDictArray 
+     * @param {string} name
+     * @param {number} resolution
+     * @param {number} version
+     * @param {HTMLImageElement} imageElement
+     * @param {Array<PlistDict>} plistDictArray
      */
     constructor(name, resolution, version, imageElement, plistDictArray) {
         this.name = name
