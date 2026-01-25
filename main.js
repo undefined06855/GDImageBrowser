@@ -33,6 +33,7 @@ function getPath(name, resolution, version, type) {
     else if (version == Version.V22073) versionString = "2.2073"
     else if (version == Version.V22074) versionString = "2.2074"
     else if (version == Version.V2208) versionString = "2.208"
+    else if (version == Version.V22081) versionString = "2.2081"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
 
@@ -113,6 +114,7 @@ function populateSheetSelect() {
         || version == Version.V22073
         || version == Version.V22074
         || version == Version.V2208
+        || version == Version.V22081
     ) {
         sheets = [
             "DungeonSheet",
