@@ -667,7 +667,8 @@ function populateSelectionFromURL() {
 
         if (term == "!") {
             // selected dict
-            currentDict = searchCurrentCombo(part.replace("_", "/")).result
+            console.log(part.replace("_", "/"))
+            currentDict = searchCurrentCombo(part.replace("+", "/").replaceAll("_", "-")).result
             console.log(currentDict)
             if (currentDict) currentDictLocked = true
             continue
@@ -731,7 +732,7 @@ function populateSelectionFromURL() {
         else if (currentCombo.version == Version.VGeode520) versionString = "Geode5.2.0"
 
         navigator.clipboard.writeText(
-            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${currentDict ? `!${currentDict.key.replace("/", "_")}` : ""}`
+            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${currentDict ? `!${currentDict.key.replace("/", "+").replaceAll("-", "_")}` : ""}`
         )
     })
 
