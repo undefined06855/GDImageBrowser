@@ -58,7 +58,7 @@ summary {
         position: fixed;
         left: 0;
         top: 0;
-        width: var(--section-width);
+        width: calc(var(--section-width) - 5px);
         height: 100%;
     }
 
@@ -84,7 +84,7 @@ summary {
 
     .white-overlay {
         background: #ffffff8a;
-        background: linear-gradient(90deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
+        background: linear-gradient(90deg, #ffffff8a var(--section-inner-width), #ffffff00 calc(var(--section-width) - 5px));
     }
 }
 
@@ -97,7 +97,7 @@ summary {
         position: fixed;
         left: 0;
         top: 0;
-        height: var(--section-width);
+        height: calc(var(--section-width) - 5px);
         width: 100%;
 
         overflow-y: scroll;
@@ -108,7 +108,7 @@ summary {
         bottom: 0;
         right: 0;
         width: 100vw;
-        height: calc(100vh - var(--section-width));
+        height: calc(100dvh - var(--section-width));
     }
 
     canvas#canvas {
@@ -121,7 +121,7 @@ summary {
 
     .white-overlay {
         background: #ffffff8a;
-        background: linear-gradient(180deg, #ffffff8a var(--section-inner-width), #ffffff00 var(--section-width));
+        background: linear-gradient(180deg, #ffffff8a var(--section-inner-width), #ffffff00 calc(var(--section-width) - 5px));
     }
 }
 
