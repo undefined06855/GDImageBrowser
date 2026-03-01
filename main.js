@@ -657,7 +657,7 @@ function populateSelectionFromURL() {
 
         if (term == "@") {
             // version
-            version = eval(`Version.V${part.replace(/\./g, "")}`) ?? Version.V22074
+            version = eval(`Version.V${part.replace(/\./g, "")}`) ?? Version.V22081
             continue
         }
 
@@ -707,6 +707,27 @@ function populateSelectionFromURL() {
 
     document.querySelector("#copy").addEventListener("click", () => {
         navigator.clipboard.writeText(currentDict.key)
+    })
+
+    document.querySelector("#copy-url").addEventListener("click", () => {
+        let resolutionString
+        if (currentCombo.resolution == Resolution.hd) resolutionString = "hd"
+        else if (currentCombo.resolution == Resolution.sd) resolutionString = "sd"
+        else if (currentCombo.resolution == Resolution.uhd) resolutionString = "uhd"
+
+        let versionString
+        if (currentCombo.version == Version.V2113) versionString = "2.113"
+        else if (currentCombo.version == Version.V2204) versionString = "2.204"
+        else if (currentCombo.version == Version.V22073) versionString = "2.2073"
+        else if (currentCombo.version == Version.V22074) versionString = "2.2074"
+        else if (currentCombo.version == Version.V2208) versionString = "2.208"
+        else if (currentCombo.version == Version.V22081) versionString = "2.2081"
+        else if (currentCombo.version == Version.VLitePinkMoreGames) versionString = "LitePinkMoreGames"
+        else if (currentCombo.version == Version.VGeode4100) versionString = "Geode4.10.0"
+
+        navigator.clipboard.writeText(
+            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${currentDict ? `!${currentDict.key}` : ""}`
+        )
     })
 
     document.querySelector("#copy-image").addEventListener("click", () => {

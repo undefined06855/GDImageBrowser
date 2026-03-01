@@ -190,10 +190,11 @@ label {
 #physical-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
 #physical-buttons > button {
-    flex: 1 1 auto;
     height: 30px;
+    flex: 1 1 160px;
 }
