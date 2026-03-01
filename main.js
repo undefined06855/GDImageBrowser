@@ -15,7 +15,7 @@ let currentDictLocked = false
 
 let currentAnimationName = ""
 
-function getSelectedVersion() { return Number(document.querySelector("#version-select").value) ?? Version.V22074 }
+function getSelectedVersion() { return Number(document.querySelector("#version-select").value) ?? Version.V22081 }
 function getSelectedSheet() { return document.querySelector("#sheet-select").value }
 function getSelectedResolution() { return Number(document.querySelector("#quality-select").value) ?? Resolution.uhd }
 
@@ -36,6 +36,7 @@ function getPath(name, resolution, version, type) {
     else if (version == Version.V22081) versionString = "2.2081"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
+    else if (version == Version.VGeode520) versionString = "geode-5.2.0"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
@@ -167,7 +168,10 @@ function populateSheetSelect() {
         isLegacy = true
         notes = `A GD Lite version that was only released for 14 days - it had a pink More Games button that did nothing when pressed, see it in the middle of GJ_GameSheet! See <a href="https://twitter.com/Misabr0penguin/status/1623083029554950145" target="_blank">this twitter post.</a>`
         defaultSheet = "GJ_GameSheet"
-    } else if (version == Version.VGeode4100) {
+    } else if (
+        version == Version.VGeode4100
+     || version == Version.VGeode520
+    ) {
         sheets = [
             "APISheet",
             "BlankSheet",
