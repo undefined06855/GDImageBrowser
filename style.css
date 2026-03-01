@@ -159,7 +159,7 @@ canvas#preview, canvas#preview2 {
 
 #search-wrap {
     position: fixed;
-    top: -70px;
+    top: 5px;
     right: 5px;
 
     transition: translate .2s linear;
@@ -167,9 +167,6 @@ canvas#preview, canvas#preview2 {
     background-color: #ffffff8a;
 }
 
-#search-wrap:has(#search-bar:focus) {
-    translate: 0px 75px;
-}
 
 #search-bar {
     width: 250px;
@@ -185,6 +182,30 @@ canvas#preview, canvas#preview2 {
 
 label {
     user-select: none;
+}
+
+#autocomplete {
+    width: 250px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    background: #ffffffee;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.autocomplete-item {
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+.autocomplete-item.active {
+    background-color: #287dff;
+    color: white;
+}
+
+.autocomplete-hidden {
+    display: none;
 }
 
 #physical-buttons {

@@ -7,6 +7,10 @@ let loading = 0
 
 /** @type {PlistAndImageComboDeal} */
 let currentCombo = null
+let autocompleteResults = []
+let autocompleteIndex = -1
+let spriteNameCache = []
+
 
 /** @type {PlistDict} */
 let currentDict = null
@@ -243,6 +247,11 @@ function updateCanvasSize() {
 async function updateCurrentCombo() {
     currentDict = null
     currentCombo = await autoGetImageAndPlist()
+    if (currentCombo) {
+        spriteNameCache = currentCombo.plist.map(p => p.key)
+    } else {
+        spriteNameCache = []
+    }
 }
 
 function draw() {
@@ -632,6 +641,78 @@ function searchCurrentCombo(name, exact = false) {
     }
 }
 
+function fuzzyScore(query, target) {
+    query = query.toLowerCase()
+    target = target.toLowerCase()
+
+    if (target.startsWith(query)) return 1000 - target.length
+
+    let qi = 0
+    let score = 0
+    for (let i = 0; i < target.length && qi < query.length; i++) {
+        if (target[i] === query[qi]) {
+            score += 10
+            qi++
+        }
+    }
+    if (qi !== query.length) return -1
+    return score - target.length
+}
+
+function updateAutocomplete(query) {
+    const container = document.querySelector("#autocomplete")
+    if (!query || !currentCombo) {
+        container.classList.add("autocomplete-hidden")
+        return
+    }
+
+    let scored = spriteNameCache
+        .map(name => ({ name, score: fuzzyScore(query, name) }))
+        .filter(x => x.score >= 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 20)
+
+    autocompleteResults = scored.map(x => x.name)
+    autocompleteIndex = -1
+
+    if (autocompleteResults.length === 0) {
+        container.classList.add("autocomplete-hidden")
+        return
+    }
+
+    container.innerHTML = ""
+    for (let name of autocompleteResults) {
+        const div = document.createElement("div")
+        div.className = "autocomplete-item"
+        div.textContent = name
+        div.addEventListener("mousedown", () => {
+            selectAutocomplete(name)
+        })
+        container.appendChild(div)
+    }
+
+    container.classList.remove("autocomplete-hidden")
+}
+
+function selectAutocomplete(name) {
+    const searchBar = document.querySelector("#search-bar")
+    searchBar.value = name
+    document.querySelector("#autocomplete").classList.add("autocomplete-hidden")
+
+    currentDictLocked = true
+    currentDict = searchCurrentCombo(name, true).result
+    if (currentDict) updateInfoAndPreview()
+}
+
+function moveAutocomplete(dir) {
+    const items = document.querySelectorAll(".autocomplete-item")
+    if (items.length === 0) return
+
+    autocompleteIndex = (autocompleteIndex + dir + items.length) % items.length
+    items.forEach(el => el.classList.remove("active"))
+    items[autocompleteIndex].classList.add("active")
+}
+
 function populateSelectionFromURL() {
     let hash = new URL(window.location.href).hash
     if (hash == "") return
@@ -761,6 +842,7 @@ function populateSelectionFromURL() {
         if (searchTerm == "") {
             currentDictLocked = false
             document.querySelector("#search-info").innerText = "Type to search..."
+            updateAutocomplete("")
             return
         }
 
@@ -776,9 +858,31 @@ function populateSelectionFromURL() {
                 document.querySelector("#search-info").innerText = `No results!`
             }
         }
+
+        updateAutocomplete(searchTerm)
     })
 
     window.addEventListener("keydown", event => {
+        const container = document.querySelector("#autocomplete")
+
+        if (!container.classList.contains("autocomplete-hidden")) {
+            if (event.code === "ArrowDown") {
+                event.preventDefault()
+                moveAutocomplete(1)
+                return
+            }
+            if (event.code === "ArrowUp") {
+                event.preventDefault()
+                moveAutocomplete(-1)
+                return
+            }
+            if (event.code === "Enter" && autocompleteIndex >= 0) {
+                event.preventDefault()
+                selectAutocomplete(autocompleteResults[autocompleteIndex])
+                return
+            }
+        }
+
         if (event.code == "KeyF" && event.ctrlKey) {
             event.preventDefault()
             searchBar.value = ""
