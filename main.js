@@ -728,6 +728,7 @@ function populateSelectionFromURL() {
         else if (currentCombo.version == Version.V22081) versionString = "2.2081"
         else if (currentCombo.version == Version.VLitePinkMoreGames) versionString = "LitePinkMoreGames"
         else if (currentCombo.version == Version.VGeode4100) versionString = "Geode4.10.0"
+        else if (currentCombo.version == Version.VGeode520) versionString = "Geode5.2.0"
 
         navigator.clipboard.writeText(
             `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${currentDict ? `!${currentDict.key.replace("/", "_")}` : ""}`
