@@ -689,8 +689,10 @@ function populateSelectionFromURL() {
     document.querySelector("#quality-select").addEventListener("change", () => {updateCurrentCombo()})
 
     document.querySelector("#canvas").addEventListener("mousemove", tickCursor)
-    document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
-    document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
+    if (window.innerWidth > 700) { // consistent with the css (normally id just use user agent)
+        document.querySelector("#canvas").addEventListener("dblclick", downloadPart)
+        document.querySelector("#canvas").addEventListener("contextmenu", copyPart)
+    }
     document.querySelector("#canvas").addEventListener("click", event => {
         // returns whether the cursor is hovering over something
         let ret = tickCursor(event)
@@ -734,7 +736,7 @@ function populateSelectionFromURL() {
         let urlSafeKey = currentDict ? `!${currentDict.key.replace("/", "+").replaceAll("-", ",")}` : ""
 
         navigator.clipboard.writeText(
-            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${}`
+            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${urlSafeKey}`
         )
     })
 
