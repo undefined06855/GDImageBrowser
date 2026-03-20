@@ -167,7 +167,7 @@ canvas#preview, canvas#preview2 {
     background-color: #ffffff8a;
 }
 
-#search-wrap:has(#search-bar:focus) {
+#search-wrap:has(#search-bar[data-state="active"]) {
     translate: 0px 75px;
 }
 
@@ -176,6 +176,30 @@ canvas#preview, canvas#preview2 {
     height: 30px;
 
     padding: 5px;
+}
+
+#search-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+}
+
+#search-dropdown li {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#search-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+#search-dropdown li.selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
 }
 
 #search-info {
