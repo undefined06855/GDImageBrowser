@@ -796,6 +796,9 @@ function populateSelectionFromURL() {
             document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
                 item.classList.toggle("selected", i === currentSearchSelectedIndex)
             })
+            
+            // scroll selected item into view
+            document.querySelectorAll("#search-dropdown li")[currentSearchSelectedIndex].scrollIntoView({ block: "nearest" })
         }
     })
     
@@ -869,7 +872,7 @@ function populateSelectionFromURL() {
     })
 
     window.addEventListener("keydown", event => {
-        if (event.code == "KeyF" && event.ctrlKey) {
+        if (event.code == "KeyF" && (event.ctrlKey || event.metaKey)) {
             event.preventDefault()
             searchBar.value = ""
             currentSearchResults = []
