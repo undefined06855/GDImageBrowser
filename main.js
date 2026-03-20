@@ -796,12 +796,6 @@ function populateSelectionFromURL() {
             document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
                 item.classList.toggle("selected", i === currentSearchSelectedIndex)
             })
-            
-            // scroll selected item into view
-            let selectedItem = document.querySelectorAll("#search-dropdown li")[currentSearchSelectedIndex]
-            if (selectedItem) {
-                selectedItem.scrollIntoView({ block: 'nearest', behavior: 'auto' })
-            }
         }
     })
     
@@ -871,7 +865,7 @@ function populateSelectionFromURL() {
         updateInfoAndPreview()
         searchDropdown.children[0].classList.add("selected")
         searchDropdown.style.display = "block"
-        document.querySelector("#search-info").innerText = `${currentSearchResults.length} result${currentSearchResults.length !== 1 ? 's' : ''}`
+        document.querySelector("#search-info").innerText = `${currentSearchResults.length} result${currentSearchResults.length !== 1 ? "s" : ""}`
     })
 
     window.addEventListener("keydown", event => {
@@ -883,7 +877,7 @@ function populateSelectionFromURL() {
             searchDropdown.style.display = "none"
             searchDropdown.innerHTML = ""
             document.querySelector("#search-info").innerText = "Type to search..."
-            searchBar.dataset.state = 'active';
+            searchBar.dataset.state = "active"
             searchBar.focus()
         }
 
@@ -893,7 +887,7 @@ function populateSelectionFromURL() {
             currentSearchSelectedIndex = 0
             searchDropdown.style.display = "none"
             searchDropdown.innerHTML = ""
-            searchBar.dataset.state = '';
+            searchBar.dataset.state = ""
             searchBar.blur()
         }
     })
@@ -906,7 +900,7 @@ function populateSelectionFromURL() {
             currentSearchSelectedIndex = 0
             searchDropdown.style.display = "none"
             searchDropdown.innerHTML = ""
-            searchBar.dataset.state = '';
+            searchBar.dataset.state = ""
             searchBar.blur()
         }
     })
