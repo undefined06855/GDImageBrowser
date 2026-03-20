@@ -295,11 +295,30 @@ function draw() {
 
         if (currentDictLocked) {
             // dont tell anyone i borrowed the idea from colon
-            ctx.beginPath()
-            ctx.rect(0, 0, canvas.width, canvas.height)
-            ctx.rect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, width, height)
-            ctx.fillStyle = "#00000056"
-            ctx.fill("evenodd")
+            if (currentSearchResults.length > 0) {
+                // dim all sprites that don't match the search
+                ctx.beginPath()
+                ctx.rect(0, 0, canvas.width, canvas.height)
+                for (let matchingDict of currentSearchResults) {
+                    let w, h
+                    if (matchingDict.textureRotated) {
+                        w = matchingDict.textureRect.h * scale
+                        h = matchingDict.textureRect.w * scale
+                    } else {
+                        w = matchingDict.textureRect.w * scale
+                        h = matchingDict.textureRect.h * scale
+                    }
+                    ctx.rect(matchingDict.textureRect.x * scale, matchingDict.textureRect.y * scale, w, h)
+                }
+                ctx.fillStyle = "#00000056"
+                ctx.fill("evenodd")
+            } else {
+                ctx.beginPath()
+                ctx.rect(0, 0, canvas.width, canvas.height)
+                ctx.rect(currentDict.textureRect.x * scale, currentDict.textureRect.y * scale, width, height)
+                ctx.fillStyle = "#00000056"
+                ctx.fill("evenodd")
+            }
         }
     }
 
@@ -605,6 +624,8 @@ function copyPart(event) {
 
 let currentSearchTerm = ""
 let currentSearchIndex = 0
+let currentSearchResults = []
+let currentSearchSelectedIndex = 0
 
 function searchCurrentCombo(name, exact = false) {
     if (!currentCombo) return {
@@ -753,6 +774,34 @@ function populateSelectionFromURL() {
     updateCanvasSize()
 
     let searchBar = document.querySelector("#search-bar")
+    let searchDropdown = document.querySelector("#search-dropdown")
+    
+    // handle arrow key navigation in search results
+    searchBar.addEventListener("keydown", event => {
+        if (event.code === "ArrowDown" || event.code === "ArrowUp") {
+            if (currentSearchResults.length === 0) return
+            
+            event.preventDefault()
+            
+            if (event.code === "ArrowDown") {
+                currentSearchSelectedIndex = (currentSearchSelectedIndex + 1) % currentSearchResults.length
+            } else {
+                currentSearchSelectedIndex = (currentSearchSelectedIndex - 1 + currentSearchResults.length) % currentSearchResults.length
+            }
+            
+            currentDict = currentSearchResults[currentSearchSelectedIndex]
+            currentDictLocked = true
+            updateInfoAndPreview()
+            
+            document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
+                item.classList.toggle("selected", i === currentSearchSelectedIndex)
+            })
+            
+            // scroll selected item into view
+            document.querySelectorAll("#search-dropdown li")[currentSearchSelectedIndex].scrollIntoView({ block: "nearest" })
+        }
+    })
+    
     // use keyup instead of input to capture enter key as well
     searchBar.addEventListener("keyup", event => {
         let searchTerm = searchBar.value
@@ -764,39 +813,98 @@ function populateSelectionFromURL() {
 
         if (searchTerm == "") {
             currentDictLocked = false
+            currentSearchResults = []
+            currentSearchSelectedIndex = 0
+            searchDropdown.style.display = "none"
+            searchDropdown.innerHTML = ""
             document.querySelector("#search-info").innerText = "Type to search..."
             return
         }
 
-        let result = searchCurrentCombo(searchTerm)
-
-        if (result) {
-            currentDictLocked = true
-            currentDict = result.result
-            if (currentDict) {
-                updateInfoAndPreview()
-                document.querySelector("#search-info").innerText = `Result ${result.current + 1} of ${result.results}`
-            } else {
-                document.querySelector("#search-info").innerText = `No results!`
-            }
+        // get all matching results
+        currentSearchResults = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(searchTerm.toLowerCase()))
+        
+        if (currentSearchResults.length === 0) {
+            currentSearchSelectedIndex = 0
+            document.querySelector("#search-info").innerText = `No results!`
+            searchDropdown.style.display = "none"
+            searchDropdown.innerHTML = ""
+            return
         }
+
+        // populate dropdown
+        searchDropdown.innerHTML = ""
+        currentSearchSelectedIndex = 0
+        currentSearchResults.forEach((dict, index) => {
+            let li = document.createElement("li")
+            li.textContent = dict.key
+            li.dataset.index = index
+            li.addEventListener("mouseover", (e) => {
+                currentSearchSelectedIndex = index
+                currentDict = dict
+                currentDictLocked = true
+                updateInfoAndPreview()
+                document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
+                    item.classList.toggle("selected", i === index)
+                })
+            })
+            li.addEventListener("click", (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                currentSearchSelectedIndex = index
+                currentDict = dict
+                currentDictLocked = true
+                updateInfoAndPreview()
+                document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
+                    item.classList.toggle("selected", i === index)
+                })
+            })
+            searchDropdown.appendChild(li)
+        })
+        
+        // select first result by default
+        currentDict = currentSearchResults[0]
+        currentDictLocked = true
+        updateInfoAndPreview()
+        searchDropdown.children[0].classList.add("selected")
+        searchDropdown.style.display = "block"
+        document.querySelector("#search-info").innerText = `${currentSearchResults.length} result${currentSearchResults.length !== 1 ? "s" : ""}`
     })
 
     window.addEventListener("keydown", event => {
-        if (event.code == "KeyF" && event.ctrlKey) {
+        if (event.code == "KeyF" && (event.ctrlKey || event.metaKey)) {
             event.preventDefault()
             searchBar.value = ""
+            currentSearchResults = []
+            currentSearchSelectedIndex = 0
+            searchDropdown.style.display = "none"
+            searchDropdown.innerHTML = ""
             document.querySelector("#search-info").innerText = "Type to search..."
+            searchBar.dataset.state = "active"
             searchBar.focus()
         }
 
         if (event.code == "Escape") {
-            if (searchBar == document.activeElement) {
-                searchBar.value = ""
-                searchBar.blur()
-            } else {
-                currentDictLocked = false
-            }
+            searchBar.value = ""
+            currentSearchResults = []
+            currentSearchSelectedIndex = 0
+            searchDropdown.style.display = "none"
+            searchDropdown.innerHTML = ""
+            searchBar.dataset.state = ""
+            searchBar.blur()
+        }
+    })
+
+    // hide search when clicking outside
+    window.addEventListener("click", event => {
+        if (event.target !== searchBar && event.target !== searchDropdown && !searchDropdown.contains(event.target)) {
+            searchBar.value = ""
+            currentSearchResults = []
+            currentSearchSelectedIndex = 0
+            searchDropdown.style.display = "none"
+            searchDropdown.innerHTML = ""
+            searchBar.dataset.state = ""
+            searchBar.blur()
         }
     })
 
