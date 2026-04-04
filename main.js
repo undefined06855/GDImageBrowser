@@ -758,9 +758,11 @@ function populateSelectionFromURL() {
 
     document.querySelector("#copy-url").addEventListener("click", () => {
         let resolutionString
-        if (currentCombo.resolution == Resolution.hd) resolutionString = "hd"
-        else if (currentCombo.resolution == Resolution.sd) resolutionString = "sd"
-        else if (currentCombo.resolution == Resolution.uhd) resolutionString = "uhd"
+        if (currentCombo.resolution == Resolution.hd) resolutionString = "-hd"
+        else if (currentCombo.resolution == Resolution.sd) resolutionString = "-sd"
+        else if (currentCombo.resolution == Resolution.uhd) resolutionString = "-uhd"
+
+        if (currentCombo.name == "GJ_WebSheet") resolutionString = ""
 
         let versionString
         if (currentCombo.version == Version.V2113) versionString = "2.113"
@@ -772,11 +774,12 @@ function populateSelectionFromURL() {
         else if (currentCombo.version == Version.VLitePinkMoreGames) versionString = "LitePinkMoreGames"
         else if (currentCombo.version == Version.VGeode4100) versionString = "Geode4.10.0"
         else if (currentCombo.version == Version.VGeode520) versionString = "Geode5.2.0"
+        else if (currentCombo.version == Version.VGDWeb1) versionString = "GDWeb1"
 
         let urlSafeKey = currentDict ? `!${currentDict.key.replace("/", "+").replaceAll("-", ",")}` : ""
 
         navigator.clipboard.writeText(
-            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}-${resolutionString}@${versionString}${urlSafeKey}`
+            `${window.location.protocol}//${window.location.host}${window.location.pathname}#${currentCombo.name}${resolutionString}@${versionString}${urlSafeKey}`
         )
     })
 
