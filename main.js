@@ -38,6 +38,7 @@ function getPath(name, resolution, version, type, ignoreResolution) {
     else if (version == Version.VGDWeb1) versionString = "gd-web-1"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
     else if (version == Version.VGeode520) versionString = "geode-5.2.0"
+    else if (version == Version.VGeode553) versionString = "geode-5.5.3"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
@@ -180,6 +181,7 @@ function populateSheetSelect() {
     } else if (
         version == Version.VGeode4100
      || version == Version.VGeode520
+     || version == Version.VGeode553
     ) {
         sheets = [
             "APISheet",
@@ -201,6 +203,10 @@ function populateSheetSelect() {
         notes = "Pretty sure this is identical to 2.2074 but it was on my laptop so might as well archive it."
     }
 
+    if (version == Version.VGeode553) {
+        notes = "no way Sapphire SDK"
+    }
+
     for (let sheet of sheets) {
         let element = document.createElement("option")
         element.innerText = sheet
@@ -218,6 +224,8 @@ function populateSheetSelect() {
     let definitionSelector = document.querySelector("#quality-select")
     if (noResolution) {
         definitionSelector.disabled = true // any truthy
+    } else {
+        definitionSelector.disabled = false
     }
 
     if (definitionSelector.children.length == 2 && noUhd == false) {
@@ -774,6 +782,7 @@ function populateSelectionFromURL() {
         else if (currentCombo.version == Version.VLitePinkMoreGames) versionString = "LitePinkMoreGames"
         else if (currentCombo.version == Version.VGeode4100) versionString = "Geode4.10.0"
         else if (currentCombo.version == Version.VGeode520) versionString = "Geode5.2.0"
+        else if (currentCombo.version == Version.VGeode553) versionString = "Geode5.5.3"
         else if (currentCombo.version == Version.VGDWeb1) versionString = "GDWeb1"
 
         let urlSafeKey = currentDict ? `!${currentDict.key.replace("/", "+").replaceAll("-", ",")}` : ""
