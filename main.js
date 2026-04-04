@@ -19,7 +19,7 @@ function getSelectedVersion() { return Number(document.querySelector("#version-s
 function getSelectedSheet() { return document.querySelector("#sheet-select").value }
 function getSelectedResolution() { return Number(document.querySelector("#quality-select").value) ?? Resolution.uhd }
 
-function getPath(name, resolution, version, type) {
+function getPath(name, resolution, version, type, ignoreResolution) {
     let versionString
     let typeString
     let resolutionString
@@ -35,13 +35,18 @@ function getPath(name, resolution, version, type) {
     else if (version == Version.V2208) versionString = "2.208"
     else if (version == Version.V22081) versionString = "2.2081"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
+    else if (version == Version.VGDWeb1) versionString = "gd-web-1"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
     else if (version == Version.VGeode520) versionString = "geode-5.2.0"
 
     if (type == FileType.Image) typeString = "png"
     else if (type == FileType.Plist) typeString = "plist"
 
-    return `./assets/${versionString}/${name}${resolutionString}.${typeString}`
+    if (ignoreResolution) {
+        return `./assets/${versionString}/${name}.${typeString}`
+    } else {
+        return `./assets/${versionString}/${name}${resolutionString}.${typeString}`
+    }
 }
 
 /**
@@ -62,8 +67,10 @@ async function getImageAndPlist(name, resolution, version) {
             // no :(
             console.log("need to load %s at %s (%s)", name, resolution, version)
 
-            let imagePath = getPath(name, resolution, version, FileType.Image)
-            let plistPath = getPath(name, resolution, version, FileType.Plist)
+            let isWebSheet = name == "GJ_WebSheet"
+
+            let imagePath = getPath(name, resolution, version, FileType.Image, isWebSheet)
+            let plistPath = getPath(name, resolution, version, FileType.Plist, isWebSheet)
 
             // parse the plist
             let plistResponse = await fetch(plistPath)
@@ -74,6 +81,7 @@ async function getImageAndPlist(name, resolution, version) {
 
             // only integer tag is the format, naive approach but works
             let format = plistDOM.querySelector("integer").innerHTML
+            if (isWebSheet) format = -1
 
             let plist = []
             for (let i = 0; i < plistBody.children.length; i += 2) {
@@ -105,6 +113,7 @@ function populateSheetSelect() {
 
     let sheets = []
     let noUhd = false
+    let noResolution = false
     let isLegacy = false
     let notes = ""
     let defaultSheet = ""
@@ -180,6 +189,12 @@ function populateSheetSelect() {
         ]
 
         defaultSheet = "APISheet"
+    } else if (version == Version.VGDWeb1) {
+        sheets = [ "GJ_WebSheet" ]
+        noResolution = true
+        isLegacy = true
+        notes = `<a href="https://geometrydash.com/">https://geometrydash.com/</a> (converted from json to plist)<br/>note: this is regarded as version 2.0 of texturepacker (same as 1.2), but the format differs slightly!`
+        defaultSheet = "GJ_WebSheet"
     }
 
     if (version == Version.V22073) {
@@ -201,6 +216,10 @@ function populateSheetSelect() {
 
     // remove or add uhd for old sheets
     let definitionSelector = document.querySelector("#quality-select")
+    if (noResolution) {
+        definitionSelector.disabled = true // any truthy
+    }
+
     if (definitionSelector.children.length == 2 && noUhd == false) {
         let uhdOption = document.createElement("option")
         uhdOption.innerText = "UHD"
@@ -775,33 +794,33 @@ function populateSelectionFromURL() {
 
     let searchBar = document.querySelector("#search-bar")
     let searchDropdown = document.querySelector("#search-dropdown")
-    
+
     // handle arrow key navigation in search results
     searchBar.addEventListener("keydown", event => {
         if (event.code === "ArrowDown" || event.code === "ArrowUp") {
             if (currentSearchResults.length === 0) return
-            
+
             event.preventDefault()
-            
+
             if (event.code === "ArrowDown") {
                 currentSearchSelectedIndex = (currentSearchSelectedIndex + 1) % currentSearchResults.length
             } else {
                 currentSearchSelectedIndex = (currentSearchSelectedIndex - 1 + currentSearchResults.length) % currentSearchResults.length
             }
-            
+
             currentDict = currentSearchResults[currentSearchSelectedIndex]
             currentDictLocked = true
             updateInfoAndPreview()
-            
+
             document.querySelectorAll("#search-dropdown li").forEach((item, i) => {
                 item.classList.toggle("selected", i === currentSearchSelectedIndex)
             })
-            
+
             // scroll selected item into view
             document.querySelectorAll("#search-dropdown li")[currentSearchSelectedIndex].scrollIntoView({ block: "nearest" })
         }
     })
-    
+
     // use keyup instead of input to capture enter key as well
     searchBar.addEventListener("keyup", event => {
         let searchTerm = searchBar.value
@@ -823,7 +842,7 @@ function populateSelectionFromURL() {
 
         // get all matching results
         currentSearchResults = currentCombo.plist.filter(dict => dict.key.toLowerCase().includes(searchTerm.toLowerCase()))
-        
+
         if (currentSearchResults.length === 0) {
             currentSearchSelectedIndex = 0
             document.querySelector("#search-info").innerText = `No results!`
@@ -861,7 +880,7 @@ function populateSelectionFromURL() {
             })
             searchDropdown.appendChild(li)
         })
-        
+
         // select first result by default
         currentDict = currentSearchResults[0]
         currentDictLocked = true

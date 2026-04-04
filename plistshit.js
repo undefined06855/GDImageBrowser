@@ -1,6 +1,6 @@
 class PlistVector {
     /**
-     * @param {string} string 
+     * @param {string} string
      */
     constructor(string) {
         // string should be formatted like {x,y}
@@ -21,7 +21,7 @@ class PlistVector {
 
 class PlistRect {
     /**
-     * @param {string} string 
+     * @param {string} string
      */
     constructor(string) {
         // string should be formatted like {{x,y},{w,h}}
@@ -41,16 +41,29 @@ class PlistRect {
     }
 }
 
+// converts a rect {x,y},{w,h} to {{x,y},{w,h}}
+function reformatRect(input) {
+    return `{${input}}`
+}
+
 class PlistDict {
     /**
-     * @param {string} key 
-     * @param {HTMLElement} plistDictElement 
+     * @param {string} key
+     * @param {HTMLElement} plistDictElement
      * @param {number} format
      */
     constructor(key, plistDictElement, format) {
         this.key = key
 
-        if (format == 3) {
+        if (format == -1) {
+            // GJ_WebSheet.plist
+            // format internally is 2 but it really isn't
+            this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
+            this.spriteSize = new PlistVector("{0,0}")
+            this.spriteSourceSize = new PlistVector(plistDictElement.children[7 /* not 9 */].innerHTML)
+            this.textureRect = new PlistRect(reformatRect(plistDictElement.children[1].innerHTML))
+            this.textureRotated = plistDictElement.children[5].tagName == "true"
+        } else if (format == 3) {
             // post 2.0
             const offset = plistDictElement.children[1].tagName == "array" ? 2 : 0
             //this.aliases = plistDictElement.children[1].innerHTML
@@ -59,13 +72,15 @@ class PlistDict {
             this.spriteSourceSize = new PlistVector(plistDictElement.children[offset + 5].innerHTML)
             this.textureRect = new PlistRect(plistDictElement.children[offset + 7].innerHTML)
             this.textureRotated = plistDictElement.children[offset + 9].tagName == "true"
-        } else {
+        } else if (format == 2) {
             // pre 2.0 i think?
             this.spriteOffset = new PlistVector(plistDictElement.children[3].innerHTML)
             this.spriteSize = new PlistVector("{0,0}")
             this.spriteSourceSize = new PlistVector(plistDictElement.children[9].innerHTML)
             this.textureRect = new PlistRect(plistDictElement.children[1].innerHTML)
             this.textureRotated = plistDictElement.children[5].tagName == "true"
+        } else {
+            console.warn("unknown format %s", format)
         }
     }
 }
