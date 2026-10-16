@@ -786,6 +786,7 @@ function populateSelectionFromURL() {
         else if (currentCombo.version == Version.V22074) versionString = "2.2074"
         else if (currentCombo.version == Version.V2208) versionString = "2.208"
         else if (currentCombo.version == Version.V22081) versionString = "2.2081"
+        else if (currentCombo.version == Version.V2209) versionString = "2.209"
         else if (currentCombo.version == Version.VLitePinkMoreGames) versionString = "LitePinkMoreGames"
         else if (currentCombo.version == Version.VGeode4100) versionString = "Geode4.10.0"
         else if (currentCombo.version == Version.VGeode520) versionString = "Geode5.2.0"
