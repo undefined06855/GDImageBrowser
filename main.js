@@ -34,6 +34,7 @@ function getPath(name, resolution, version, type, ignoreResolution) {
     else if (version == Version.V22074) versionString = "2.2074"
     else if (version == Version.V2208) versionString = "2.208"
     else if (version == Version.V22081) versionString = "2.2081"
+    else if (version == Version.V2209) versionString = "2.209"
     else if (version == Version.VLitePinkMoreGames) versionString = "1.2litepinkmoregames"
     else if (version == Version.VGDWeb1) versionString = "gd-web-1"
     else if (version == Version.VGeode4100) versionString = "geode-4.10.0"
@@ -126,6 +127,7 @@ function populateSheetSelect() {
         || version == Version.V22074
         || version == Version.V2208
         || version == Version.V22081
+        || version == Version.V2209
     ) {
         sheets = [
             "DungeonSheet",
@@ -197,6 +199,11 @@ function populateSheetSelect() {
         isLegacy = true
         notes = `<a href="https://geometrydash.com/">https://geometrydash.com/</a> (converted from json to plist)<br/>note: this is regarded as version 2.0 of texturepacker (same as 1.2), but the format differs slightly!`
         defaultSheet = "GJ_WebSheet"
+    }
+
+    if (version == Version.V2209) {
+        sheets.push("GJ_FontSheet");
+        sheets.sort();
     }
 
     if (version == Version.V22073) {
